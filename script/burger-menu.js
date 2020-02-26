@@ -4,12 +4,12 @@ $(function () {
 	$('.burger').on('click', function(e){
 		e.preventDefault();
 
-		$('.header__nav').slideToggle(100, 'linear');
+		$('.header__nav').toggleClass('header__nav_click');
 		$('.burger-btn').toggleClass('burger-btn-click');
 	});
 	
 	
-	$('.header__nav_menu_list, .scroll-offset').on('click', function (e) {
+	$('.header__nav_menu_list').on('click', function (e) {
 		e.preventDefault();
 	
 		let href = $(this).attr('href');
@@ -17,10 +17,25 @@ $(function () {
 
 		$('body, html').animate({
 			scrollTop: offset
-		}, 600);
+		}, 700);
+
+
+		$('.header__nav').toggleClass('header__nav_click');
+		$('.burger-btn').toggleClass('burger-btn-click');
 
 	});
 	
+	$('.scroll-offset').on('click', function (e) {
+		e.preventDefault();
+	
+		let href = $(this).attr('href');
+		let offset = $(href).offset().top;
+
+		$('body, html').animate({
+			scrollTop: offset
+		}, 700);
+
+	});
 
 
 

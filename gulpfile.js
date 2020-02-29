@@ -12,6 +12,7 @@ const jsFiles = [
     './src/js/owlCarousel.js',
     './src/js/jquery.formstyler.min.js',
     './src/js/jquery.validate.min.js',
+    './src/js/popup__form.js',
 ]
 
 function watch() {
@@ -32,12 +33,14 @@ function styles() {
     return gulp.src('./src/css/**/*.css')
     .pipe(concat('all.css'))
     .pipe(autoprefixer({
-        browsers: ['last 2 versions'],
+        overrideBrowserslist: ['last 2 versions'],
         cascade: false,
     }))
+    
     .pipe(cleanCSS({
         level: 2
     }))
+
     .pipe(gulp.dest('./build/css'))
     .pipe(browserSync.stream());
 }
@@ -47,9 +50,8 @@ function styles() {
 function scripts(){
     return gulp.src(jsFiles)
     .pipe(concat('all.js'))
-    .pipe(uglify({
-        toplevel: true,
-    }))
+    .pipe(uglify())
+
     .pipe(gulp.dest('./build/js'))
     .pipe(browserSync.stream());
 }

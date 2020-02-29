@@ -156,7 +156,7 @@
 }
 
 .main__aboutme_conteiner_ellipse {
-	background-image: url(../img/ellipse.svg);
+	background-image: url(../../img/ellipse.svg);
 	background-repeat: no-repeat;
 	background-position: top left;
 	width: 58%;

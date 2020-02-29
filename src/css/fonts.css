@@ -4,8 +4,8 @@
   font-style: normal;
   font-weight: 400;
   src: local('Roboto'), local('Roboto-Regular'),
-       url('../fonts/roboto-v20-cyrillic_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/roboto-v20-cyrillic_latin-regular.woff') format('woff'); /* Modern Browsers */
+       url('../../fonts/roboto-v20-cyrillic_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../fonts/roboto-v20-cyrillic_latin-regular.woff') format('woff'); /* Modern Browsers */
   font-display: swap;
 }
 /* roboto-700 - cyrillic_latin */
@@ -14,8 +14,8 @@
   font-style: normal;
   font-weight: 700;
   src: local('Roboto Bold'), local('Roboto-Bold'),
-       url('../fonts/roboto-v20-cyrillic_latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/roboto-v20-cyrillic_latin-700.woff') format('woff'); /* Modern Browsers */
+       url('../../fonts/roboto-v20-cyrillic_latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../fonts/roboto-v20-cyrillic_latin-700.woff') format('woff'); /* Modern Browsers */
   font-display: swap;
 }
 /* roboto-900 - cyrillic_latin */
@@ -24,16 +24,16 @@
   font-style: normal;
   font-weight: 900;
   src: local('Roboto Black'), local('Roboto-Black'),
-       url('../fonts/roboto-v20-cyrillic_latin-900.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/roboto-v20-cyrillic_latin-900.woff') format('woff'); /* Modern Browsers */
+       url('../../fonts/roboto-v20-cyrillic_latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../fonts/roboto-v20-cyrillic_latin-900.woff') format('woff'); /* Modern Browsers */
   font-display: swap;
 }
 
 @font-face {
   font-family: 'fontello';
-  src: url('../fonts/fontello.eot?64204630');
-  src: url('../fonts/fontello.woff2?64204630') format('woff2'),
-       url('../fonts/fontello.woff?64204630') format('woff');
+  src: url('../../fonts/fontello.eot?64204630');
+  src: url('../../fonts/fontello.woff2?64204630') format('woff2'),
+       url('../../fonts/fontello.woff?64204630') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

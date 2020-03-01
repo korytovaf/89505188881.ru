@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
-const uglify = require('gulp-uglify');
+const uglify = require('gulp-uglify-es').default;
 const del = require('del');
 const browserSync = require('browser-sync').create();
 
@@ -51,7 +51,6 @@ function scripts(){
     return gulp.src(jsFiles)
     .pipe(concat('all.js'))
     .pipe(uglify())
-
     .pipe(gulp.dest('./build/js'))
     .pipe(browserSync.stream());
 }

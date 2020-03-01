@@ -92,25 +92,20 @@ ul {
 }
 
 .button__color_white {
-    border: 1.0px solid #f82370;
+    border: 1.0px solid #ff2f96;
     border-radius: 2px;
     background: transparent;
-    color: #f82370;
-    transition: 1s;
+	color: #ff2f96;
+	transition: 0.4s;
 }
 
 .button__color_white:hover {
-	background: linear-gradient(13.0deg, #ff8f5a 26%, #ff2f96 72%);
-	border: none;
+	background: #ff2f96;
 	color: #fff;
 }
 
-
-@media (max-width: 624px) {
-	.button__color_orange {
-		background-color: #ff4e2e;
-		color: #fff;
-		border: none;
-	}
+.button__color_orange {
+	background-color: #ff4e2e;
+	color: #fff;
+	border: none;
 }
-

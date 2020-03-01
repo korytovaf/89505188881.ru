@@ -27,23 +27,17 @@
 }
 
 .header__nav_menu_list:hover {
-	background: linear-gradient(13.0deg, rgba(255,143,90,1) 26%, rgba(255,47,150,1) 72%); 
-	-webkit-background-clip: text; 
-	color: transparent;
-	border-bottom: 1px solid #ff2f96;
+	color: #ff2f96; 
 }
 
 .header__phone {
 	margin: 0 20px;
 	font-size: 26px;
-	transition: 1s;
+	transition: 0.4s;
 }
 
 .header__phone:hover {
-	background: linear-gradient(13.0deg, rgba(255,143,90,1) 26%, rgba(255,47,150,1) 72%); 
-	-webkit-background-clip: text; 
-	color: transparent;
-	transition: 1s;
+	color: #ff2f96; 
 }
 
 .button__size_circle {
@@ -51,10 +45,10 @@
 	width: 32px;
 	height: 32px;
 	border-radius: 50%;
-	border: 1px solid #ff2f96;
+	border: 1px solid #f00c6b;
 	background-color: transparent;
 	cursor: pointer;
-	transition: 1s ease-out 1s;
+	transition: 0.4s;
 }
 
 /* ============ burger меню ============ */

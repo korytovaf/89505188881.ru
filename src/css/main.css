@@ -232,7 +232,6 @@
 	width: 268px;
 	height: 60px;
 	background-color: #ff4e2e;
-	border: none;
 	line-height: 66px;
 	border-radius: 2px;
 	font-size: 18px;
@@ -241,12 +240,11 @@
 	color: #fff;
 	text-align: center;
 	vertical-align: middle;
+	transition: 0.4s;
 }
 
 .main__button_color_orange:hover {
-	background: linear-gradient(13.0deg, #ff8f5a 26%, #ff2f96 72%);
-	border: none;
-	color: #fff;
+	background: #ff2f96;
 }
 
 @media (max-width: 750px) {

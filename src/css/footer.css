@@ -31,10 +31,7 @@
 }
 
 .footer__menu_li:hover {
-	background: linear-gradient(13.0deg, rgba(255,143,90,1) 26%, rgba(255,47,150,1) 72%); 
-	-webkit-background-clip: text; 
-	color: transparent;
-	
+	color: #ff2f96; 
 }
 
 .footer__contact {
@@ -50,9 +47,7 @@
 }
 
 .footer__contact:hover {
-	background: linear-gradient(13.0deg, rgba(255,143,90,1) 26%, rgba(255,47,150,1) 72%); 
-	-webkit-background-clip: text; 
-	color: transparent;
+	color: #ff2f96; 
 }
 
 @media (max-width: 1224px) {
@@ -80,6 +75,7 @@
     fill: #8993ad;
 	width: 30px;
 	height: 30px;
+	transition: 0.4s;
 }
 
 .footer__contact_icon:hover {

@@ -17,12 +17,7 @@ a {
 ul {
 	list-style: none;
 }
-/*
-:active, :hover, :focus {
-	outline: 0;
-	outline-offset: 0;
-}
-*/
+
 .conteiner {
 	max-width: 1210px;
 	margin: 0 auto;
@@ -99,9 +94,9 @@ ul {
 .button__color_white {
     border: 1.0px solid #f82370;
     border-radius: 2px;
-    background-color: transparent;
+    background: transparent;
     color: #f82370;
-    transition: background-color 0.8s, box-shadow 0.4s, color 0.1s;
+    transition: 1s;
 }
 
 .button__color_white:hover {

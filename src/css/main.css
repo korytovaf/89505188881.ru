@@ -273,7 +273,7 @@
 	font-size: 54px;
 	font-weight: 700;
 	color: #262626;
-	padding: 80px 20px;
+	padding: 90px 20px;
     text-align: center;
 }
 
@@ -292,8 +292,8 @@
 }
 
 .main__i-do_skills li {
-	width: 23%;
-	margin-bottom: 40px;
+	width: 22%;
+	margin-bottom: 16px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -343,15 +343,16 @@
 	align-items: center;
 	justify-content: space-around;
 	background-color: #fbfbfb;
+	padding: 75px 0;
 }
 
 .main__portfolio_slider {
 	width: 100%;
-	padding: 0 30px;
+	padding: 0 30px 62px;
 }
 
 .main__portfolio_item_header {
-	margin-top: 20px;
+	margin-top: 42px;
 	text-align: center;
 	font-size: 20px;
 	color: #8993ad;
@@ -384,20 +385,20 @@ button.active {
 
 .owl-nav button {
 	position: absolute;
-	top: -200px;
-	width: 40px;
-	height: 40px;
+	top: -231px;
+	width: 60px;
+	height: 60px;
 	border-radius: 50%;
 	background-color: #fff;
 	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.17);
 }
 
 .owl-prev {
-	left: -20px;
+	left: -32px;
 }
 
 .owl-next {
-	right: -20px;
+	right: -32px;
 }
 
 
@@ -416,13 +417,13 @@ button.active {
 }
 
 .main__price_conteiner {
-	margin: 60px 0;
+	padding-bottom: 58px;
 	position: relative;
 	z-index: 3;
 }
 
 .main__price_conteiner_header {
-	margin-bottom: 20px;
+	margin: 72px 70px 15px 115px;
 	font-size: 45px;
 	line-height: 60px;
 	font-weight: 700;
@@ -430,10 +431,17 @@ button.active {
 }
 
 .main__price_conteiner_small {
-	padding: 20px 0;
+	padding: 18px 283px 20px 113px;
 	font-size: 20px;
+	line-height: 30px;
+
+	display: flex;
+	flex-wrap: nowrap;
 }
 
+.main__price_conteiner_small small {
+	margin-left: 10px;
+}
 
 @media (max-width: 1024px) {
 	.main__price_conteiner_header {

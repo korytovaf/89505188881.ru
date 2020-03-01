@@ -3,7 +3,7 @@
 	display: flex;
 	flex-flow: nowrap;
 	justify-content: space-between;
-	padding: 70px 20px;
+	padding: 84px 20px;
 }
 @media (max-width: 824px) {
 	.footer {
@@ -24,8 +24,8 @@
 
 .footer__menu_li {
 	display: inline-block;
-	margin-bottom: 20PX;
-	font-weight: 700;
+	margin-bottom: 16PX;
+	font-weight: 400;
 	color: #8993ad;
 	transition: 0.4s;
 }
@@ -39,12 +39,14 @@
 
 .footer__contact {
 	padding-right: 22px;
-	margin-bottom: 20px;
+	padding-left: 16px;
+	margin-bottom: 30px;
 	font-size: 25px;
-	font-weight: 700;
+	font-weight: 400;
 	color: #1f1f24;
 	vertical-align: middle;
 	display: block;
+	transition: 0.4s;
 }
 
 .footer__contact:hover {

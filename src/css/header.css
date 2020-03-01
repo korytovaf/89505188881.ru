@@ -36,13 +36,14 @@
 .header__phone {
 	margin: 0 20px;
 	font-size: 26px;
-	transition: 0.3s;
+	transition: 1s;
 }
 
 .header__phone:hover {
 	background: linear-gradient(13.0deg, rgba(255,143,90,1) 26%, rgba(255,47,150,1) 72%); 
 	-webkit-background-clip: text; 
 	color: transparent;
+	transition: 1s;
 }
 
 .button__size_circle {
@@ -53,7 +54,7 @@
 	border: 1px solid #ff2f96;
 	background-color: transparent;
 	cursor: pointer;
-	transition: 0.3s;
+	transition: 1s ease-out 1s;
 }
 
 /* ============ burger меню ============ */

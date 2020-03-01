@@ -17,14 +17,14 @@ a {
 ul {
 	list-style: none;
 }
-
+/*
 :active, :hover, :focus {
 	outline: 0;
 	outline-offset: 0;
 }
-
+*/
 .conteiner {
-	max-width: 1400px;
+	max-width: 1210px;
 	margin: 0 auto;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -84,9 +84,8 @@ ul {
 }
 
 .button {
-	width: 200px;
-	height: 40px;
-	text-transform: uppercase;
+	width: 208px;
+	height: 45px;
 	cursor: pointer;
 }
 
@@ -102,7 +101,7 @@ ul {
     border-radius: 2px;
     background-color: transparent;
     color: #f82370;
-    transition: background-color 0.2s, box-shadow 0.2s, color 0.2s;
+    transition: background-color 0.8s, box-shadow 0.4s, color 0.1s;
 }
 
 .button__color_white:hover {

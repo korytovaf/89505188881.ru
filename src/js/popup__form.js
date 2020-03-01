@@ -7,6 +7,7 @@ $(function () {
 		$('.popup__form').css('display', 'inline-block');
 		$('html').addClass('popup__html_fixed');
 		$('body').addClass('popup__body_fixed');
+		$('#name').focus();
 	});
 
 	$('.popup__button_close').on('click', function(e){

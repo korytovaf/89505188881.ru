@@ -63,4 +63,4 @@ gulp.task('styles', styles);
 gulp.task('scripts', scripts);
 gulp.task('watch', watch);
 gulp.task('build', gulp.series(clian, gulp.parallel(styles, scripts)));
-gulp.task('dev', gulp.series('build','watch' ));
+gulp.task('dev', gulp.series('build','watch'));

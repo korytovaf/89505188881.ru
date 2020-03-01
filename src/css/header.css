@@ -4,7 +4,7 @@
 	justify-content: space-between;
 	align-items: center;
 
-	padding: 30px 20px;
+	padding: 26px 20px;
 	font-weight: 700;
 }
 
@@ -22,7 +22,8 @@
 }
 
 .header__nav_menu_list {
-	margin-right: 20px;
+	margin-right: 30px;
+	transition: 0.4s;
 }
 
 .header__nav_menu_list:hover {
@@ -34,6 +35,8 @@
 
 .header__phone {
 	margin: 0 20px;
+	font-size: 26px;
+	transition: 0.3s;
 }
 
 .header__phone:hover {

@@ -27,12 +27,14 @@
 	margin-bottom: 20PX;
 	font-weight: 700;
 	color: #8993ad;
+	transition: 0.4s;
 }
 
 .footer__menu_li:hover {
 	background: linear-gradient(13.0deg, rgba(255,143,90,1) 26%, rgba(255,47,150,1) 72%); 
 	-webkit-background-clip: text; 
 	color: transparent;
+	
 }
 
 .footer__contact {

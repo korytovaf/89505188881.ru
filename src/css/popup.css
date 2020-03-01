@@ -89,10 +89,12 @@
 	border: 1px solid #808080;
 	border-radius: 2px;
 }
+
+/*
 .popup__form_input:focus {
 	border: 1px solid #ff2f96;
 }
-
+*/
 @media (max-width : 624px) {
 	.popup__form_label {
 		width: 200px;

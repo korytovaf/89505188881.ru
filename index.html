@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Александр Корытов - Frontend-разработчик и веб-верстальщик</title>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="preload" href="./fonts/roboto-v20-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="stylesheet" type="text/css" href="build/css/all.css">
 
@@ -21,7 +20,7 @@
 </head>
 <body>
 	<div class="popup gradient__background">
-		<form class="popup__form popup__form_size_desktop" action="mailer/smart.php" method="POST">
+		<form id="form-popup" class="popup__form popup__form_size_desktop" action="mailer/smart.php" method="POST">
 			<a class="popup__button_close popup__button_close_out" href="#">&#10006;</a>
 			<h3 class="popup__header">Укажите свои данные!</h3>	
 			<label class="popup__form_label">
@@ -29,7 +28,7 @@
 					Имя
 					<span class="popup__form_pattern">*</span>
 				</span>
-				<input class="popup__form_input" type="text" name="name" placeholder="Имя">
+				<input id="name" class="popup__form_input" type="text" name="name" placeholder="Имя">
 			</label>
 			<label class="popup__form_label">
 				<span>

@@ -54,9 +54,9 @@
 /* ============ burger меню ============ */
 
 
-@media (max-width: 824px) {
+@media (max-width: 1024px) {
 	.header__nav_click {
-		transform: translateX(180px);
+		transform: translateX(450px);
 	}
 
 	.header__nav {
@@ -65,10 +65,10 @@
 		border: 1px solid #ff2f96;
 		border-radius: 4px;
 		top: 120px;
-		left: -200px;
-		width: 150px;
+		left: -460px;
+		width: 450px;
 		z-index: 20;
-		transition: all 300ms cubic-bezier(.9, 0, .33, 1);
+		transition: 0.8s cubic-bezier(.78,.15,.27,.81);
 	}
 
 	.header__nav_menu {
@@ -76,7 +76,18 @@
 	}
 
 	.header__nav_menu li {
-		margin: 20px 40px;
+		margin: 33px auto;
+		width: 400px;
+		text-align: center;
+	}
+
+	.header__phone {
+		flex-grow: 3;
+		text-align: end;
+	}
+
+	.header__nav_menu_list {
+		font-size: 28px;
 	}
 }
 
@@ -93,15 +104,14 @@
 .burger {
 	display: none;
 	margin-right: 10px;
-	width: 30px;
-	height: 30px;
 	background-color: transparent;
 	position: relative;
 }
 
-@media (max-width: 824px) {
+@media (max-width: 1024px) {
 	.burger {
 		display: inline-block;
+		flex-grow: 1;
 	}
 }
 
@@ -109,12 +119,11 @@
 .burger-btn span::before,
 .burger-btn span::after {
 	position: absolute;
-	left: 50%;
-	margin-left: -15px;
-	top: 50%;
-	margin-top: -2px;
-	width: 30px;
-	height: 3px;
+	left: 0;
+	top: 0;
+
+	width: 45px;
+	height: 6px;
 	transition: 0.4s;
 	
 	background: linear-gradient(13.0deg, rgba(255,143,90,0.9) 26%, rgba(255,47,150,0.95) 72%); 
@@ -127,10 +136,12 @@
 
 .burger-btn span::before {
 	transform: translateY(-8px);
+	margin-top: -6px;
 }
 
 .burger-btn span::after {
 	transform: translateY(8px);
+	margin-top: 6px;
 }
 
 .burger-btn-click span {
@@ -139,10 +150,12 @@
 }
 .burger-btn-click span::after {
 	transform: rotate(45deg);
+	margin-top: 0;
 }
 
 .burger-btn-click span::before {
 	transform: rotate(-45deg);
+	margin-top: 0;
 }
 
 

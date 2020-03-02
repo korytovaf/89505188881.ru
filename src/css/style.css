@@ -39,7 +39,7 @@ ul {
  
 @media (max-width : 1024px) {
 	.conteiner {
-		max-width: 800px;
+		max-width: 985px;
 	}
 }
 
@@ -108,4 +108,7 @@ ul {
 	background-color: #ff4e2e;
 	color: #fff;
 	border: none;
+	width: 268px;
+    height: 60px;
+    cursor: pointer;
 }

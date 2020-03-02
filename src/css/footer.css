@@ -3,7 +3,7 @@
 	display: flex;
 	flex-flow: nowrap;
 	justify-content: space-between;
-	padding: 84px 20px;
+	padding: 84px 20px 60px;
 }
 @media (max-width: 824px) {
 	.footer {
@@ -48,12 +48,6 @@
 
 .footer__contact:hover {
 	color: #ff2f96; 
-}
-
-@media (max-width: 1224px) {
-	.footer__contact {
-		font-size: 20px;
-	}
 }
 
 @media (max-width: 824px) {
@@ -105,6 +99,9 @@
 }
 
 @media (max-width: 1024px) {
+	.footer {
+		padding: 104px 20px 63px;
+	}
 	.copyright small {
 		font-size: 12px; 
 	}

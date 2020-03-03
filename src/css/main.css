@@ -1,4 +1,3 @@
-/*================ about-me ===================*/
 .animate {
 	font-size: 50px;
 	font-weight: 700;
@@ -91,33 +90,11 @@
 	transition: transform 20s;	
 }
 
-@media (max-width: 750px) {
-	.main__aboutme {
-		padding-top: 0;
-	}
-}
-
 .h1 {
 	margin: 0;
 	font-size: 80px;
 	font-weight: bold;
 	color: #1f1f24;
-}
-
-@media (max-width: 1024px) {
-	.main__aboutme {
-		background-color: #fff;
-	}
-	.h1 {
-		font-size: 51px;
-		line-height: 40px;
-	}
-}
-
-@media (max-width: 824px) {
-	.h1 {
-		font-size: 27px;
-	}
 }
 
 .main__aboutme_conteiner {
@@ -128,8 +105,6 @@
 .main__aboutme_conteiner_empty {
 	width: 76%;
 }
-
-
 
 .main__aboutme_conteiner_text {
 	position: relative;
@@ -142,51 +117,12 @@
     z-index: 3;
 }
 
-@media (max-width: 1024px) {
-	.main__aboutme_conteiner_text-block {
-    top: -442px;
-	}
-}
-
-@media (max-width: 1000px) {
-	.main__aboutme_conteiner_text-block {
-		position: static;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	
-	.main__aboutme_conteiner_empty {
-		display: none;
-	}
-}
-
 .main__aboutme_conteiner_ellipse {
 	background-image: url(../../img/ellipse.svg);
 	background-repeat: no-repeat;
 	background-position: top left;
 	width: 58%;
 	height: 637px;
-}
-
-@media (max-width: 1170px) {
-	.main__aboutme_conteiner_ellipse {
-		width: 80%;
-	}
-}
-
-@media (max-width: 1000px) {
-	.main__aboutme_conteiner_ellipse {
-		width: 100%;
-	}
-}
-
-@media (max-width: 750px) {
-	.main__aboutme_conteiner_ellipse {
-		height: 380px;
-		background-position: 10px 90px;
-    	background-size: cover;
-	}
 }
 
 .main__aboutme_foto {
@@ -201,36 +137,6 @@
 	font-size: 25px;
 	font-weight: 400;
 	color: #8993ad;
-}
-
-@media (max-width: 1024px) {
-	.main__aboutme_foto {
-		padding-left: 28px;
-	}
-	.main__aboutme_conteiner_text-block p {
-		padding-top: 20px;
-	}
-}
-
-@media (max-width: 1000px) {
-	picture {
-		display: flex;
-		justify-content: center;
-	}
-}
-
-@media (max-width: 750px) {
-	picture {
-		height: 100%;
-    	align-items: flex-end;
-	}
-}
-
-@media (max-width: 750px) {
-	.main__aboutme_conteiner_text-block p {
-		font-size: 16px;
-		text-align: center;
-	}
 }
 
 .main__button_color_orange {
@@ -253,22 +159,6 @@
 .main__button_color_orange:hover {
 	background: #ff2f96;
 }
-
-@media (max-width: 1024px) {
-	.main__button_color_orange {
-		width: 320px;
-		height: 70px;
-		line-height: 70px;
-	}
-}
-
-@media (max-width: 750px) {
-	.main__button_color_orange {
-		font-size: 16px;
-	}
-}
-
-
 /*===================== i-do =======================*/
 
 .main__i-do {
@@ -290,13 +180,6 @@
     text-align: center;
 }
 
-@media (max-width: 750px) {
-	.main__item_header {
-		font-size: 30px;
-		padding: 30px 20px;
-	}
-}
-
 .main__i-do_skills {
 	width: 100%;
 	display: flex;
@@ -311,19 +194,6 @@
 	flex-direction: column;
 	align-items: center;
 }
-
-@media (max-width: 1170px) {
-	.main__i-do_skills li {
-		width: 50%;
-	}
-}
-
-@media (max-width: 750px) {
-	.main__i-do_skills li {
-		width: 100%;
-	}
-}
-
 
 .main__i-do_skills img {
 	width: 80px;
@@ -340,14 +210,6 @@
 	margin: 15px 0 40px;
 }
 
-@media (max-width: 750px) {
-	.main__i-do_skills p {
-		font-size: 16px;
-		line-height: 24px;
-	}
-}
-
-
 /*==================== portfolio ====================*/
 
 .main__portfolio {
@@ -357,7 +219,7 @@
 	justify-content: space-around;
 	background-color: #fbfbfb;
 	margin: 75px 0 0;
-	padding: 0 0 100px 40px;
+	padding-bottom: 100px;
 }
 
 .main__portfolio_slider {
@@ -410,36 +272,7 @@ button.active {
 	right: -32px;
 }
 
-
-
-@media (max-width: 1024px) {
-	.main__portfolio {
-		margin-top: 90px;
-		padding: 10px 0 90px;
-	}
-
-	.main__portfolio_item_header{
-		margin-top: 18px;
-		text-align: center;
-		font-size: 25px;
-	}
-	
-	.owl-dots {
-		margin-top: 104px;
-	}
-
-	.main__portfolio_slider {
-		padding: 0 30px 100px;
-	}
-
-	.button__color_orange {
-		width: 320px;
-		height: 70px;
-	}
-}
-
 /*======================== price ========================*/
-
 .main__price {
 	width: 100%;
 	background: linear-gradient(13.0deg, #ff8f5a 26%, #ff2f96 72%);
@@ -470,34 +303,12 @@ button.active {
 	padding: 18px 283px 20px 113px;
 	font-size: 20px;
 	line-height: 30px;
-
 	display: flex;
 	flex-wrap: nowrap;
 }
 
 .main__price_conteiner_small small {
 	margin-left: 10px;
-}
-
-@media (max-width: 1024px) {
-	.main__price_conteiner_header {
-		margin: 80px 0px 15px 0px;
-	}
-
-	.main__price_conteiner_small {
-		padding: 18px 190px 20px 0;
-	}
-}
-
-@media (max-width: 624px) {
-	.main__price_conteiner_header {
-		font-size: 18px;
-		line-height: 25px;
-	}
-	
-	.main__price_conteiner_small {
-		font-size: 80%;
-	}
 }
 
 .animate-price {
@@ -507,12 +318,6 @@ button.active {
 	z-index: 1;
 	transition: 10s;
 	color: #fff;
-}
-
-@media (max-width: 624px) {
-	.animate-price {
-		font-size: 18px;
-	}
 }
 
 .animate-price-1 {
@@ -565,4 +370,259 @@ button.active {
 .main__price:hover .animate-price-5{
 	transform: translate(200px, 10px) rotate(-60deg);
 	opacity: 1;
+}
+
+
+
+
+@media (max-width: 1224px) {
+	.h1 {
+		font-size: 60px;
+	}
+}
+
+
+
+
+@media (max-width: 1170px) {
+	.main__aboutme_conteiner_ellipse {
+		width: 80%;
+	}
+
+	.main__i-do_skills li {
+		width: 50%;
+	}
+}
+
+
+
+
+@media (max-width: 1024px) {
+
+	.main__aboutme {
+		background-color: #fff;
+	}
+
+	.h1 {
+		font-size: 51px;
+		line-height: 40px;
+		margin-top: 50px;
+	}
+
+	.main__aboutme_conteiner_text-block {
+    	top: -442px;
+	}
+
+	.main__aboutme_foto {
+		padding-left: 28px;
+	}
+	.main__aboutme_conteiner_text-block p {
+		padding-top: 20px;
+	}
+
+	.main__button_color_orange {
+		width: 320px;
+		height: 70px;
+		line-height: 70px;
+	}
+
+	.main__portfolio {
+		margin-top: 90px;
+		padding: 10px 0 90px;
+	}
+
+	.main__portfolio_item_header{
+		margin-top: 18px;
+		text-align: center;
+		font-size: 25px;
+	}
+	
+	.owl-dots {
+		margin-top: 104px;
+	}
+
+	.main__portfolio_slider {
+		padding: 0 30px 100px;
+	}
+
+	.button__color_orange {
+		width: 320px;
+		height: 70px;
+	}
+
+	.main__price_conteiner_header {
+		margin: 80px 0px 15px 0px;
+	}
+
+	.main__price_conteiner_small {
+		padding: 18px 190px 20px 0;
+	}
+
+}
+
+
+
+
+
+@media (max-width: 1000px) {
+	.main__aboutme_conteiner_ellipse {
+		width: 100%;
+	}	
+	
+	.main__aboutme_conteiner_text-block {
+		position: static;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.main__aboutme_conteiner_empty {
+		display: none;
+	}
+
+	picture {
+		display: flex;
+		justify-content: center;
+	}
+
+}
+
+
+
+
+
+
+
+@media (max-width: 750px) {
+	.main__aboutme_conteiner_ellipse {
+		height: 380px;
+		background-position: 10px 90px;
+    	background-size: cover;
+	}
+
+	picture {
+		height: 100%;
+    	align-items: flex-end;
+	}
+
+	.main__aboutme_conteiner_text-block p {
+		font-size: 16px;
+		text-align: center;
+	}
+
+	.main__aboutme {
+		padding-top: 0;
+	}
+
+	.main__button_color_orange {
+		font-size: 16px;
+	}
+
+	.main__item_header {
+		font-size: 30px;
+		padding: 30px 20px;
+	}
+
+	.main__i-do_skills li {
+		width: 100%;
+	}
+
+	.main__i-do_skills p {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.main__price_conteiner_header {
+		font-size: 35px;
+    	line-height: 54px;
+	}
+
+	.main__price_conteiner_small {
+		padding: 18px 0;
+	}
+	
+	.animate-price {
+		font-size: 18px;
+	}
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 425px) {
+	.h1 {
+		font-size: 27px;
+		margin-top: 12px;
+	}	
+	
+	.main__aboutme_conteiner_ellipse {
+		background-position: -50px 80px;
+	}
+
+	.main__aboutme_conteiner_text-block p {
+		padding-top: 10px;
+	}
+
+	.main__button_color_orange {
+		width: 280px;
+		height: 54px;
+		line-height: 54px;
+	}
+
+	.main__item_header {
+		padding: 18px 20px 40px;
+	}
+
+	.main__i-do_skills img {
+		width: 60px;
+		height: 60px;
+	}
+
+	.main__i-do_skills p {
+		margin: 10px 0 40px;
+	}
+
+	.main__i-do_skills li {
+		margin-bottom: 13px;
+	}
+	.main__portfolio {
+		margin-top: 5px;
+	}
+
+	.main__portfolio_item_header {
+		margin-top: 52px;
+		font-size: 18px;
+	}
+
+	.owl-dots {
+		margin-top: 40px;
+	}
+
+	.owl-dot {
+		width: 10px;
+		height: 10px;
+	}
+
+	.main__portfolio_slider {
+		padding: 0 30px 48px;
+	}
+
+	.main__portfolio {
+		padding: 10px 0 47px;
+	}
+
+	.main__price_conteiner_header {
+		margin: 40px 0 15px;
+		font-size: 28px;
+	    line-height: 40px;
+	}
+
+	.main__price_conteiner {
+		padding-bottom: 0;
+	}
 }

@@ -112,3 +112,10 @@ ul {
     height: 60px;
     cursor: pointer;
 }
+
+@media (max-width : 425px) {
+	.button__color_orange {
+		width: 280px;
+		height: 57px;
+	}
+}

@@ -19,36 +19,7 @@
 	<meta name="theme-color" content="#ffffff">
 </head>
 <body id="body">
-	<div class="popup gradient__background">
-		<form id="form-popup" class="popup__form popup__form_size_desktop" action="mailer/smart.php" method="POST">
-			<a class="popup__button_close popup__button_close_out" href="#">&#10006;</a>
-			<h3 class="popup__header">Укажите свои данные!</h3>	
-			<label class="popup__form_label">
-				<span>
-					Имя
-					<span class="popup__form_pattern">*</span>
-				</span>
-				<input id="name" class="popup__form_input" type="text" name="name" placeholder="Имя">
-			</label>
-			<label class="popup__form_label">
-				<span>
-					Телефон
-					<span class="popup__form_pattern">*</span>
-				</span>
-				<input class="popup__form_input" type="tel" name="phone" placeholder="+7 (999) 999-99-99">
-			</label>
-			<label class="popup__form_label">
-				<span>Email</span>
-				<input class="popup__form_input" type="text" name="Email" placeholder="Email">
-			</label>
-			<button class="button button__colir_gradient popup__button">Отправить</button>
-		</form>
-		<div class="popup__alert">
-			<h3 class="popup__header">Сообщение отправлено!</h3>
-			<p>Спасибо, я свяжусь с вами в ближайшее время.</p>
-			<button class="button popup__alert_ok button__colir_gradient popup__button">Ок</button>
-		</div>
-	</div>
+	
 	<header>
 		<div class="conteiner header">
 			<nav class="header__nav burger-menu">
@@ -226,8 +197,39 @@
 			<small>&copy; Александр Корытов, 2020</small>
 		</div>
 	</footer>
+<div class="popup gradient__background">
+	<form id="form-popup" class="popup__form popup__form_size_desktop" action="mailer/smart.php" method="POST">
+		<a class="popup__button_close popup__button_close_out" href="#">&#10006;</a>
+		<h3 class="popup__header">Укажите свои данные!</h3>	
+		<label class="popup__form_label">
+			<span>
+				Имя
+				<span class="popup__form_pattern">*</span>
+			</span>
+			<input id="name" class="popup__form_input" type="text" name="name" placeholder="Имя">
+		</label>
+		<label class="popup__form_label">
+			<span>
+				Телефон
+				<span class="popup__form_pattern">*</span>
+			</span>
+			<input class="popup__form_input" type="tel" name="phone" placeholder="+7 (999) 999-99-99">
+		</label>
+		<label class="popup__form_label">
+			<span>Email</span>
+			<input class="popup__form_input" type="text" name="Email" placeholder="Email">
+		</label>
+		<button class="button button__colir_gradient popup__button">Отправить</button>
+	</form>
+	<div class="popup__alert">
+		<h3 class="popup__header">Сообщение отправлено!</h3>
+		<p>Спасибо, я свяжусь с вами в ближайшее время.</p>
+		<button class="button popup__alert_ok button__colir_gradient popup__button">Ок</button>
+	</div>
+</div>
 
 <script src="build/js/all.js"></script>
 <script src="owlcarousel/owl.carousel.min.js"></script>
+
 </body>
 </html>

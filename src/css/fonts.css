@@ -66,5 +66,19 @@
   -moz-osx-font-smoothing: grayscale;
  }
  
-.icon-phone:before { content: '\e800'; } /* '' */
-.icon-mail-alt:before { content: '\f0e0'; } /* '' */
+.icon-phone:before { 
+  content: '\e800';
+  font-size: 0;
+}
+
+.icon-mail-alt:before {
+  content: '\f0e0'; 
+}
+
+@media (max-width: 750px) {
+  
+  .icon-phone:before { 
+    font-size: 20px;
+  }
+
+}

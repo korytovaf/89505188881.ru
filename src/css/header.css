@@ -22,6 +22,7 @@
 .header__nav_menu_list {
 	margin-right: 30px;
 	transition: 0.4s;
+	font-weight: 300;
 }
 
 .header__nav_menu_list:hover {
@@ -38,15 +39,22 @@
 	color: #ff2f96; 
 }
 
-.button__size_circle {
-	display: none;
-	width: 45px;
-	height: 45px;
-	border-radius: 50%;
-	border: 1px solid #f00c6b;
-	background-color: transparent;
-	cursor: pointer;
+
+
+.header__button {
+    border: 1.0px solid #ff2f96;
+    border-radius: 2px;
+    background: transparent;
+	color: #ff2f96;
 	transition: 0.4s;
+	width: 208px;
+	height: 45px;
+	cursor: pointer;
+}
+
+.header__button:hover {
+	background: #ff2f96;
+	color: #fff;
 }
 
 /* ============ burger меню ============ */
@@ -55,6 +63,10 @@
 	margin-right: 10px;
 	background-color: transparent;
 	position: relative;
+	width: 60px;
+	height: 60px;
+	background-color: transparent;
+	border: none;
 }
 
 .burger-btn span,
@@ -62,8 +74,8 @@
 .burger-btn span::after {
 	position: absolute;
 	left: 0;
-	top: 0;
-	width: 45px;
+	top: auto;
+	width: 47px;
 	height: 6px;
 	transition: 0.4s;
 	background: linear-gradient(13.0deg, rgba(255,143,90,0.9) 26%, rgba(255,47,150,0.95) 72%); 
@@ -144,13 +156,19 @@
 }
 
 @media (max-width: 750px) {
+	
 	.header__button {
-		display: none;
+		width: 45px;
+		height: 45px;
+		border-radius: 50%;
+		border: 1px solid #f00c6b;
+		background-color: transparent;
+		cursor: pointer;
+		transition: 0.4s;
+		font-size: 0;
 	}
 
-	.button__size_circle {
-		display: block;
-	}
+
 }
 
 
@@ -191,5 +209,5 @@
 		transform: translateX(250px);
 	}
 
-	
+
 }

@@ -77,12 +77,6 @@ ul {
 	color: transparent;
 }
 
-.button {
-	width: 208px;
-	height: 45px;
-	cursor: pointer;
-}
-
 .button__colir_gradient {
 	border: none;
 	border-radius: 2px;
@@ -90,18 +84,6 @@ ul {
 	color: #fff;
 }
 
-.button__color_white {
-    border: 1.0px solid #ff2f96;
-    border-radius: 2px;
-    background: transparent;
-	color: #ff2f96;
-	transition: 0.4s;
-}
-
-.button__color_white:hover {
-	background: #ff2f96;
-	color: #fff;
-}
 
 .button__color_orange {
 	background-color: #ff4e2e;

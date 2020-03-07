@@ -34,10 +34,8 @@
 					</li>
 				</ul>
 			</nav>
-			<button class="burger" href="#">
-				<div class="burger-btn">
-					<span></span>
-				</div>
+			<button class="burger burger-btn">
+				<span></span>
 			</button>
 			<a class="header__phone" href="tel:+79505188881">+7 (950) 518-88-81</a>
 			<button class="order header__button icon-phone">Заказать звонок</button>
@@ -51,7 +49,13 @@
 			<span class="animate animate-4">#</span>
 			<span class="animate animate-5">&lt;/&gt;</span>
 			<div class="main__aboutme_conteiner">
-				<div class="main__aboutme_conteiner_empty"></div>
+				<div class="main__aboutme_conteiner_text">
+					<div class="main__aboutme_conteiner_text-block">
+						<h1 class="main__aboutme_conteiner_h1">Александр Корытов</h1>
+						<p class="main__aboutme_conteiner_p">Frontend-разработчик и веб-верстальщик</p>
+						<a class="main__button_color_orange scroll-offset" href="#i-do">Узнать больше</a>
+					</div>
+				</div>
 				<div class="main__aboutme_conteiner_ellipse">
 					<picture class="main__aboutme_foto">
 						<source media="(min-width: 750px)" type="image/webp" srcset="img/shutterstock_435x637.webp">
@@ -61,13 +65,7 @@
 					</picture>
 				</div>
 			</div>
-			<div class="main__aboutme_conteiner_text conteiner">
-				<div class="main__aboutme_conteiner_text-block">
-					<h1 class="h1">Александр Корытов</h1>
-					<p>Frontend-разработчик и веб-верстальщик</p>
-					<a class="main__button_color_orange scroll-offset" href="#i-do">Узнать больше</a>
-				</div>
-			</div>
+
 		</section>
 		<section id="i-do" class="main__i-do conteiner">
 			<h2 class="main__item_header">Что я делаю</h2>
@@ -201,39 +199,45 @@
 			<small>&copy; Александр Корытов, 2020</small>
 		</div>
 	</footer>
-<div class="popup gradient__background">
-	<form id="form-popup" class="popup__form popup__form_size_desktop" action="mailer/smart.php" method="POST">
-		<a class="popup__button_close popup__button_close_out" href="#">&#10006;</a>
-		<h3 class="popup__header">Укажите свои данные!</h3>	
-		<label class="popup__form_label">
-			<span>
-				Имя
-				<span class="popup__form_pattern">*</span>
-			</span>
-			<input id="name" class="popup__form_input" type="text" name="name" placeholder="Имя">
-		</label>
-		<label class="popup__form_label">
-			<span>
-				Телефон
-				<span class="popup__form_pattern">*</span>
-			</span>
-			<input class="popup__form_input" type="tel" name="phone" placeholder="+7 (999) 999-99-99">
-		</label>
-		<label class="popup__form_label">
-			<span>Email</span>
-			<input class="popup__form_input" type="text" name="Email" placeholder="Email">
-		</label>
-		<button class="button button__colir_gradient popup__button">Отправить</button>
-	</form>
-	<div class="popup__alert">
-		<h3 class="popup__header">Сообщение отправлено!</h3>
-		<p>Спасибо, я свяжусь с вами в ближайшее время.</p>
-		<button class="button popup__alert_ok button__colir_gradient popup__button">Ок</button>
+	
+	<div class="popup">
+		<span class="popup__close">&#10006;</span>
+		<form id="form-popup" action="mailer/smart.php" method="POST">
+			<h3 class="popup__header">Укажите свои данные!</h3>	
+			<label class="popup__form_label">
+				<span>
+					Имя
+					<span class="popup__form_pattern">*</span>
+				</span>
+				<input id="name" class="popup__form_input" type="text" name="name" placeholder="Имя">
+			</label>
+			<label class="popup__form_label">
+				<span>
+					Телефон
+					<span class="popup__form_pattern">*</span>
+				</span>
+				<input class="popup__form_input" type="tel" name="phone" placeholder="+7 (999) 999-99-99">
+			</label>
+			<label class="popup__form_label">
+				<span>Email</span>
+				<input class="popup__form_input" type="text" name="Email" placeholder="Email">
+			</label>
+			<button class="popup__button">Отправить</button>
+		</form>
 	</div>
-</div>
+	<div class="popup__alert">
+		<h3 class="popup__alert_header">Сообщение отправлено!</h3>
+		<p class="popup__alert_text">Спасибо, я свяжусь с вами <br> в ближайшее время.</p>
+		<button class="popup__button popup__alert_button">Ок</button>
+	</div>
+	
+	<div class="popup__form"></div>
+	
+
 
 <script src="build/js/all.js"></script>
 <script src="owlcarousel/owl.carousel.min.js"></script>
+
 
 </body>
 </html>

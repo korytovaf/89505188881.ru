@@ -39,8 +39,6 @@
 	color: #ff2f96; 
 }
 
-
-
 .header__button {
     border: 1.0px solid #ff2f96;
     border-radius: 2px;
@@ -56,17 +54,16 @@
 	background: #ff2f96;
 	color: #fff;
 }
-
 /* ============ burger меню ============ */
 .burger {
 	display: none;
 	margin-right: 10px;
 	background-color: transparent;
 	position: relative;
-	width: 60px;
-	height: 60px;
+	height: 45px;
 	background-color: transparent;
 	border: none;
+	cursor: pointer;
 }
 
 .burger-btn span,
@@ -175,6 +172,11 @@
 
 @media (max-width: 425px) {
 	
+	.header__button {
+		width: 30px;
+		height: 30px;
+	}
+
 	.burger-btn span,
 	.burger-btn span::before,
 	.burger-btn span::after {

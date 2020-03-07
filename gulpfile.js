@@ -5,6 +5,7 @@ const cleanCSS = require('gulp-clean-css');
 const uglify = require('gulp-uglify-es').default;
 const del = require('del');
 const browserSync = require('browser-sync').create();
+const sourcemaps = require('gulp-sourcemaps');
 
 const jsFiles = [
     './src/js/jquery-3.4.1.min.js',
@@ -13,6 +14,7 @@ const jsFiles = [
     './src/js/jquery.formstyler.min.js',
     './src/js/jquery.validate.min.js',
     './src/js/popup__form.js',
+    './src/js/jquery.inputmask.js',
 ]
 
 function watch() {
@@ -31,6 +33,7 @@ function watch() {
 
 function styles() {
     return gulp.src('./src/css/**/*.css')
+    .pipe(sourcemaps.init())
     .pipe(concat('all.css'))
     .pipe(autoprefixer({
         overrideBrowserslist: ['last 2 versions'],
@@ -40,7 +43,7 @@ function styles() {
     .pipe(cleanCSS({
         level: 2
     }))
-
+    .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./build/css'))
     .pipe(browserSync.stream());
 }

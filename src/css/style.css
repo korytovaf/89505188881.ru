@@ -90,8 +90,8 @@ ul {
 	color: #fff;
 	border: none;
 	width: 268px;
-    height: 60px;
-    cursor: pointer;
+	height: 60px;
+	cursor: pointer;
 }
 
 @media (max-width : 425px) {
@@ -99,4 +99,5 @@ ul {
 		width: 280px;
 		height: 57px;
 	}
+
 }

@@ -1,21 +1,32 @@
 $(function () {
 
+
 	// для вызова Popup окна, кнопкам прописать класс .order
 	$('.order').on('click', function(e){
 		e.preventDefault()
-		$('.popup').css('display', 'block');
-		$('.popup__form').css('display', 'inline-block');
+		$('.popup__form').fadeIn(400,
+            function(){
+                $('.popup') 
+                    .css('display', 'block')
+                    .animate({opacity: 1, left: '50%'}, 400);
+        });
 		$('html').addClass('popup__html_fixed');
 		$('body').addClass('popup__body_fixed');
 		$('#name').focus();
 	});
 
-	$('.popup__button_close').on('click', function(e){
-		e.preventDefault()
-		$('.popup').css('display', 'none');
+	$('.popup__close, .popup__form').on('click', function(){
+				
+		$('.popup').animate({opacity: 0, left: '45%'}, 400, function(){
+			$(this).css('display', 'none');
+			$('.popup__form').fadeOut(400);
+		});
+
 		$('html').removeClass('popup__html_fixed');
 		$('body').removeClass('popup__body_fixed');
 	});
+
+	$('input[type="tel"]').inputmask({"mask": "+7(999)999-99-99"});
 
 	//Отправка формы через mailer
 	$('form').validate({
@@ -29,7 +40,6 @@ $(function () {
 				},
 				phone: {
 					required: true,
-					digits: true
 				},
 			},
 			submitHandler() {
@@ -41,8 +51,8 @@ $(function () {
 				data: $('form').serialize()
 			}).done(function() {
 				$(this).find("input").val("");
-				$('.popup__form').css('display', 'none');
-				$('.popup__alert').css('display', 'inline-block');
+				$('.popup').css('display', 'none');
+				$('.popup__alert').css('display', 'block');
 				$('form').trigger("reset");
 			});
 			return false;
@@ -52,13 +62,19 @@ $(function () {
 
 
 	//Сообщение об успешной отправке формы
-	$('.popup__alert_ok').on('click', function(e){
-		e.preventDefault()
-		$('.popup__alert').css('display', 'none');
-		$('.popup').css('display', 'none');
+	$('.popup__alert_button').on('click', function(){
+		
+		$('.popup__alert').animate({opacity: 0, left: '45%'}, 400, function(){
+			$(this).css('display', 'none');
+			$('.popup__form').fadeOut(400);
+		});
+
 		$('html').removeClass('popup__html_fixed');
 		$('body').removeClass('popup__body_fixed');
 	});
 
+
+
+ 	
 
 });

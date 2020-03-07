@@ -51,8 +51,15 @@ $(function () {
 				data: $('form').serialize()
 			}).done(function() {
 				$(this).find("input").val("");
-				$('.popup').css('display', 'none');
-				$('.popup__alert').css('display', 'block');
+
+				$('.popup').fadeOut(400);
+				
+
+                $('.popup__alert') 
+                    .css('display', 'block')
+                    .animate({opacity: 1, left: '50%'}, 400);
+        		
+
 				$('form').trigger("reset");
 			});
 			return false;

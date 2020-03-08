@@ -18,7 +18,11 @@
 	color: #ff2f96; 
 }
 
-.footer__contact {
+.footer__social_conteiner {
+	padding-right: 20px;
+}
+
+.footer__contact_a {
 	padding-right: 22px;
 	padding-left: 16px;
 	margin-bottom: 30px;
@@ -30,12 +34,30 @@
 	transition: 0.4s;
 }
 
-.footer__contact:hover {
+.footer__contact_a:hover {
 	color: #ff2f96; 
 }
 
+.footer__button {
+    border: 1.0px solid #ff2f96;
+    border-radius: 2px;
+    background: transparent;
+	color: #ff2f96;
+	transition: 0.4s;
+	width: 250px;
+	height: 45px;
+	cursor: pointer;
+}
+
+.footer__button:hover {
+	background: #ff2f96;
+	color: #fff;
+}
+
+
 .footer__contact_icon_conteiner {
-	margin-top: 20px;
+	margin-top: 26px;
+	display: flex;
 }
 
 .footer__contact_icon {
@@ -51,14 +73,9 @@
 	height: 30px;
 }
 
-.footer__contact_icon_conteiner a {
-	margin-left: 10px;
+.footer__contact_icon_list {
+	margin-right: 26px;
 }
-
-.footer__contact_icon_conteiner a:last-child {
-	margin-left: 18px;
-}
-
 
 .copyright {
 	background-color: #31293c;

@@ -22,7 +22,8 @@
 .header__nav_menu_linck {
 	margin-right: 30px;
 	transition: 0.4s;
-	font-weight: 300;
+	font-weight: 400;
+	color: #1f1f24;
 }
 
 .header__nav_menu_linck:hover {

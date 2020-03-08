@@ -65,21 +65,38 @@
 	}
 
 	.main__aboutme:hover .animate-2 {
-		transform: translate(100px, -300px) rotate(110deg);
+		transform: translate(168px, -260px) rotate(110deg);
+	}
+
+	.animate-3 {
+	    left: 2%;
+	    top: 23%;
 	}
 
 	.main__aboutme:hover .animate-3 {
 		transform: translate(50px, -50px) rotate(20deg);
 	}
 
+	.animate-4 {
+	    left: 90%;
+	    top: 20%;
+	}
+
 	.main__aboutme:hover .animate-4 {
-		transform: translate(-150px, -150px) rotate(-60deg);
+		transform: translate(-150px, -107px) rotate(-60deg);
+	}
+
+	.animate-5 {
+	    left: 71%;
+	    top: 5%;
 	}
 
 	.main__aboutme:hover .animate-5 {
 		transform: translate(-50px, -80px) rotate(-60deg);
 	}
 }
+
+
 /**---------------------------------------------*/
 .main__aboutme {
 	padding-top: 30px;
@@ -579,8 +596,8 @@ button.active {
 	.main__aboutme_conteiner_h1 {
 		font-size: 27px;
 		margin-top: 12px;
-	}	
-	
+	}
+
 	.main__aboutme_conteiner_ellipse {
 		background-position: -50px 80px;
 	}

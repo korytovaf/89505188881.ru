@@ -6,7 +6,7 @@
 	padding: 84px 20px 60px;
 }
 
-.footer__menu_li {
+.footer__menu_li_click {
 	display: inline-block;
 	margin-bottom: 16PX;
 	font-weight: 400;
@@ -14,7 +14,7 @@
 	transition: 0.4s;
 }
 
-.footer__menu_li:hover {
+.footer__menu_li_click:hover {
 	color: #ff2f96; 
 }
 
@@ -28,11 +28,12 @@
 	margin-bottom: 30px;
 	font-size: 25px;
 	font-weight: 400;
-	color: #1f1f24;
+	color: #8993ad;
 	vertical-align: middle;
 	display: block;
 	transition: 0.4s;
 }
+
 
 .footer__contact_a:hover {
 	color: #ff2f96; 
@@ -56,7 +57,7 @@
 
 
 .footer__contact_icon_conteiner {
-	margin-top: 26px;
+	margin-top: 30px;
 	display: flex;
 }
 
@@ -133,13 +134,16 @@
 		padding: 40px 20px;
 	}
 
-	.footer__contact {
+	.footer__contact_a {
 		font-size: 20px;
 		margin-bottom: 22px;
 		padding-left: 0px;
 	}
 
-	.button__color_orange {
+	.footer__button {
+		background-color: #ff4e2e;
+		color: #fff;
+		border: none;
 		width: 280px;
 		height: 57px;
 	}

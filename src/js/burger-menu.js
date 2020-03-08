@@ -9,7 +9,7 @@ $(function () {
 	});
 	
 	
-	$('.header__nav_menu_list').on('click', function (e) {
+	$('.header__nav_menu_linck').on('click', function (e) {
 		e.preventDefault();
 	
 		let href = $(this).attr('href');

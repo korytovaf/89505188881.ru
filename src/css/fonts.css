@@ -66,9 +66,13 @@
   -moz-osx-font-smoothing: grayscale;
  }
  
-.icon-phone:before { 
+.icon-phone-header:before { 
   content: '\e800';
   font-size: 0;
+}
+
+.icon-phone-footer:before { 
+  content: '\e800';
 }
 
 .icon-mail-alt:before {
@@ -77,7 +81,7 @@
 
 @media (max-width: 750px) {
   
-  .icon-phone:before { 
+  .icon-phone-header:before { 
     font-size: 20px;
   }
 

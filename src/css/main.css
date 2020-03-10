@@ -174,7 +174,7 @@
 	cursor: pointer;
 	color: #fff;
 	text-align: center;
-	transition: 0.4s;
+	transition: background .4s;
 }
 
 .main__button_color_orange:hover {
@@ -261,14 +261,14 @@
 }
 
 .owl-dot {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  margin: 0 4px;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	margin: 0 4px;
 }
 
 button.active {
-  background: #ff4e2e;
+	background: #ff4e2e;
 }
 
 .owl-nav {
@@ -283,11 +283,10 @@ button.active {
 	border-radius: 50%;
 	background-color: #fff;
 	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.17);
-
 }
 
 .owl-nav button:hover {
-	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.30);
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.35);
 
 }
 

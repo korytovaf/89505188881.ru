@@ -84,6 +84,24 @@ ul {
 	color: #fff;
 }
 
+.button__orange {
+	margin: 30px 0;
+	width: 268px;
+	height: 60px;
+	background-color: #ff4e2e;
+	line-height: 60px;
+	border-radius: 2px;
+	font-size: 18px;
+	font-weight: 400;
+	cursor: pointer;
+	color: #fff;
+	text-align: center;
+	transition: background .4s;
+}
+
+.button__orange:hover {
+	background: #ff2f96;
+}
 
 .button__color_orange {
 	background-color: #ff4e2e;
@@ -93,6 +111,14 @@ ul {
 	height: 60px;
 	cursor: pointer;
 }
+@media (max-width : 1024px) {
+	.button__orange {
+		width: 320px;
+		height: 70px;
+	}
+
+}
+
 
 @media (max-width : 425px) {
 	.button__color_orange {

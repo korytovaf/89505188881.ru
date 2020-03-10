@@ -24,109 +24,110 @@
 		<button class="burger burger-btn"><span></span></button>
 
 		<nav class="header__nav burger-menu">
-			<ul class="header__nav_menu">
-				<li class="header__nav_menu_list">
-					<a class="header__nav_menu_link" href="#i-do">Услуги</a>
+			<ul class="menu">
+				<li class="menu__item">
+					<a class="menu__link" href="#i-do">Услуги</a>
 				</li>
-				<li class="header__nav_menu_list">
-					<a class="header__nav_menu_link" href="#portfolio">Портфолио</a>
+				<li class="menu__item">
+					<a class="menu__link" href="#portfolio">Портфолио</a>
 				</li>
-				<li class="header__nav_menu_list">
-					<a class="header__nav_menu_link" href="#price">Стоимость</a>
+				<li class="menu__item">
+					<a class="menu__link" href="#price">Стоимость</a>
 				</li>
 			</ul>
 		</nav>
 
 		<a class="header__phone" href="tel:+79505188881">+7 (950) 518-88-81</a>
-		<button class="order header__button icon-phone-header">Заказать звонок</button>
+		<button class="order header__button icon-phone__header">Заказать звонок</button>
 	</header>
 
 	<main>
 		<section class="main__aboutme">
-			<span class="animate animate-1">&#123; &#125;</span>
-			<span class="animate animate-2">&lt;/&gt;</span>
-			<span class="animate animate-3">&lt;div&gt;</span>
-			<span class="animate animate-4">#</span>
-			<span class="animate animate-5">&lt;/&gt;</span>
+			<span class="animate animate_1">&#123; &#125;</span>
+			<span class="animate animate_2">&lt;/&gt;</span>
+			<span class="animate animate_3">&lt;div&gt;</span>
+			<span class="animate animate_4">#</span>
+			<span class="animate animate_5">&lt;/&gt;</span>
 			<div class="aboutme__conteiner_ellipse"></div>
-			<div class="main__aboutme_conteiner conteiner">
-				<div class="main__aboutme_conteiner_text">
-					<div class="main__aboutme_conteiner_text-block">
-						<h1 class="main__aboutme_conteiner_h1">Александр&nbsp;Корытов</h1>
-						<p class="main__aboutme_conteiner_p">Frontend-разработчик и веб-верстальщик</p>
-						<a class="main__button_color_orange scroll-offset" href="#i-do">Узнать больше</a>
+			<div class="aboutme__conteiner conteiner">
+				<div class="aboutme__text">
+					<div class="aboutme__text_block">
+						<h1 class="aboutme__text_h1">Александр&nbsp;Корытов</h1>
+						<p class="aboutme__text_p">Frontend-разработчик и веб-верстальщик</p>
+						<a class="button__orange scroll-offset" href="#i-do">Узнать больше</a>
 					</div>
 				</div>
-				<div class="main__aboutme_conteiner_ellipse">
-					<picture class="main__aboutme_foto">
+
+				<div class="aboutme__foto">
+					<picture class="aboutme__foto_picture">
 						<source media="(min-width: 750px)" type="image/webp" srcset="img/shutterstock_435x637.webp">
 						<source type="image/webp" srcset="img/shutterstock_224x334.webp">
 						<source media="(min-width: 750px)" srcset="img/shutterstock_435x637.png">
-						<img class="main__aboutme_foto" src="img/shutterstock_224x334.png" alt="Фотография Александра">
+						<img class="aboutme__foto_img" src="img/shutterstock_224x334.png" alt="Фотография Александра">
 					</picture>
 				</div>
 			</div>
 		</section>
-		<section id="i-do" class="main__i-do conteiner">
-			<h2 class="main__item_header">Что я делаю</h2>
-			<ul class="main__i-do_skills">
-				<li class="main__i-do_list">
-					<img src="img/tools_and_utensils_111.svg" alt="Вёрстка лендинг–страниц и сайтов любой сложности">
-					<p class="main__i-do_text">Вёрстка лендинг–страниц и сайтов любой сложности</p>
+		<section id="i-do" class="main__skills conteiner">
+			<h2 class="main__title">Что я делаю</h2>
+			<ul class="skills">
+				<li class="skills__item">
+					<img class="skills__item_img" src="img/tools_and_utensils_111.svg" alt="Вёрстка лендинг–страниц и сайтов любой сложности">
+					<p class="skills__item_p">Вёрстка лендинг–страниц и сайтов любой сложности</p>
 				</li>
-				<li class="main__i-do_list">
-					<img src="img/responsive_115.svg" alt="Адаптивная вёрстка под все браузеры и устройства">
-					<p class="main__i-do_text">Адаптивная вёрстка под все браузеры и устройства</p>
+				<li class="skills__item">
+					<img class="skills__item_img" src="img/responsive_115.svg" alt="Адаптивная вёрстка под все браузеры и устройства">
+					<p class="skills__item_p">Адаптивная вёрстка под все браузеры и устройства</p>
 				</li>
-				<li class="main__i-do_list">
-					<img src="img/programming_119.svg" alt="Frontend–разработка и программирование">
-					<p class="main__i-do_text">Frontend–разработка и программирование</p>
+				<li class="skills__item">
+					<img class="skills__item_img" src="img/programming_119.svg" alt="Frontend–разработка и программирование">
+					<p class="skills__item_p">Frontend–разработка и программирование</p>
 				</li>
-				<li class="main__i-do_list">
-					<img src="img/coding_(1)_121.svg" alt="Исправление и доработка существующей вёрстки">
-					<p class="main__i-do_text">Исправление и доработка существующей вёрстки</p>
+				<li class="skills__item">
+					<img class="skills__item_img" src="img/coding_(1)_121.svg" alt="Исправление и доработка существующей вёрстки">
+					<p class="skills__item_p">Исправление и доработка существующей вёрстки</p>
 				</li>
 			</ul>
-			<a class="main__button_color_orange scroll-offset" href="#price">Узнать стоимость</a>
+			<a class="button__orange scroll-offset" href="#price">Узнать стоимость</a>
 		</section>
 		<section id="portfolio" class="main__portfolio">
-			<h2 class="main__item_header">Примеры моих работ</h2>
-			<div class="main__portfolio_slider conteiner">
+			<h2 class="main__title">Примеры моих работ</h2>
+			<div class="portfolio__slider conteiner">
 				<div class="owl-carousel">
-					<a class="main__portfolio_linck" href="#">
-						<div class="main__portfolio_item">
+					<a class="portfolio__linck" href="#">
+						<div class="portfolio__item">
 							<img src="img/layer_1.png" alt="Сайт психолога Веры Антоновой">
-							<h3 class="main__portfolio_item_header">Сайт психолога Веры Антоновой</h3>
+							<h3 class="portfolio__item_header">Сайт психолога Веры Антоновой</h3>
 						</div>
 					</a>
-					<a class="main__portfolio_linck" href="#">
-						<div class="main__portfolio_item">
+					<a class="portfolio__linck" href="#">
+						<div class="portfolio__item">
 							<img src="img/layer_2.png" alt="Сайт детской одежды">
-							<h3 class="main__portfolio_item_header">Сайт детской одежды</h3>
+							<h3 class="portfolio__item_header">Сайт детской одежды</h3>
 						</div>
 					</a>
-					<a class="main__portfolio_linck" href="#">
-						<div class="main__portfolio_item">
+					<a class="portfolio__linck" href="#">
+						<div class="portfolio__item">
 							<img src="img/layer_3.png" alt="Сайт магазина «Рыболов»">
-							<h3 class="main__portfolio_item_header">Сайт магазина «Рыболов»</h3>
+							<h3 class="portfolio__item_header">Сайт магазина «Рыболов»</h3>
 						</div>
 					</a>
-					<a class="main__portfolio_linck" href="#">
-						<div class="main__portfolio_item">
+					<a class="portfolio__linck" href="#">
+						<div class="portfolio__item">
 							<img src="img/layer_1.png" alt="Сайт психолога Веры Антоновой">
-							<h3 class="main__portfolio_item_header">Сайт психолога Веры Антоновой</h3>
+							<h3 class="portfolio__item_header">Сайт психолога Веры Антоновой</h3>
 						</div>
 					</a>
-					<a class="main__portfolio_linck" href="#">
-						<div class="main__portfolio_item">
+					<a class="portfolio__linck" href="#">
+						<div class="portfolio__item">
 							<img src="img/layer_2.png" alt="Сайт детской одежды">
-							<h3 class="main__portfolio_item_header">Сайт детской одежды</h3>
+							<h3 class="portfolio__item_header">Сайт детской одежды</h3>
 						</div>
 					</a>
-					<a class="main__portfolio_linck" href="#">
-						<div class="main__portfolio_item">
+					<a class="portfolio__linck" href="#">
+						<div class="portfolio__item">
 							<img src="img/layer_3.png" alt="Сайт магазина «Рыболов»">
-							<h3 class="main__portfolio_item_header">Сайт магазина «Рыболов»</h3>
+							<h3 class="portfolio__item_header">Сайт магазина «Рыболов»</h3>
 						</div>
 					</a>
 				</div>
@@ -134,15 +135,15 @@
 			<button class="order button__color_orange">Заказать проект</button>
 		</section>
 		<section id="price" class="main__price">
-			<span class="animate-price animate-price-1">&#123; &#125;</span>
-			<span class="animate-price animate-price-2">&lt;/&gt;</span>
-			<span class="animate-price animate-price-3">&lt;div&gt;</span>
-			<span class="animate-price animate-price-4">#</span>
-			<span class="animate-price animate-price-5">&lt;/&gt;</span>
-			<div class="main__price_conteiner conteiner">
+			<span class="animate__price animate__price_1">&#123; &#125;</span>
+			<span class="animate__price animate__price_2">&lt;/&gt;</span>
+			<span class="animate__price animate__price_3">&lt;div&gt;</span>
+			<span class="animate__price animate__price_4">#</span>
+			<span class="animate__price animate__price_5">&lt;/&gt;</span>
+			<div class="price__conteiner conteiner">
 				<h2 class="visually-hidden">Цены и сроки</h2>
-				<p class="main__price_conteiner_header">Адаптивная вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за 4 часа.*</p>
-				<div class="main__price_conteiner_small">
+				<p class="price__conteiner_header">Адаптивная вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за 4 часа.*</p>
+				<div class="price__conteiner_small">
 					<span>*  </span>
 					<small>Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в зависимости от сложности задач.</small>
 				</div>
@@ -151,22 +152,22 @@
 	</main>
 	<footer>
 		<div class="footer conteiner">
-			<nav class="footer__menu">
-				<ul class="footer__menu_list">
-					<li class="footer__menu_li">
-						<a class="footer__menu_li_click scroll-offset" href="#body">Главная</a>
+			<nav class="footer__nav">
+				<ul class="footer__menu">
+					<li class="footer__menu_item">
+						<a class="footer__menu_link scroll-offset" href="#body">Главная</a>
 					</li>
-					<li class="footer__menu_li">
-						<a class="footer__menu_li_click scroll-offset" href="#i-do">Услуги</a>
+					<li class="footer__menu_item">
+						<a class="footer__menu_link scroll-offset" href="#i-do">Услуги</a>
 					</li>
-					<li class="footer__menu_li">
-						<a class="footer__menu_li_click scroll-offset" href="#portfolio">Портфолио</a>
+					<li class="footer__menu_item">
+						<a class="footer__menu_link scroll-offset" href="#portfolio">Портфолио</a>
 					</li>
 				</ul>
 			</nav>
 			<div class="footer__contact">
 				<a class="footer__contact_a footer__contact_tel" href="tel:+79505188881">
-					<i class="icon-phone-footer"></i>
+					<i class="icon-phone__footer"></i>
 					+7 (950) 518-88-81
 				</a>
 				<a class="footer__contact_a footer__contact_mail" href="mailto:kaf1@mail.ru">
@@ -176,29 +177,29 @@
 			</div>
 			<div class="footer__social_conteiner">
 				<button class="order footer__button">Заказать звонок</button>
-				<ul class="footer__contact_icon_conteiner">
-					<li class="footer__contact_icon_list">
+				<ul class="footer__social">
+					<li class="footer__social_item">
 						<a href="https://vk.com/id82727393">
 							<svg class="footer__contact_icon">
 								<use xlink:href="img/sprite.svg#vk"></use>
 							</svg>
 						</a>
 					</li>
-					<li class="footer__contact_icon_list">
+					<li class="footer__social_item">
 						<a href="https://web.facebook.com/?_rdc=1&_rdr">
 							<svg class="footer__contact_icon">
 								<use xlink:href="img/sprite.svg#facebook"></use>
 							</svg>
 						</a>
 					</li>
-					<li class="footer__contact_icon_list">
+					<li class="footer__social_item">
 						<a href="https://twitter.com/korytovaf">
 							<svg class="footer__contact_icon">
 								<use xlink:href="img/sprite.svg#tvitter"></use>
 							</svg>
 						</a>
 					</li>
-					<li class="footer__contact_icon_list">
+					<li class="footer__social_item">
 						<a href="https://www.instagram.com/korytovaf/">
 							<svg class="footer__contact_icon">
 								<use xlink:href="img/sprite.svg#instagram"></use>

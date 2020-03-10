@@ -5,11 +5,11 @@ $(function () {
 		e.preventDefault();
 
 		$('.header__nav').toggleClass('header__nav_click');
-		$('.burger-btn').toggleClass('burger-btn-click');
+		$('.burger-btn').toggleClass('burger-btn_click');
 	});
 	
 	
-	$('.header__nav_menu_link').on('click', function (e) {
+	$('.menu__link').on('click', function (e) {
 		e.preventDefault();
 	
 		let href = $(this).attr('href');
@@ -21,7 +21,7 @@ $(function () {
 
 
 		$('.header__nav').toggleClass('header__nav_click');
-		$('.burger-btn').toggleClass('burger-btn-click');
+		$('.burger-btn').toggleClass('burger-btn_click');
 
 	});
 	

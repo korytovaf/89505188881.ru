@@ -6,7 +6,7 @@
 	padding: 84px 20px 60px;
 }
 
-.footer__menu_li_click {
+.footer__menu_link {
 	display: inline-block;
 	margin-bottom: 16PX;
 	font-weight: 400;
@@ -14,7 +14,7 @@
 	transition: 0.4s;
 }
 
-.footer__menu_li_click:hover {
+.footer__menu_link:hover {
 	color: #ff2f96; 
 }
 
@@ -55,8 +55,7 @@
 	color: #fff;
 }
 
-
-.footer__contact_icon_conteiner {
+.footer__social {
 	margin-top: 30px;
 	display: flex;
 }
@@ -74,7 +73,7 @@
 	height: 30px;
 }
 
-.footer__contact_icon_list {
+.footer__social_item {
 	margin-right: 26px;
 }
 
@@ -114,7 +113,7 @@
 		flex-flow: wrap;
 	}
 
-	.footer__menu, .footer-contact, .footer-order-a-call {
+	.footer-contact, .footer-order-a-call {
 		margin-bottom: 30px;
 	}
 	
@@ -152,7 +151,7 @@
 		height: 57px;
 	}
 
-	.footer__contact_icon_conteiner {
+	.footer__social {
 		margin-top: 54px;
 	}
 }

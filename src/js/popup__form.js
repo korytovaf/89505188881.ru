@@ -80,8 +80,4 @@ $(function () {
 		$('body').removeClass('popup__body_fixed');
 	});
 
-
-
- 	
-
 });

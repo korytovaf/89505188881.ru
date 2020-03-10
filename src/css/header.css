@@ -8,9 +8,9 @@
 }
 
 .header__nav {
-	flex-grow: 1;
 	display: flex;
 	justify-content: flex-start;
+	flex-grow: 1;
 }
 
 .header__nav_menu {
@@ -19,14 +19,14 @@
 	justify-content: space-between;
 }
 
-.header__nav_menu_linck {
+.header__nav_menu_link {
 	margin-right: 30px;
 	transition: 0.4s;
 	font-weight: 400;
 	color: #1f1f24;
 }
 
-.header__nav_menu_linck:hover {
+.header__nav_menu_link:hover {
 	color: #ff2f96; 
 }
 
@@ -62,7 +62,7 @@
 	background-color: transparent;
 	position: relative;
 	height: 45px;
-	width: 23px;
+	width: 48px;
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
@@ -150,7 +150,7 @@
 
 	.burger {
 		display: inline-block;
-		flex-grow: 1;
+		margin-right: 0;
 	}
 }
 
@@ -173,7 +173,9 @@
 
 
 @media (max-width: 425px) {
-	
+	.burger {
+		width: 23px;
+	}
 	.header__button {
 		width: 30px;
 		height: 30px;

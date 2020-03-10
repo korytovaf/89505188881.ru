@@ -99,6 +99,10 @@
 	.copyright small {
 		font-size: 12px; 
 	}
+
+	.footer__social_conteiner {
+		padding-right: 0;
+	}
 }
 
 

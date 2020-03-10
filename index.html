@@ -19,28 +19,28 @@
 	<meta name="theme-color" content="#ffffff">
 </head>
 <body id="body">
-	<header>
-		<div class="conteiner header">
-			<nav class="header__nav burger-menu">
-				<ul class="header__nav_menu">
-					<li class="header__nav_menu_list">
-						<a class="header__nav_menu_linck" href="#i-do">Услуги</a>
-					</li>
-					<li class="header__nav_menu_list">
-						<a class="header__nav_menu_linck" href="#portfolio">Портфолио</a>
-					</li>
-					<li class="header__nav_menu_list">
-						<a class="header__nav_menu_linck" href="#price">Стоимость</a>
-					</li>
-				</ul>
-			</nav>
-			<button class="burger burger-btn">
-				<span></span>
-			</button>
-			<a class="header__phone" href="tel:+79505188881">+7 (950) 518-88-81</a>
-			<button class="order header__button icon-phone-header">Заказать звонок</button>
-		</div>
+	<header class="conteiner header">
+
+		<button class="burger burger-btn"><span></span></button>
+
+		<nav class="header__nav burger-menu">
+			<ul class="header__nav_menu">
+				<li class="header__nav_menu_list">
+					<a class="header__nav_menu_link" href="#i-do">Услуги</a>
+				</li>
+				<li class="header__nav_menu_list">
+					<a class="header__nav_menu_link" href="#portfolio">Портфолио</a>
+				</li>
+				<li class="header__nav_menu_list">
+					<a class="header__nav_menu_link" href="#price">Стоимость</a>
+				</li>
+			</ul>
+		</nav>
+
+		<a class="header__phone" href="tel:+79505188881">+7 (950) 518-88-81</a>
+		<button class="order header__button icon-phone-header">Заказать звонок</button>
 	</header>
+
 	<main>
 		<section class="main__aboutme">
 			<span class="animate animate-1">&#123; &#125;</span>
@@ -48,10 +48,11 @@
 			<span class="animate animate-3">&lt;div&gt;</span>
 			<span class="animate animate-4">#</span>
 			<span class="animate animate-5">&lt;/&gt;</span>
-			<div class="main__aboutme_conteiner">
+			<div class="aboutme__conteiner_ellipse"></div>
+			<div class="main__aboutme_conteiner conteiner">
 				<div class="main__aboutme_conteiner_text">
 					<div class="main__aboutme_conteiner_text-block">
-						<h1 class="main__aboutme_conteiner_h1">Александр Корытов</h1>
+						<h1 class="main__aboutme_conteiner_h1">Александр&nbsp;Корытов</h1>
 						<p class="main__aboutme_conteiner_p">Frontend-разработчик и веб-верстальщик</p>
 						<a class="main__button_color_orange scroll-offset" href="#i-do">Узнать больше</a>
 					</div>
@@ -140,7 +141,7 @@
 			<span class="animate-price animate-price-5">&lt;/&gt;</span>
 			<div class="main__price_conteiner conteiner">
 				<h2 class="visually-hidden">Цены и сроки</h2>
-				<p class="main__price_conteiner_header">Адаптивная вёрстка под все устройства и браузеры от 1000 рублей всего за 4 часа.*</p>
+				<p class="main__price_conteiner_header">Адаптивная вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за 4 часа.*</p>
 				<div class="main__price_conteiner_small">
 					<span>*  </span>
 					<small>Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в зависимости от сложности задач.</small>
@@ -231,7 +232,7 @@
 			</label>
 			<label class="popup__form_label">
 				<span>Email</span>
-				<input class="popup__form_input" type="text" name="Email" placeholder="Email">
+				<input class="popup__form_input" type="email" name="Email" placeholder="Email">
 			</label>
 			<button class="popup__button">Отправить</button>
 		</form>

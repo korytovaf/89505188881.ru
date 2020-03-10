@@ -6,6 +6,7 @@ const uglify = require('gulp-uglify-es').default;
 const del = require('del');
 const browserSync = require('browser-sync').create();
 const sourcemaps = require('gulp-sourcemaps');
+const sass = require('gulp-sass');
 
 const jsFiles = [
     './src/js/jquery-3.4.1.min.js',
@@ -25,6 +26,7 @@ function watch() {
     });
 
     gulp.watch('./src/css/**/*.css', styles);
+    gulp.watch('./src/css/**/*.scss', styles);
     gulp.watch('./src/js/**/*.js', scripts);
     gulp.watch('./*.html').on('change', browserSync.reload);
 }
@@ -32,8 +34,9 @@ function watch() {
 
 
 function styles() {
-    return gulp.src('./src/css/**/*.css')
+    return gulp.src('./src/css/**/*.*')
     .pipe(sourcemaps.init())
+    .pipe(sass())
     .pipe(concat('all.css'))
     .pipe(autoprefixer({
         overrideBrowserslist: ['last 2 versions'],

@@ -19,27 +19,32 @@
 	<meta name="theme-color" content="#ffffff">
 </head>
 <body id="body">
-	<header class="conteiner header">
+	
+	<header class="header">
+		<div class="header__conteiner conteiner">
+			<button class="burger burger-btn"><span></span></button>
 
-		<button class="burger burger-btn"><span></span></button>
+			<nav class="header__nav burger-menu">
+				<ul class="menu">
+					<li class="menu__item">
+						<a class="menu__link" href="#i-do">Услуги</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#portfolio">Портфолио</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#price">Стоимость</a>
+					</li>
+				</ul>
+			</nav>
 
-		<nav class="header__nav burger-menu">
-			<ul class="menu">
-				<li class="menu__item">
-					<a class="menu__link" href="#i-do">Услуги</a>
-				</li>
-				<li class="menu__item">
-					<a class="menu__link" href="#portfolio">Портфолио</a>
-				</li>
-				<li class="menu__item">
-					<a class="menu__link" href="#price">Стоимость</a>
-				</li>
-			</ul>
-		</nav>
-
-		<a class="header__phone" href="tel:+79505188881">+7 (950) 518-88-81</a>
-		<button class="order header__button icon-phone__header">Заказать звонок</button>
+			<div class="header__right">
+				<a class="header__right_phone" href="tel:+79505188881">+7 (950) 518-88-81</a>
+				<button class="header__right_button icon-phone__header order">Заказать звонок</button>
+			</div>
+		</div>
 	</header>
+	
 
 	<main>
 		<section class="main__aboutme">

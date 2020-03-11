@@ -1,3 +1,4 @@
+/*
 .header {
 	display: flex;
 	flex-flow: nowrap;
@@ -55,7 +56,8 @@
 	background: #ff2f96;
 	color: #fff;
 }
-/* ============ burger меню ============ */
+
+
 .burger {
 	display: none;
 	margin-right: 10px;
@@ -244,3 +246,5 @@
 	}
 
 }
+*/
+

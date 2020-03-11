@@ -1,0 +1,76 @@
+$color_pink:#ff2f96;
+$color_bg_grey:#fbfbfb;
+$time_1:.2s;
+
+%btn-desctop {
+	width: 206px;
+	height: 45px;
+	border: 1px solid $color_pink;
+	background-color: transparent;
+	color: $color_pink;
+	transition: background $time_1, color $time_1;
+
+	&:hover {
+		background-color: $color_pink;
+		color: #fff;
+	}
+}
+
+.header {
+	background-color: $color_bg_grey;
+}
+
+.header__conteiner {
+	display: flex;
+	justify-content: space-between;
+
+	.burger {
+		display:none;
+	}
+
+	.menu {
+		display:flex;
+
+		&__item {
+			margin:20px 32px 20px 0;
+		}
+
+		&__link {
+			transition: color $time_1;
+			font-weight: 400;
+			color: #1f1f24;
+
+			&:hover {
+				color:$color_pink;
+			}
+		}
+
+	}
+
+	.header__right {
+		display:flex;
+		align-items: center;
+
+		&_button {
+			@extend %btn-desctop
+		}
+
+		&_phone {
+			font-size: 25px;
+			margin-right: 37px;
+			transition: color $time_1;
+		
+			&:hover {
+				color: $color_pink;
+			}
+		}
+
+
+	}
+
+
+}
+
+
+
+

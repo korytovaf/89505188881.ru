@@ -295,6 +295,11 @@ button.active {
 	background-size: 23px 30px;
 }
 
+.portfolio__butten {
+	display: flex;
+	justify-content: center;
+}
+
 /*======================== price ========================*/
 .main__price {
 	width: 100%;
@@ -339,7 +344,7 @@ button.active {
 	font-weight: 700;
 	position: absolute;
 	z-index: 1;
-	transition: 10s;
+	transition: transform 10s;
 	color: #fff;
 }
 
@@ -587,17 +592,20 @@ button.active {
 		background-color: #fff;
 		width: 100%;
 		align-items: center;
+		padding-bottom: 0;
 	}
 
 	.aboutme__text {
 		padding-left: 0;
 		z-index: 1;
-   		margin: 0 -24px;
+   		margin: 0 -90px;
 	}
 
 	.aboutme__text_p {
 		font-size: 15px;
-  		padding: 10px 23px;
+		padding: 13px 0 10px;
+		width: 270px;
+		line-height: 21px;
 	}
 
 	.aboutme__text_h1 {
@@ -620,11 +628,11 @@ button.active {
 	}
 
 	.aboutme__foto_img {
-		padding-left: 30px;
+		padding-left: 60px;
 	}
 
 	.main__title {
-		padding: 18px 20px 40px;
+		padding: 25px 20px 40px;
 	}
 
 	.skills__item_img {
@@ -662,7 +670,7 @@ button.active {
 	}
 
 	.main__portfolio {
-		padding: 10px 0 47px;
+		padding: 10px 0 53px;
 	}
 
 	.price__conteiner_header {
@@ -673,5 +681,9 @@ button.active {
 
 	.price__conteiner {
 		padding-bottom: 0;
+	}
+
+	.price__conteiner_small {
+		padding: 18px 0 44px;
 	}
 }

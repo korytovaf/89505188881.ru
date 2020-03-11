@@ -21,26 +21,25 @@
 
 </head>
 <body id="body">
-	<header class="conteiner header">
-
-		<button class="burger burger-btn"><span></span></button>
-
-		<nav class="header__nav burger-menu">
-			<ul class="menu">
-				<li class="menu__item">
-					<a class="menu__link" href="#i-do">Услуги</a>
-				</li>
-				<li class="menu__item">
-					<a class="menu__link" href="#portfolio">Портфолио</a>
-				</li>
-				<li class="menu__item">
-					<a class="menu__link" href="#price">Стоимость</a>
-				</li>
-			</ul>
-		</nav>
-
-		<a class="header__phone" href="tel:+79505188881">+7 (950) 518-88-81</a>
-		<button class="order header__button icon-phone__header">Заказать звонок</button>
+	<header class="conteiner">
+		<div class="header">
+			<button class="burger burger-btn"><span></span></button>
+			<nav class="header__nav burger-menu">
+				<ul class="menu">
+					<li class="menu__item">
+						<a class="menu__link" href="#i-do">Услуги</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#portfolio">Портфолио</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#price">Стоимость</a>
+					</li>
+				</ul>
+			</nav>
+			<a class="header__phone" href="tel:+79505188881">+7 (950) 518-88-81</a>
+			<button class="order header__button icon-phone__header">Заказать звонок</button>
+		</div>
 	</header>
 
 	<main>
@@ -51,46 +50,50 @@
 			<span class="animate animate_4">#</span>
 			<span class="animate animate_5">&lt;/&gt;</span>
 			<div class="aboutme__conteiner_ellipse"></div>
-			<div class="aboutme__conteiner conteiner">
-				<div class="aboutme__text">
-					<div class="aboutme__text_block">
-						<h1 class="aboutme__text_h1">Александр&nbsp;Корытов</h1>
-						<p class="aboutme__text_p">Frontend-разработчик и веб-верстальщик</p>
-						<a class="button__orange scroll-offset" href="#i-do">Узнать больше</a>
+			<div class="conteiner">
+				<div class="aboutme__conteiner">
+					<div class="aboutme__text">
+						<div class="aboutme__text_block">
+							<h1 class="aboutme__text_h1">Александр&nbsp;Корытов</h1>
+							<p class="aboutme__text_p">Frontend-разработчик и веб-верстальщик</p>
+							<a class="button__orange scroll-offset" href="#i-do">Узнать больше</a>
+						</div>
 					</div>
-				</div>
 
-				<div class="aboutme__foto">
-					<picture class="aboutme__foto_picture">
-						<source media="(min-width: 750px)" type="image/webp" srcset="img/shutterstock_435x637.webp">
-						<source type="image/webp" srcset="img/shutterstock_224x334.webp">
-						<source media="(min-width: 750px)" srcset="img/shutterstock_435x637.png">
-						<img class="aboutme__foto_img" src="img/shutterstock_224x334.png" alt="Фотография Александра">
-					</picture>
+					<div class="aboutme__foto">
+						<picture class="aboutme__foto_picture">
+							<source media="(min-width: 750px)" type="image/webp" srcset="img/shutterstock_435x637.webp">
+							<source type="image/webp" srcset="img/shutterstock_224x334.webp">
+							<source media="(min-width: 750px)" srcset="img/shutterstock_435x637.png">
+							<img class="aboutme__foto_img" src="img/shutterstock_224x334.png" alt="Фотография Александра">
+						</picture>
+					</div>
 				</div>
 			</div>
 		</section>
-		<section id="i-do" class="main__skills conteiner">
-			<h2 class="main__title">Что я делаю</h2>
-			<ul class="skills">
-				<li class="skills__item">
-					<img class="skills__item_img" src="img/tools_and_utensils_111.svg" alt="Вёрстка лендинг–страниц и сайтов любой сложности">
-					<p class="skills__item_p">Вёрстка лендинг–страниц и сайтов любой сложности</p>
-				</li>
-				<li class="skills__item">
-					<img class="skills__item_img" src="img/responsive_115.svg" alt="Адаптивная вёрстка под все браузеры и устройства">
-					<p class="skills__item_p">Адаптивная вёрстка под все браузеры и устройства</p>
-				</li>
-				<li class="skills__item">
-					<img class="skills__item_img" src="img/programming_119.svg" alt="Frontend–разработка и программирование">
-					<p class="skills__item_p">Frontend–разработка и программирование</p>
-				</li>
-				<li class="skills__item">
-					<img class="skills__item_img" src="img/coding_(1)_121.svg" alt="Исправление и доработка существующей вёрстки">
-					<p class="skills__item_p">Исправление и доработка существующей вёрстки</p>
-				</li>
-			</ul>
-			<a class="button__orange scroll-offset" href="#price">Узнать стоимость</a>
+		<section id="i-do" class="conteiner">
+			<div class="main__skills">
+				<h2 class="main__title">Что я делаю</h2>
+				<ul class="skills">
+					<li class="skills__item">
+						<img class="skills__item_img" src="img/tools_and_utensils_111.svg" alt="Вёрстка лендинг–страниц и сайтов любой сложности">
+						<p class="skills__item_p">Вёрстка лендинг–страниц и сайтов любой сложности</p>
+					</li>
+					<li class="skills__item">
+						<img class="skills__item_img" src="img/responsive_115.svg" alt="Адаптивная вёрстка под все браузеры и устройства">
+						<p class="skills__item_p">Адаптивная вёрстка под все браузеры и устройства</p>
+					</li>
+					<li class="skills__item">
+						<img class="skills__item_img" src="img/programming_119.svg" alt="Frontend–разработка и программирование">
+						<p class="skills__item_p">Frontend–разработка и программирование</p>
+					</li>
+					<li class="skills__item">
+						<img class="skills__item_img" src="img/coding_(1)_121.svg" alt="Исправление и доработка существующей вёрстки">
+						<p class="skills__item_p">Исправление и доработка существующей вёрстки</p>
+					</li>
+				</ul>
+				<a class="button__orange scroll-offset" href="#price">Узнать стоимость</a>
+			</div>
 		</section>
 		<section id="portfolio" class="main__portfolio">
 			<h2 class="main__title">Примеры моих работ</h2>
@@ -153,62 +156,64 @@
 		</section>
 	</main>
 	<footer>
-		<div class="footer conteiner">
-			<nav class="footer__nav">
-				<ul class="footer__menu">
-					<li class="footer__menu_item">
-						<a class="footer__menu_link scroll-offset" href="#body">Главная</a>
-					</li>
-					<li class="footer__menu_item">
-						<a class="footer__menu_link scroll-offset" href="#i-do">Услуги</a>
-					</li>
-					<li class="footer__menu_item">
-						<a class="footer__menu_link scroll-offset" href="#portfolio">Портфолио</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="footer__contact">
-				<a class="footer__contact_a footer__contact_tel" href="tel:+79505188881">
-					<i class="icon-phone__footer"></i>
-					+7 (950) 518-88-81
-				</a>
-				<a class="footer__contact_a footer__contact_mail" href="mailto:kaf1@mail.ru">
-					<i class="icon-mail-alt"></i>
-					kaf1@mail.ru
-				</a>
-			</div>
-			<div class="footer__social_conteiner">
-				<button class="order footer__button">Заказать звонок</button>
-				<ul class="footer__social">
-					<li class="footer__social_item">
-						<a href="https://vk.com/id82727393">
-							<svg class="footer__contact_icon">
-								<use xlink:href="img/sprite.svg#vk"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="footer__social_item">
-						<a href="https://web.facebook.com/?_rdc=1&_rdr">
-							<svg class="footer__contact_icon">
-								<use xlink:href="img/sprite.svg#facebook"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="footer__social_item">
-						<a href="https://twitter.com/korytovaf">
-							<svg class="footer__contact_icon">
-								<use xlink:href="img/sprite.svg#tvitter"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="footer__social_item">
-						<a href="https://www.instagram.com/korytovaf/">
-							<svg class="footer__contact_icon">
-								<use xlink:href="img/sprite.svg#instagram"></use>
-							</svg>
-						</a>
-					</li>
-				</ul>
+		<div class="conteiner">
+			<div class="footer">
+				<nav class="footer__nav">
+					<ul class="footer__menu">
+						<li class="footer__menu_item">
+							<a class="footer__menu_link scroll-offset" href="#body">Главная</a>
+						</li>
+						<li class="footer__menu_item">
+							<a class="footer__menu_link scroll-offset" href="#i-do">Услуги</a>
+						</li>
+						<li class="footer__menu_item">
+							<a class="footer__menu_link scroll-offset" href="#portfolio">Портфолио</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="footer__contact">
+					<a class="footer__contact_a footer__contact_tel" href="tel:+79505188881">
+						<i class="icon-phone__footer"></i>
+						+7 (950) 518-88-81
+					</a>
+					<a class="footer__contact_a footer__contact_mail" href="mailto:kaf1@mail.ru">
+						<i class="icon-mail-alt"></i>
+						kaf1@mail.ru
+					</a>
+				</div>
+				<div class="footer__social_conteiner">
+					<button class="order footer__button">Заказать звонок</button>
+					<ul class="footer__social">
+						<li class="footer__social_item">
+							<a href="https://vk.com/id82727393">
+								<svg class="footer__contact_icon">
+									<use xlink:href="img/sprite.svg#vk"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="footer__social_item">
+							<a href="https://web.facebook.com/?_rdc=1&_rdr">
+								<svg class="footer__contact_icon">
+									<use xlink:href="img/sprite.svg#facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="footer__social_item">
+							<a href="https://twitter.com/korytovaf">
+								<svg class="footer__contact_icon">
+									<use xlink:href="img/sprite.svg#tvitter"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="footer__social_item">
+							<a href="https://www.instagram.com/korytovaf/">
+								<svg class="footer__contact_icon">
+									<use xlink:href="img/sprite.svg#instagram"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div class="copyright">

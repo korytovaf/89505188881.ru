@@ -48,9 +48,11 @@ ul {
 	}
 }
 
-@media (max-width : 624px) {
+@media (max-width: 624px) {
 	.conteiner {
-		max-width: none;
+		max-width: 320px;
+		padding-left: 12px;
+    	padding-right: 12px;
 	}
 }
 
@@ -121,9 +123,10 @@ ul {
 
 
 @media (max-width : 425px) {
-	.button__color_orange {
+	.button__orange {
 		width: 280px;
 		height: 57px;
+		margin: 17px 0;
 	}
 
 }

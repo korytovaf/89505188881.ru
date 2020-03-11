@@ -11,7 +11,7 @@
 	margin-bottom: 16PX;
 	font-weight: 400;
 	color: #8993ad;
-	transition: 0.4s;
+	transition: color 0.4s;
 }
 
 .footer__menu_link:hover {
@@ -31,7 +31,7 @@
 	color: #8993ad;
 	vertical-align: middle;
 	display: block;
-	transition: 0.4s;
+	transition: color 0.4s;
 }
 
 
@@ -44,7 +44,7 @@
     border-radius: 2px;
     background: transparent;
 	color: #ff2f96;
-	transition: 0.4s;
+	transition: background 0.4s, color 0.4s;
 	width: 250px;
 	height: 45px;
 	cursor: pointer;
@@ -64,7 +64,7 @@
     fill: #8993ad;
 	width: 30px;
 	height: 30px;
-	transition: 0.4s;
+	transition: fill 0.4s;
 }
 
 .footer__contact_icon:hover {
@@ -134,7 +134,16 @@
 @media (max-width: 425px) {
 	.footer {
 		flex-direction: column;
-		padding: 40px 20px;
+		padding: 46px 8px;
+	}
+
+	.footer__menu_link {
+		font-size: 14px;
+	}
+
+	.footer__contact {
+		padding-top: 30px;
+
 	}
 
 	.footer__contact_a {
@@ -153,5 +162,9 @@
 
 	.footer__social {
 		margin-top: 54px;
+	}
+
+	.copyright {
+		padding: 14px;
 	}
 }

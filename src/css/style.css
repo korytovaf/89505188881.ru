@@ -86,7 +86,7 @@ ul {
 	color: #fff;
 }
 
-.button__orange {
+.button-orange {
 	margin: 30px 0;
 	width: 268px;
 	height: 60px;
@@ -101,7 +101,7 @@ ul {
 	transition: background .4s;
 }
 
-.button__orange:hover {
+.button-orange:hover {
 	background: #ff2f96;
 }
 
@@ -113,8 +113,9 @@ ul {
 	height: 60px;
 	cursor: pointer;
 }
+
 @media (max-width : 1024px) {
-	.button__orange {
+	.button-orange {
 		width: 320px;
 		height: 70px;
 	}
@@ -123,7 +124,7 @@ ul {
 
 
 @media (max-width : 425px) {
-	.button__orange {
+	.button-orange {
 		width: 280px;
 		height: 57px;
 		margin: 17px 0;

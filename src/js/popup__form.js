@@ -69,7 +69,7 @@ $(function () {
 
 
 	//Сообщение об успешной отправке формы
-	$('.popup__alert_button').on('click', function(){
+	$('.alert__button').on('click', function(){
 		
 		$('.popup__alert').animate({opacity: 0, left: '45%'}, 400, function(){
 			$(this).css('display', 'none');

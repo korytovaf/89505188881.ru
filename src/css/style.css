@@ -20,10 +20,9 @@ ul {
 .conteiner {
 	max-width: 1210px;
 	margin: 0 auto;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding: 0 20px;
 }
-
+/*
 @media (max-width : 1824px) {
 	.conteiner {
 		max-width: 1200px;
@@ -35,27 +34,19 @@ ul {
 		max-width: 1000px;
 	}
 }
- 
+ */
 @media (max-width : 1024px) {
 	.conteiner {
 		max-width: 985px;
 	}
 }
-
+/*
 @media (max-width : 824px) {
 	.conteiner {
 		max-width: 600px;
 	}
 }
-
-@media (max-width: 624px) {
-	.conteiner {
-		max-width: 320px;
-		padding-left: 12px;
-    	padding-right: 12px;
-	}
-}
-
+*/
 .visually-hidden {
 	position: absolute !important;
 	clip: rect(1px, 1px, 1px, 1px);
@@ -65,9 +56,6 @@ ul {
 	width: 1px !important;
 	overflow: hidden;
 }
- 
-
-
 
 .gradient__background {
 	background: linear-gradient(13.0deg, rgba(255,143,90,0.95) 26%, rgba(255,47,150,0.95) 72%);

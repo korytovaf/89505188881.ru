@@ -22,7 +22,7 @@
 	padding-right: 20px;
 }
 
-.footer__contact_a {
+.contact__link {
 	padding-right: 22px;
 	padding-left: 16px;
 	margin-bottom: 30px;
@@ -35,7 +35,7 @@
 }
 
 
-.footer__contact_a:hover {
+.contact__link:hover {
 	color: #ff2f96; 
 }
 
@@ -55,25 +55,25 @@
 	color: #fff;
 }
 
-.footer__social {
+.social__list {
 	margin-top: 30px;
 	display: flex;
 }
 
-.footer__contact_icon {
-    fill: #8993ad;
+.social__icon {
+ fill: #8993ad;
 	width: 30px;
 	height: 30px;
 	transition: fill 0.4s;
 }
 
-.footer__contact_icon:hover {
+.social__icon:hover {
     fill: #ff2f96;
 	width: 30px;
 	height: 30px;
 }
 
-.footer__social_item {
+.social__item {
 	margin-right: 26px;
 }
 
@@ -146,7 +146,7 @@
 
 	}
 
-	.footer__contact_a {
+	.contact__link {
 		font-size: 20px;
 		margin-bottom: 22px;
 		padding-left: 0px;
@@ -160,7 +160,7 @@
 		height: 57px;
 	}
 
-	.footer__social {
+	.social__list {
 		margin-top: 54px;
 	}
 

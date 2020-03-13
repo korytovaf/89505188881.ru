@@ -5,17 +5,12 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Александр Корытов - Frontend-разработчик и веб-верстальщик</title>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	
 	<link rel="preload" href="./fonts/roboto-v20-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/popup.css">
-	<link rel="stylesheet" type="text/css" href="css/header.css">
-	<link rel="stylesheet" type="text/css" href="css/fonts.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	
+	<link rel="stylesheet" type="text/css" href="build/css/all.css">
 
-	<link rel="stylesheet" href="owlcarousel/assets/owl.carousel.css">
-	<link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="libs/owlcarousel/owl.carousel.css">
 
 	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -23,196 +18,210 @@
 	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">	
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
+
 </head>
-<body>
-	<div class="popup gradient__background">
-		<form class="popup__form popup__form_size_desktop" action="mailer/smart.php" method="POST">
-			<a class="popup__button_close popup__button_close_out" href="#">&#10006;</a>
-			<h3 class="popup__header">Укажите свои данные!</h3>	
-			<label class="popup__form_label">
-				<span>
-					Имя
-					<span class="popup__form_pattern">*</span>
-				</span>
-				<input class="popup__form_input" type="text" name="name" placeholder="Имя">
-			</label>
-			<label class="popup__form_label">
-				<span>
-					Телефон
-					<span class="popup__form_pattern">*</span>
-				</span>
-				<input class="popup__form_input" type="tel" name="phone" placeholder="+7 (999) 999-99-99">
-			</label>
-			<label class="popup__form_label">
-				<span>Email</span>
-				<input class="popup__form_input" type="text" name="Email" placeholder="Email">
-			</label>
-			<button class="button button__colir_gradient popup__button">Отправить</button>
-		</form>
-		<div class="popup__alert">
-			<h3 class="popup__header">Сообщение отправлено!</h3>
-			<p>Спасибо, я свяжусь с вами в ближайшее время.</p>
-			<button class="button popup__alert_ok button__colir_gradient popup__button">Ок</button>
-		</div>
-	</div>
-	<header>
-		<div class="conteiner header">
-			<nav class="header__nav burger-menu">
-				<ul class="header__nav_menu">
-					<li><a class="header__nav_menu_list" href="#i-do">Услуги</a></li>
-					<li><a class="header__nav_menu_list" href="#portfolio">Портфолио</a></li>
-					<li><a class="header__nav_menu_list" href="#price">Стоимость</a></li>
-				</ul>
-			</nav>
-			<a class="burger" href="#">
-				<div class="burger-btn">
-					<span></span>
-				</div>
-			</a>
-			<a class="header__phone" href="tel:+79505188881">+7 (950) 518-88-81</a>
-			<button class="order header__button button button__color_white">Заказать звонок</button>
-			<button class="order icon-phone button__size_circle"></button>
+<body id="body">
+	<header class="header">
+		<div class="conteiner">
+			<div class="header__conteiner">
+				<button class="burger burger-btn"><span></span></button>
+				<nav class="header__nav burger-menu">
+					<ul class="menu">
+						<li class="menu__item">
+							<a class="menu__link" href="#skills">Услуги</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#portfolio">Портфолио</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#price">Стоимость</a>
+						</li>
+					</ul>
+				</nav>
+				<a class="header__phone" href="tel:+79505188881">+7 (950) 518-88-81</a>
+				<button class="order header__button icon-phone__header">Заказать звонок</button>
+			</div>
 		</div>
 	</header>
+
 	<main>
 		<section class="main__aboutme">
-			<span class="animate animate-1">&#123; &#125;</span>
-			<span class="animate animate-2">&lt;/&gt;</span>
-			<span class="animate animate-3">&lt;div&gt;</span>
-			<span class="animate animate-4">#</span>
-			<span class="animate animate-5">&lt;/&gt;</span>
-			<div class="main__aboutme_conteiner">
-				<div class="main__aboutme_conteiner_empty"></div>
-				<div class="main__aboutme_conteiner_ellipse">
-					<picture class="main__aboutme_foto">
-						<source media="(min-width: 750px)" type="image/webp" srcset="img/shutterstock_435x637.webp">
-						<source type="image/webp" srcset="img/shutterstock_224x334.webp">
-						<source media="(min-width: 750px)" srcset="img/shutterstock_435x637.png">
-						<img class="main__aboutme_foto" src="img/shutterstock_224x334.png" alt="Фотография Александра">
-					</picture>
-				</div>
-			</div>
-			<div class="main__aboutme_conteiner_text conteiner">
-				<div class="main__aboutme_conteiner_text-block">
-					<h1 class="h1">Александр Корытов</h1>
-					<p>Frontend-разработчик и веб-верстальщик</p>
-					<a class="main__button_color_orange" href="#i-do">Узнать больше</a>
+			<span class="animate animate_1">&#123; &#125;</span>
+			<span class="animate animate_2">&lt;/&gt;</span>
+			<span class="animate animate_3">&lt;div&gt;</span>
+			<span class="animate animate_4">#</span>
+			<span class="animate animate_5">&lt;/&gt;</span>
+			<div class="aboutme__ellipse"></div>
+			<div class="conteiner">
+				<div class="aboutme">
+					<div class="aboutme__text-conteiner">
+						<div class="text-conteiner__block ">
+							<h1 class="aboutme__title">Александр&nbsp;Корытов</h1>
+							<p class="aboutme__subtitle">Frontend-разработчик и веб-верстальщик</p>
+							<a class="button-orange scroll-offset" href="#skills">Узнать больше</a>
+						</div>
+					</div>
+					<div class="aboutme__foto">
+						<picture class="foto__picture">
+							<source media="(min-width: 425px)" type="image/webp" srcset="img/shutterstock_435x637.webp">
+							<source type="image/webp" srcset="img/shutterstock_224x334.webp">
+							<source media="(min-width: 425px)" srcset="img/shutterstock_435x637.png">
+							<img class="foto__img" src="img/shutterstock_224x334.png" alt="Фотография Александра">
+						</picture>
+					</div>
 				</div>
 			</div>
 		</section>
-		<section id="i-do" class="main__i-do conteiner">
-			<h2 class="main__item_header">Что я делаю</h2>
-			<ul class="main__i-do_skills">
-				<li>
-					<img src="img/tools_and_utensils_111.svg" alt="Вёрстка лендинг–страниц и сайтов любой сложности">
-					<p>Вёрстка лендинг–страниц и сайтов любой сложности</p>
-				</li>
-				<li>
-					<img src="img/responsive_115.svg" alt="Адаптивная вёрстка под все браузеры и устройства">
-					<p>Адаптивная вёрстка под все браузеры и устройства</p>
-				</li>
-				<li>
-					<img src="img/programming_119.svg" alt="Frontend–разработка и программирование">
-					<p>Frontend–разработка и программирование</p>
-				</li>
-				<li>
-					<img src="img/coding_(1)_121.svg" alt="Исправление и доработка существующей вёрстки">
-					<p>Исправление и доработка существующей вёрстки</p>
-				</li>
-			</ul>
-			<a class="main__button_color_orange" href="#price">Узнать стоимость</a>
-		</section>
-		<section id="portfolio" class="main__portfolio">
-			<h2 class="main__item_header">Примеры моих работ</h2>
-			<div class="main__portfolio_slider conteiner">
-				<div class="owl-carousel">
-					<div class="main__portfolio_item">
-						<img src="img/layer_1.png" alt="Сайт психолога Веры Антоновой">
-						<h3 class="main__portfolio_item_header">Сайт психолога Веры Антоновой</h3>
-					</div>
-					<div class="main__portfolio_item">
-						<img src="img/layer_2.png" alt="Сайт детской одежды">
-						<h3 class="main__portfolio_item_header">Сайт детской одежды</h3>
-					</div>
-					<div class="main__portfolio_item">
-						<img src="img/layer_3.png" alt="Сайт магазина «Рыболов»">
-						<h3 class="main__portfolio_item_header">Сайт магазина «Рыболов»</h3>
-					</div>
-					<div class="main__portfolio_item">
-						<img src="img/layer_1.png" alt="Сайт психолога Веры Антоновой">
-						<h3 class="main__portfolio_item_header">Сайт психолога Веры Антоновой</h3>
-					</div>
-					<div class="main__portfolio_item">
-						<img src="img/layer_2.png" alt="Сайт детской одежды">
-						<h3 class="main__portfolio_item_header">Сайт детской одежды</h3>
-					</div>
-					<div class="main__portfolio_item">
-						<img src="img/layer_3.png" alt="Сайт магазина «Рыболов»">
-						<h3 class="main__portfolio_item_header">Сайт магазина «Рыболов»</h3>
-					</div>
+		<section id="skills">
+			<div class="conteiner">
+				<div class="main__skills">
+					<h2 class="main__title">Что я делаю</h2>
+					<ul class="skills">
+						<li class="skills__item">
+							<img class="skills__img" src="img/tools_and_utensils_111.svg" alt="Вёрстка лендинг–страниц и сайтов любой сложности">
+							<p class="skills__p">Вёрстка лендинг–страниц и сайтов любой сложности</p>
+						</li>
+						<li class="skills__item">
+							<img class="skills__img" src="img/responsive_115.svg" alt="Адаптивная вёрстка под все браузеры и устройства">
+							<p class="skills__p">Адаптивная вёрстка под все браузеры и устройства</p>
+						</li>
+						<li class="skills__item">
+							<img class="skills__img" src="img/programming_119.svg" alt="Frontend–разработка и программирование">
+							<p class="skills__p">Frontend–разработка и программирование</p>
+						</li>
+						<li class="skills__item">
+							<img class="skills__img" src="img/coding_(1)_121.svg" alt="Исправление и доработка существующей вёрстки">
+							<p class="skills__p">Исправление и доработка существующей вёрстки</p>
+						</li>
+					</ul>
+					<a class="button-orange scroll-offset" href="#price">Узнать стоимость</a>
 				</div>
-
 			</div>
-			<a class="order main__button_color_orange" href="#">Заказать проект</a>
+		</section>
+		<section id="portfolio" class="portfolio">
+			<div class="conteiner">
+				<div class="portfolio__conteiner">
+					<h2 class="main__title">Примеры моих работ</h2>
+					<div class="slider">
+						<div class="owl-carousel">
+							<a class="portfolio__linck" href="#">
+								<div class="portfolio__item">
+									<img src="img/layer_1.png" alt="Сайт психолога Веры Антоновой">
+									<h3 class="portfolio__header">Сайт психолога Веры Антоновой</h3>
+								</div>
+							</a>
+							<a class="portfolio__linck" href="#">
+								<div class="portfolio__item">
+									<img src="img/layer_2.png" alt="Сайт детской одежды">
+									<h3 class="portfolio__header">Сайт детской одежды</h3>
+								</div>
+							</a>
+							<a class="portfolio__linck" href="#">
+								<div class="portfolio__item">
+									<img src="img/layer_3.png" alt="Сайт магазина «Рыболов»">
+									<h3 class="portfolio__header">Сайт магазина «Рыболов»</h3>
+								</div>
+							</a>
+							<a class="portfolio__linck" href="#">
+								<div class="portfolio__item">
+									<img src="img/layer_1.png" alt="Сайт психолога Веры Антоновой">
+									<h3 class="portfolio__header">Сайт психолога Веры Антоновой</h3>
+								</div>
+							</a>
+							<a class="portfolio__linck" href="#">
+								<div class="portfolio__item">
+									<img src="img/layer_2.png" alt="Сайт детской одежды">
+									<h3 class="portfolio__header">Сайт детской одежды</h3>
+								</div>
+							</a>
+							<a class="portfolio__linck" href="#">
+								<div class="portfolio__item">
+									<img src="img/layer_3.png" alt="Сайт магазина «Рыболов»">
+									<h3 class="portfolio__header">Сайт магазина «Рыболов»</h3>
+								</div>
+							</a>
+						</div>
+					</div>
+					<button class="order button__color_orange">Заказать проект</button>
+				</div>
+			</div>
 		</section>
 		<section id="price" class="main__price">
-			<span class="animate-price animate-price-1">&#123; &#125;</span>
-			<span class="animate-price animate-price-2">&lt;/&gt;</span>
-			<span class="animate-price animate-price-3">&lt;div&gt;</span>
-			<span class="animate-price animate-price-4">#</span>
-			<span class="animate-price animate-price-5">&lt;/&gt;</span>
-			<div class="main__price_conteiner conteiner">
-				<h2 class="visually-hidden">Цены и сроки</h2>
-				<p class="main__price_conteiner_header">Адаптивная вёрстка под все устройства и браузеры от 1000 рублей всего за 4 часа.*</p>
-				<div class="main__price_conteiner_small">
-					<span>*</span>
-					<small>Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в зависимости от сложности задач.</small>
+			<span class="animate__price animate__price_1">&#123; &#125;</span>
+			<span class="animate__price animate__price_2">&lt;/&gt;</span>
+			<span class="animate__price animate__price_3">&lt;div&gt;</span>
+			<span class="animate__price animate__price_4">#</span>
+			<span class="animate__price animate__price_5">&lt;/&gt;</span>
+			<div class="conteiner">
+				<div class="price__conteiner">
+					<h2 class="visually-hidden">Цены и сроки</h2>
+					<p class="price__header">Адаптивная вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за 4 часа.*</p>
+					<div class="price__small">
+						<span>*  </span>
+						<small>Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в зависимости от сложности задач.</small>
+					</div>
 				</div>
 			</div>
 		</section>
 	</main>
 	<footer>
-		<div class="footer conteiner">
-			<nav class="footer__menu">
-				<ul>
-					<li><a class="footer__menu_li" href="#i-do">Услуги</a></li>
-					<li><a class="footer__menu_li" href="#portfolio">Портфолио</a></li>
-					<li><a class="footer__menu_li" href="#price">Стоимость</a></li>
-				</ul>
-			</nav>
-			<div>
-				<a class="footer__contact footer__contact_tel" href="tel:+79505188881">
-					<i class="icon-phone"></i>
-					+7 (950) 518-88-81
-				</a>
-				<a class="footer__contact footer__contact_mail" href="mailto:kaf1@mail.ru">
-					<i class="icon-mail-alt"></i>
-					kaf1@mail.ru
-				</a>
-			</div>
-			<div>
-				<button class="order button button__color_white button__color_orange">Заказать звонок</button>
-				<div class="footer__contact_icon_conteiner">
-					<a href="https://vk.com/id82727393">
-						<svg class="footer__contact_icon">
-							<use xlink:href="img/sprite.svg#vk"></use>
-						</svg>
+		<div class="conteiner">
+			<div class="footer">
+				<nav class="footer__nav">
+					<ul class="footer__menu">
+						<li class="footer__menu_item">
+							<a class="footer__menu_link scroll-offset" href="#body">Главная</a>
+						</li>
+						<li class="footer__menu_item">
+							<a class="footer__menu_link scroll-offset" href="#skills">Услуги</a>
+						</li>
+						<li class="footer__menu_item">
+							<a class="footer__menu_link scroll-offset" href="#portfolio">Портфолио</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="footer__contact">
+					<a class="contact__link" href="tel:+79505188881">
+						<i class="icon-phone__footer"></i>
+						+7 (950) 518-88-81
 					</a>
-					<a href="https://web.facebook.com/?_rdc=1&_rdr">
-						<svg class="footer__contact_icon">
-							<use xlink:href="img/sprite.svg#facebook"></use>
-						</svg>
+					<a class="contact__link" href="mailto:kaf1@mail.ru">
+						<i class="icon-mail__alt"></i>
+						kaf1@mail.ru
 					</a>
-					<a href="https://t.me/korytovaf">
-						<svg class="footer__contact_icon">
-							<use xlink:href="img/sprite.svg#telegram"></use>
-						</svg>
-					</a>
-					<a href="https://www.instagram.com/korytovaf/">
-						<svg class="footer__contact_icon">
-							<use xlink:href="img/sprite.svg#instagram"></use>
-						</svg>
-					</a>
+				</div>
+				<div class="footer__social_conteiner">
+					<button class="order footer__button">Заказать звонок</button>
+					<ul class="social__list">
+						<li class="social__item">
+							<a href="https://vk.com/id82727393">
+								<svg class="social__icon">
+									<use xlink:href="img/sprite.svg#vk"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="https://web.facebook.com/?_rdc=1&_rdr">
+								<svg class="social__icon">
+									<use xlink:href="img/sprite.svg#facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="https://twitter.com/korytovaf">
+								<svg class="social__icon">
+									<use xlink:href="img/sprite.svg#tvitter"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="https://www.instagram.com/korytovaf/">
+								<svg class="social__icon">
+									<use xlink:href="img/sprite.svg#instagram"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -220,29 +229,40 @@
 			<small>&copy; Александр Корытов, 2020</small>
 		</div>
 	</footer>
-
-
-
-
-
-
-
-
-
-
-
-
+	<div class="popup">
+		<span class="popup__close">&#10006;</span>
+		<form id="form-popup" action="libs/mailer/smart.php" method="POST">
+			<h3 class="popup__header">Укажите свои данные!</h3>	
+			<label class="form__label">
+				<span>
+					Имя
+					<span class="form__pattern">*</span>
+				</span>
+				<input id="name" class="form__input" type="text" name="name" placeholder="Имя">
+			</label>
+			<label class="form__label">
+				<span>
+					Телефон
+					<span class="form__pattern">*</span>
+				</span>
+				<input class="form__input" type="tel" name="phone" placeholder="+7 (999) 999-99-99">
+			</label>
+			<label class="form__label">
+				<span>Email</span>
+				<input class="form__input" type="email" name="Email" placeholder="Email">
+			</label>
+			<button class="popup__button">Отправить</button>
+		</form>
+	</div>
+	<div class="popup__alert">
+		<h3 class="alert__header">Сообщение отправлено!</h3>
+		<p class="alert__text">Спасибо,<br>я свяжусь&nbsp;с&nbsp;вами <br> в&nbsp;ближайшее время.</p>
+		<button class="popup__button alert__button">Ок</button>
+	</div>
+	<div class="popup__form"></div>
 	
+<script src="build/js/all.js"></script>
+<script src="libs/owlcarousel/owl.carousel.min.js"></script>
 
-
-
-
-<script src="script/jquery-3.4.1.min.js"></script>
-<script src="script/popup__form.js"></script>
-<script src="script/jquery.formstyler.min.js"></script>
-<script src="script/jquery.validate.min.js"></script>
-<script src="script/burger-menu.js"></script>
-<script src="owlcarousel/owl.carousel.min.js"></script>
-<script src="script/owlCarousel.js"></script>
 </body>
 </html>

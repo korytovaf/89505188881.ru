@@ -672,7 +672,7 @@
 	}
 	.footer {
 		flex-direction: column;
-		padding: 46px 8px;
+		padding: 46px 0 0;
 	}
 
 	.menu__link_footer {

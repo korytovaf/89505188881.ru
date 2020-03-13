@@ -27,11 +27,14 @@
 	margin-right: 30px;
 	transition: color .4s;
 	font-weight: 400;
-	color: #1f1f24;
 }
 
 .menu__link:hover {
 	color: #ff2f96; 
+}
+
+.menu__link_header {
+	color: #1f1f24;
 }
 
 .header__phone {
@@ -115,137 +118,4 @@
 	transform: rotate(-45deg);
 	margin-top: 0;
 	top: 0;
-}
-
-@media (max-width: 1024px) {
-	.header__nav_click {
-		transform: translateX(368px);
-	}
-
-	.header__nav {
-		position: absolute;
-		top: 120px;
-		left: -260px;
-		width: 250px;
-		z-index: 20;
-		transition: transform .6s linear;
-		background-color: #fff;
-		box-shadow:0px 0px 8px 0px rgba(0,0,0,0.16);
-	}
-
-	.menu {
-		flex-direction: column;
-	}
-
-	.menu li {
-		width: 250px;
-		height: 40px;
-		border-bottom: 1px solid #d6d6d6;
-		text-align: center;
-		line-height: 40px;
-
-	}
-
-	.header__phone {
-		flex-grow: 3;
-		text-align: end;
-	}
-
-	.menu__item {
-		font-size: 22px;
-		font-weight: 400;
-	}
-
-	.burger {
-		display: block;
-		margin-right: 0;
-	}
-}
-
-@media (max-width: 750px) {
-	
-	.header__button {
-		width: 45px;
-		height: 45px;
-		border-radius: 50%;
-		border: 1px solid #f00c6b;
-		background-color: transparent;
-		cursor: pointer;
-		font-size: 0;
-	}
-
-	.header__button:hover {
-		background: #fff;
-		box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.17);
-	}
-}
-
-
-
-@media (max-width: 425px) {
-
-	.header__conteiner {
-		padding: 35px 0;
-	}
-
-	.burger {
-		height: 35px;
-		width: 40px;
-	}
-	
-	.burger-btn span,
-	.burger-btn span::before,
-	.burger-btn span::after {
-		width: 25px;
-		height: 3px;
-	}
-	
-	.burger-btn span {
-		left: 8px;
-		top: 17px;
-	}
-
-	.burger-btn span::after {
-		top: -8px;
-	}
-
-	.burger-btn span::before {
-		top: 8px;
-	}
-
-	.burger-btn_click span::after,
-	.burger-btn_click span::before {
-		top: 0;
-	}
-
-	.burger-btn_click span {
-		width: 0;
-		margin-left: 0;
-	}
-
-	.header__phone {
-		font-size: 18px;
-		font-weight: 300;
-	}
-
-	.header__button {
-		width: 25px;
-		height: 25px;
-	}
-
-	.button__size_circle {
-		width: 30px;
-		height: 30px;
-	}
-
-
-
-	.menu__item {
-		font-size: 20px;
-	}
-
-	.header__nav_click {
-		transform: translateX(250px);
-	}
-
 }

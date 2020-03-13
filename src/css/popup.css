@@ -25,7 +25,7 @@
 	z-index: 10;
 }
 
-.popup__form {
+.popup__background {
     z-index:9;
     position:fixed;
     background-color:#000;
@@ -119,42 +119,4 @@
 .error {
 	border: 1px solid #f00;
 	color: red;
-}
-
-
-@media (max-width : 624px) {
-	
-	.popup {
-		width: 300px;
-		top: 40%;
-	}
-
-	.form__label {
-		width: 200px;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	.popup__header {
-		margin: 60px auto 40px;
-	}
-
-	.popup__button {
-		width: 200px;
-		margin: 40px auto 20px;
-	}
-
-	.popup__alert {
-		top: 40%;
-	}
-
-	.alert__header {
-	    margin: 20px 30px 40px;
-	}
-
-	.popup__close {
-		right: 8px;
-		top: 8px;
-		color: red;
-	}
 }

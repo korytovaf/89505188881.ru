@@ -28,13 +28,13 @@
 				<nav class="header__nav burger-menu">
 					<ul class="menu">
 						<li class="menu__item">
-							<a class="menu__link" href="#skills">Услуги</a>
+							<a class="menu__link menu__link_header" href="#skills">Услуги</a>
 						</li>
 						<li class="menu__item">
-							<a class="menu__link" href="#portfolio">Портфолио</a>
+							<a class="menu__link menu__link_header" href="#portfolio">Портфолио</a>
 						</li>
 						<li class="menu__item">
-							<a class="menu__link" href="#price">Стоимость</a>
+							<a class="menu__link menu__link_header" href="#price">Стоимость</a>
 						</li>
 					</ul>
 				</nav>
@@ -58,7 +58,7 @@
 						<div class="aboutme__text">
 							<h1 class="aboutme__title">Александр&nbsp;Корытов</h1>
 							<p class="aboutme__subtitle">Frontend-разработчик и веб-верстальщик</p>
-							<a class="button-orange scroll-offset" href="#skills">Узнать больше</a>
+							<a class="button-orange scroll" href="#skills">Узнать больше</a>
 						</div>
 					</div>
 					<div class="aboutme__photo">
@@ -94,7 +94,7 @@
 							<p class="skills__p">Исправление и доработка существующей вёрстки</p>
 						</li>
 					</ul>
-					<a class="button-orange scroll-offset" href="#price">Узнать стоимость</a>
+					<a class="button-orange scroll" href="#price">Узнать стоимость</a>
 				</div>
 			</div>
 		</section>
@@ -165,13 +165,13 @@
 			<nav class="footer__nav">
 				<ul class="footer__menu">
 					<li class="footer__menu_item">
-						<a class="footer__menu_link scroll-offset" href="#body">Главная</a>
+						<a class="menu__link menu__link_footer" href="#body">Главная</a>
 					</li>
 					<li class="footer__menu_item">
-						<a class="footer__menu_link scroll-offset" href="#skills">Услуги</a>
+						<a class="menu__link menu__link_footer" href="#skills">Услуги</a>
 					</li>
 					<li class="footer__menu_item">
-						<a class="footer__menu_link scroll-offset" href="#portfolio">Портфолио</a>
+						<a class="menu__link menu__link_footer" href="#portfolio">Портфолио</a>
 					</li>
 				</ul>
 			</nav>
@@ -185,7 +185,7 @@
 					kaf1@mail.ru
 				</a>
 			</div>
-			<div class="social__conteiner">
+			<div class="social">
 				<button class="order footer__button">Заказать звонок</button>
 				<ul class="social__list">
 					<li class="social__item">
@@ -225,7 +225,7 @@
 	</footer>
 	<div class="popup">
 		<span class="popup__close">&#10006;</span>
-		<form id="form-popup" action="libs/mailer/smart.php" method="POST">
+		<form class="form" id="form-popup" action="libs/mailer/smart.php" method="POST">
 			<h3 class="popup__header">Укажите свои данные!</h3>	
 			<label class="form__label">
 				<span>
@@ -253,7 +253,7 @@
 		<p class="alert__text">Спасибо,<br>я свяжусь&nbsp;с&nbsp;вами <br> в&nbsp;ближайшее время.</p>
 		<button class="popup__button alert__button">Ок</button>
 	</div>
-	<div class="popup__form"></div>
+	<div class="popup__background"></div>
 	
 <script src="build/js/all.js"></script>
 <script src="libs/owlcarousel/owl.carousel.min.js"></script>

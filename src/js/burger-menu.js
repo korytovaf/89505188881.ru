@@ -9,7 +9,7 @@ $(function () {
 	});
 	
 	
-	$('.menu__link').on('click', function (e) {
+	$('.menu__link_header').on('click', function (e) {
 		e.preventDefault();
 	
 		let href = $(this).attr('href');
@@ -25,7 +25,7 @@ $(function () {
 
 	});
 	
-	$('.scroll-offset').on('click', function (e) {
+	$('.menu__link, .scroll').on('click', function (e) {
 		e.preventDefault();
 	
 		let href = $(this).attr('href');

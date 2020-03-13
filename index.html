@@ -28,13 +28,13 @@
 				<nav class="header__nav burger-menu">
 					<ul class="menu">
 						<li class="menu__item">
-							<a class="menu__link" href="#skills">Услуги</a>
+							<a class="menu__link menu__link_header" href="#skills">Услуги</a>
 						</li>
 						<li class="menu__item">
-							<a class="menu__link" href="#portfolio">Портфолио</a>
+							<a class="menu__link menu__link_header" href="#portfolio">Портфолио</a>
 						</li>
 						<li class="menu__item">
-							<a class="menu__link" href="#price">Стоимость</a>
+							<a class="menu__link menu__link_header" href="#price">Стоимость</a>
 						</li>
 					</ul>
 				</nav>
@@ -55,18 +55,18 @@
 			<div class="conteiner">
 				<div class="aboutme">
 					<div class="aboutme__text-conteiner">
-						<div class="text-conteiner__block ">
+						<div class="aboutme__text">
 							<h1 class="aboutme__title">Александр&nbsp;Корытов</h1>
 							<p class="aboutme__subtitle">Frontend-разработчик и веб-верстальщик</p>
-							<a class="button-orange scroll-offset" href="#skills">Узнать больше</a>
+							<a class="button-orange scroll" href="#skills">Узнать больше</a>
 						</div>
 					</div>
-					<div class="aboutme__foto">
-						<picture class="foto__picture">
+					<div class="aboutme__photo">
+						<picture class="photo__picture">
 							<source media="(min-width: 425px)" type="image/webp" srcset="img/shutterstock_435x637.webp">
 							<source type="image/webp" srcset="img/shutterstock_224x334.webp">
 							<source media="(min-width: 425px)" srcset="img/shutterstock_435x637.png">
-							<img class="foto__img" src="img/shutterstock_224x334.png" alt="Фотография Александра">
+							<img class="photo__img" src="img/shutterstock_224x334.png" alt="Фотография Александра">
 						</picture>
 					</div>
 				</div>
@@ -75,7 +75,7 @@
 		<section id="skills">
 			<div class="conteiner">
 				<div class="main__skills">
-					<h2 class="main__title">Что я делаю</h2>
+					<h2 class="main-title">Что я делаю</h2>
 					<ul class="skills">
 						<li class="skills__item">
 							<img class="skills__img" src="img/tools_and_utensils_111.svg" alt="Вёрстка лендинг–страниц и сайтов любой сложности">
@@ -94,56 +94,54 @@
 							<p class="skills__p">Исправление и доработка существующей вёрстки</p>
 						</li>
 					</ul>
-					<a class="button-orange scroll-offset" href="#price">Узнать стоимость</a>
+					<a class="button-orange scroll" href="#price">Узнать стоимость</a>
 				</div>
 			</div>
 		</section>
 		<section id="portfolio" class="portfolio">
-			<div class="conteiner">
-				<div class="portfolio__conteiner">
-					<h2 class="main__title">Примеры моих работ</h2>
-					<div class="slider">
-						<div class="owl-carousel">
-							<a class="portfolio__linck" href="#">
-								<div class="portfolio__item">
-									<img src="img/layer_1.png" alt="Сайт психолога Веры Антоновой">
-									<h3 class="portfolio__header">Сайт психолога Веры Антоновой</h3>
-								</div>
-							</a>
-							<a class="portfolio__linck" href="#">
-								<div class="portfolio__item">
-									<img src="img/layer_2.png" alt="Сайт детской одежды">
-									<h3 class="portfolio__header">Сайт детской одежды</h3>
-								</div>
-							</a>
-							<a class="portfolio__linck" href="#">
-								<div class="portfolio__item">
-									<img src="img/layer_3.png" alt="Сайт магазина «Рыболов»">
-									<h3 class="portfolio__header">Сайт магазина «Рыболов»</h3>
-								</div>
-							</a>
-							<a class="portfolio__linck" href="#">
-								<div class="portfolio__item">
-									<img src="img/layer_1.png" alt="Сайт психолога Веры Антоновой">
-									<h3 class="portfolio__header">Сайт психолога Веры Антоновой</h3>
-								</div>
-							</a>
-							<a class="portfolio__linck" href="#">
-								<div class="portfolio__item">
-									<img src="img/layer_2.png" alt="Сайт детской одежды">
-									<h3 class="portfolio__header">Сайт детской одежды</h3>
-								</div>
-							</a>
-							<a class="portfolio__linck" href="#">
-								<div class="portfolio__item">
-									<img src="img/layer_3.png" alt="Сайт магазина «Рыболов»">
-									<h3 class="portfolio__header">Сайт магазина «Рыболов»</h3>
-								</div>
-							</a>
-						</div>
+			<div class="conteiner portfolio__conteiner">
+				<h2 class="main-title">Примеры моих работ</h2>
+				<div class="slider">
+					<div class="owl-carousel">
+						<a class="portfolio__linck" href="#">
+							<div class="portfolio__item">
+								<img src="img/layer_1.png" alt="Сайт психолога Веры Антоновой">
+								<h3 class="portfolio__header">Сайт психолога Веры Антоновой</h3>
+							</div>
+						</a>
+						<a class="portfolio__linck" href="#">
+							<div class="portfolio__item">
+								<img src="img/layer_2.png" alt="Сайт детской одежды">
+								<h3 class="portfolio__header">Сайт детской одежды</h3>
+							</div>
+						</a>
+						<a class="portfolio__linck" href="#">
+							<div class="portfolio__item">
+								<img src="img/layer_3.png" alt="Сайт магазина «Рыболов»">
+								<h3 class="portfolio__header">Сайт магазина «Рыболов»</h3>
+							</div>
+						</a>
+						<a class="portfolio__linck" href="#">
+							<div class="portfolio__item">
+								<img src="img/layer_1.png" alt="Сайт психолога Веры Антоновой">
+								<h3 class="portfolio__header">Сайт психолога Веры Антоновой</h3>
+							</div>
+						</a>
+						<a class="portfolio__linck" href="#">
+							<div class="portfolio__item">
+								<img src="img/layer_2.png" alt="Сайт детской одежды">
+								<h3 class="portfolio__header">Сайт детской одежды</h3>
+							</div>
+						</a>
+						<a class="portfolio__linck" href="#">
+							<div class="portfolio__item">
+								<img src="img/layer_3.png" alt="Сайт магазина «Рыболов»">
+								<h3 class="portfolio__header">Сайт магазина «Рыболов»</h3>
+							</div>
+						</a>
 					</div>
-					<button class="order button__color_orange">Заказать проект</button>
 				</div>
+				<button class="order button__color_orange">Заказать проект</button>
 			</div>
 		</section>
 		<section id="price" class="main__price">
@@ -152,77 +150,73 @@
 			<span class="animate__price animate__price_3">&lt;div&gt;</span>
 			<span class="animate__price animate__price_4">#</span>
 			<span class="animate__price animate__price_5">&lt;/&gt;</span>
-			<div class="conteiner">
-				<div class="price__conteiner">
+			<div class="conteiner price__conteiner">
 					<h2 class="visually-hidden">Цены и сроки</h2>
 					<p class="price__header">Адаптивная вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за 4 часа.*</p>
 					<div class="price__small">
 						<span>*  </span>
 						<small>Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в зависимости от сложности задач.</small>
 					</div>
-				</div>
 			</div>
 		</section>
 	</main>
-	<footer>
-		<div class="conteiner">
-			<div class="footer">
-				<nav class="footer__nav">
-					<ul class="footer__menu">
-						<li class="footer__menu_item">
-							<a class="footer__menu_link scroll-offset" href="#body">Главная</a>
-						</li>
-						<li class="footer__menu_item">
-							<a class="footer__menu_link scroll-offset" href="#skills">Услуги</a>
-						</li>
-						<li class="footer__menu_item">
-							<a class="footer__menu_link scroll-offset" href="#portfolio">Портфолио</a>
-						</li>
-					</ul>
-				</nav>
-				<div class="footer__contact">
-					<a class="contact__link" href="tel:+79505188881">
-						<i class="icon-phone__footer"></i>
-						+7 (950) 518-88-81
-					</a>
-					<a class="contact__link" href="mailto:kaf1@mail.ru">
-						<i class="icon-mail__alt"></i>
-						kaf1@mail.ru
-					</a>
-				</div>
-				<div class="footer__social_conteiner">
-					<button class="order footer__button">Заказать звонок</button>
-					<ul class="social__list">
-						<li class="social__item">
-							<a href="https://vk.com/id82727393">
-								<svg class="social__icon">
-									<use xlink:href="img/sprite.svg#vk"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="social__item">
-							<a href="https://web.facebook.com/?_rdc=1&_rdr">
-								<svg class="social__icon">
-									<use xlink:href="img/sprite.svg#facebook"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="social__item">
-							<a href="https://twitter.com/korytovaf">
-								<svg class="social__icon">
-									<use xlink:href="img/sprite.svg#tvitter"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="social__item">
-							<a href="https://www.instagram.com/korytovaf/">
-								<svg class="social__icon">
-									<use xlink:href="img/sprite.svg#instagram"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
+	<footer class="footer">
+		<div class="conteiner footer__conteiner">
+			<nav class="footer__nav">
+				<ul class="footer__menu">
+					<li class="footer__menu_item">
+						<a class="menu__link menu__link_footer" href="#body">Главная</a>
+					</li>
+					<li class="footer__menu_item">
+						<a class="menu__link menu__link_footer" href="#skills">Услуги</a>
+					</li>
+					<li class="footer__menu_item">
+						<a class="menu__link menu__link_footer" href="#portfolio">Портфолио</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="contact">
+				<a class="contact__link" href="tel:+79505188881">
+					<i class="icon-phone__footer"></i>
+					+7 (950) 518-88-81
+				</a>
+				<a class="contact__link" href="mailto:kaf1@mail.ru">
+					<i class="icon-mail__alt"></i>
+					kaf1@mail.ru
+				</a>
+			</div>
+			<div class="social">
+				<button class="order footer__button">Заказать звонок</button>
+				<ul class="social__list">
+					<li class="social__item">
+						<a href="https://vk.com/id82727393">
+							<svg class="social__icon">
+								<use xlink:href="img/sprite.svg#vk"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="https://web.facebook.com/?_rdc=1&_rdr">
+							<svg class="social__icon">
+								<use xlink:href="img/sprite.svg#facebook"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="https://twitter.com/korytovaf">
+							<svg class="social__icon">
+								<use xlink:href="img/sprite.svg#tvitter"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="https://www.instagram.com/korytovaf/">
+							<svg class="social__icon">
+								<use xlink:href="img/sprite.svg#instagram"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 		<div class="copyright">
@@ -231,7 +225,7 @@
 	</footer>
 	<div class="popup">
 		<span class="popup__close">&#10006;</span>
-		<form id="form-popup" action="libs/mailer/smart.php" method="POST">
+		<form class="form" id="form-popup" action="libs/mailer/smart.php" method="POST">
 			<h3 class="popup__header">Укажите свои данные!</h3>	
 			<label class="form__label">
 				<span>
@@ -259,7 +253,7 @@
 		<p class="alert__text">Спасибо,<br>я свяжусь&nbsp;с&nbsp;вами <br> в&nbsp;ближайшее время.</p>
 		<button class="popup__button alert__button">Ок</button>
 	</div>
-	<div class="popup__form"></div>
+	<div class="popup__background"></div>
 	
 <script src="build/js/all.js"></script>
 <script src="libs/owlcarousel/owl.carousel.min.js"></script>

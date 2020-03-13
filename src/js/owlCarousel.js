@@ -14,7 +14,7 @@ $(document).ready(function(){
 			0:{
 				items: 1
 			},
-			800:{
+			426:{
 				items: 2
 
 			},
@@ -29,8 +29,5 @@ $(document).ready(function(){
 			}
 		}
 	});
-
-
-
 
 });

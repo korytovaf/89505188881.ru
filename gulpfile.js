@@ -7,6 +7,17 @@ const del = require('del');
 const browserSync = require('browser-sync').create();
 const sourcemaps = require('gulp-sourcemaps');
 
+const cssFiles = [
+    './src/css/fonts.css',
+    './src/css/normalize.css',
+    './src/css/style.css',
+    './src/css/header.css',
+    './src/css/main.css',
+    './src/css/footer.css',
+    './src/css/popup.css',
+    './src/css/media.css',
+]
+
 const jsFiles = [
     './src/js/jquery-3.4.1.min.js',
     './src/js/burger-menu.js',
@@ -32,7 +43,7 @@ function watch() {
 
 
 function styles() {
-    return gulp.src('./src/css/**/*.css')
+    return gulp.src(cssFiles)
     .pipe(sourcemaps.init())
     .pipe(concat('all.css'))
     .pipe(autoprefixer({

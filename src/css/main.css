@@ -188,7 +188,7 @@
 	flex-grow: 1;
 }
 
-.text-conteiner__block {
+.aboutme__text {
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
@@ -211,11 +211,11 @@
 	padding-bottom: 17px;
 }
 
-.foto__picture {
+.photo__picture {
 	display: flex;
 }
 
-.foto__img {
+.photo__img {
 	padding-left: 25px;
 	display: flex;
 	align-items: flex-end;
@@ -235,7 +235,7 @@
 	justify-content: space-around;
 }
 
-.main__title {
+.main-title {
 	font-size: 54px;
 	font-weight: 700;
 	color: #262626;
@@ -282,7 +282,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
-	margin: 75px 0 0;
+	margin-top: 75px;
 	padding-bottom: 100px;
 }
 
@@ -620,11 +620,11 @@ button.active {
 		top: 20%;
 	}
 
-	.foto__img {
-  padding-left: 0;
- }
+	.photo__img {
+		padding-left: 0;
+	}
 
-	.text-conteiner__block  {
+	.aboutme__text {
 		padding-bottom: 16px;
 	}
 
@@ -636,7 +636,7 @@ button.active {
 
 @media (max-width: 1000px) {
 	
-	.text-conteiner__block  {
+	.aboutme__text {
 		display: flex;
 		flex-direction: column;
 	}
@@ -649,7 +649,7 @@ button.active {
 		font-size: 16px;
 	}
 
-	.foto__picture {
+	.photo__picture {
 		display: flex;
 		justify-content: center;
 	}
@@ -664,7 +664,7 @@ button.active {
 		width: 75%;
 	}
 
-	.text-conteiner__block{
+	.aboutme__text {
 		padding-bottom: 250px;
 	}
 
@@ -678,34 +678,33 @@ button.active {
 		flex-direction: column;
 	}
 
-		.aboutme__ellipse {
+	.aboutme__ellipse {
 		width: 184%;
 		top: 13%;
 		right: -30%;
 	}
 
-	.text-conteiner__block{
+	.aboutme__text {
 		padding-bottom: 0;
 	}
  
 	.aboutme__text-conteiner {
 		justify-content: center;
 		background-color: #fff;
-  z-index: 1;
-  margin: 0 -20px;
-  padding-top: 40px;
+		z-index: 1;
+		margin: 0 -20px;
+		padding-top: 40px;
 	}
 
 	.aboutme__subtitle {
 		text-align: center;
 	}
 
-	.aboutme__foto {
-	/*	height: 380px;*/
+	.aboutme__photo {
 		order: -1;
 	}
 
-	.foto__picture {
+	.photo__picture {
 		height: 100%;
 		align-items: flex-end;
 	}
@@ -720,7 +719,7 @@ button.active {
 		font-size: 16px;
 	}
 
-	.main__title {
+	.main-title {
 		font-size: 30px;
 		padding: 30px 20px;
 	}
@@ -754,7 +753,7 @@ button.active {
 
 @media (max-width: 425px) {
 	
-	.text-conteiner__block  {
+	.aboutme__text {
 		background-color: #fff;
 		width: 100%;
 		align-items: center;
@@ -793,11 +792,11 @@ button.active {
 		line-height: 54px;
 	}
 
-	.foto__img {
+	.photo__img {
 		padding-left: 60px;
 	}
 
-	.main__title {
+	.main-title {
 		padding: 25px 20px 40px;
 	}
 

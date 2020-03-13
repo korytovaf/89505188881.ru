@@ -55,18 +55,18 @@
 			<div class="conteiner">
 				<div class="aboutme">
 					<div class="aboutme__text-conteiner">
-						<div class="text-conteiner__block ">
+						<div class="aboutme__text">
 							<h1 class="aboutme__title">Александр&nbsp;Корытов</h1>
 							<p class="aboutme__subtitle">Frontend-разработчик и веб-верстальщик</p>
 							<a class="button-orange scroll-offset" href="#skills">Узнать больше</a>
 						</div>
 					</div>
-					<div class="aboutme__foto">
-						<picture class="foto__picture">
+					<div class="aboutme__photo">
+						<picture class="photo__picture">
 							<source media="(min-width: 425px)" type="image/webp" srcset="img/shutterstock_435x637.webp">
 							<source type="image/webp" srcset="img/shutterstock_224x334.webp">
 							<source media="(min-width: 425px)" srcset="img/shutterstock_435x637.png">
-							<img class="foto__img" src="img/shutterstock_224x334.png" alt="Фотография Александра">
+							<img class="photo__img" src="img/shutterstock_224x334.png" alt="Фотография Александра">
 						</picture>
 					</div>
 				</div>
@@ -75,7 +75,7 @@
 		<section id="skills">
 			<div class="conteiner">
 				<div class="main__skills">
-					<h2 class="main__title">Что я делаю</h2>
+					<h2 class="main-title">Что я делаю</h2>
 					<ul class="skills">
 						<li class="skills__item">
 							<img class="skills__img" src="img/tools_and_utensils_111.svg" alt="Вёрстка лендинг–страниц и сайтов любой сложности">
@@ -99,51 +99,49 @@
 			</div>
 		</section>
 		<section id="portfolio" class="portfolio">
-			<div class="conteiner">
-				<div class="portfolio__conteiner">
-					<h2 class="main__title">Примеры моих работ</h2>
-					<div class="slider">
-						<div class="owl-carousel">
-							<a class="portfolio__linck" href="#">
-								<div class="portfolio__item">
-									<img src="img/layer_1.png" alt="Сайт психолога Веры Антоновой">
-									<h3 class="portfolio__header">Сайт психолога Веры Антоновой</h3>
-								</div>
-							</a>
-							<a class="portfolio__linck" href="#">
-								<div class="portfolio__item">
-									<img src="img/layer_2.png" alt="Сайт детской одежды">
-									<h3 class="portfolio__header">Сайт детской одежды</h3>
-								</div>
-							</a>
-							<a class="portfolio__linck" href="#">
-								<div class="portfolio__item">
-									<img src="img/layer_3.png" alt="Сайт магазина «Рыболов»">
-									<h3 class="portfolio__header">Сайт магазина «Рыболов»</h3>
-								</div>
-							</a>
-							<a class="portfolio__linck" href="#">
-								<div class="portfolio__item">
-									<img src="img/layer_1.png" alt="Сайт психолога Веры Антоновой">
-									<h3 class="portfolio__header">Сайт психолога Веры Антоновой</h3>
-								</div>
-							</a>
-							<a class="portfolio__linck" href="#">
-								<div class="portfolio__item">
-									<img src="img/layer_2.png" alt="Сайт детской одежды">
-									<h3 class="portfolio__header">Сайт детской одежды</h3>
-								</div>
-							</a>
-							<a class="portfolio__linck" href="#">
-								<div class="portfolio__item">
-									<img src="img/layer_3.png" alt="Сайт магазина «Рыболов»">
-									<h3 class="portfolio__header">Сайт магазина «Рыболов»</h3>
-								</div>
-							</a>
-						</div>
+			<div class="conteiner portfolio__conteiner">
+				<h2 class="main-title">Примеры моих работ</h2>
+				<div class="slider">
+					<div class="owl-carousel">
+						<a class="portfolio__linck" href="#">
+							<div class="portfolio__item">
+								<img src="img/layer_1.png" alt="Сайт психолога Веры Антоновой">
+								<h3 class="portfolio__header">Сайт психолога Веры Антоновой</h3>
+							</div>
+						</a>
+						<a class="portfolio__linck" href="#">
+							<div class="portfolio__item">
+								<img src="img/layer_2.png" alt="Сайт детской одежды">
+								<h3 class="portfolio__header">Сайт детской одежды</h3>
+							</div>
+						</a>
+						<a class="portfolio__linck" href="#">
+							<div class="portfolio__item">
+								<img src="img/layer_3.png" alt="Сайт магазина «Рыболов»">
+								<h3 class="portfolio__header">Сайт магазина «Рыболов»</h3>
+							</div>
+						</a>
+						<a class="portfolio__linck" href="#">
+							<div class="portfolio__item">
+								<img src="img/layer_1.png" alt="Сайт психолога Веры Антоновой">
+								<h3 class="portfolio__header">Сайт психолога Веры Антоновой</h3>
+							</div>
+						</a>
+						<a class="portfolio__linck" href="#">
+							<div class="portfolio__item">
+								<img src="img/layer_2.png" alt="Сайт детской одежды">
+								<h3 class="portfolio__header">Сайт детской одежды</h3>
+							</div>
+						</a>
+						<a class="portfolio__linck" href="#">
+							<div class="portfolio__item">
+								<img src="img/layer_3.png" alt="Сайт магазина «Рыболов»">
+								<h3 class="portfolio__header">Сайт магазина «Рыболов»</h3>
+							</div>
+						</a>
 					</div>
-					<button class="order button__color_orange">Заказать проект</button>
 				</div>
+				<button class="order button__color_orange">Заказать проект</button>
 			</div>
 		</section>
 		<section id="price" class="main__price">
@@ -152,15 +150,13 @@
 			<span class="animate__price animate__price_3">&lt;div&gt;</span>
 			<span class="animate__price animate__price_4">#</span>
 			<span class="animate__price animate__price_5">&lt;/&gt;</span>
-			<div class="conteiner">
-				<div class="price__conteiner">
+			<div class="conteiner price__conteiner">
 					<h2 class="visually-hidden">Цены и сроки</h2>
 					<p class="price__header">Адаптивная вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за 4 часа.*</p>
 					<div class="price__small">
 						<span>*  </span>
 						<small>Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в зависимости от сложности задач.</small>
 					</div>
-				</div>
 			</div>
 		</section>
 	</main>

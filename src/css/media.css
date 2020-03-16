@@ -292,7 +292,7 @@
 	}
 
 	.main__price:hover .animate__price_3{
-		transform: translate(-90px, 10px) rotate(-80deg);
+		transform: translate(-90px, 1px) rotate(-10deg);
 	}
 
 }
@@ -472,6 +472,7 @@
 	.header__phone {
 		font-size: 18px;
 		font-weight: 300;
+		text-align: center;
 	}
 
 	.header__button {
@@ -650,8 +651,8 @@
 
 
 	.animate__price_3 {
-		bottom: 50%;
-		transform: rotate(-130deg);
+		bottom: 40%;
+		transform: rotate(-9deg);
 	}
 
 

@@ -351,7 +351,7 @@ button.active {
 }
 
 .main__price:hover .animate__price_3{
-	transform: translate(-100px, -50px) rotate(-80deg);
+	transform: translate(-100px, -10px) rotate(-80deg);
 }
 
 .main__price:hover .animate__price_4{

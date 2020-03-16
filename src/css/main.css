@@ -260,6 +260,10 @@
 	justify-content: center;
 }
 
+button.active {
+	background-color: #ff4e2e;
+}
+
 /*======================== price ========================*/
 .main__price {
 	width: 100%;

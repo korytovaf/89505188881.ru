@@ -292,7 +292,7 @@
 	}
 
 	.main__price:hover .animate__price_3{
-		transform: translate(-90px, 10px) rotate(-80deg);
+		transform: translate(-90px, 1px) rotate(-10deg);
 	}
 
 }
@@ -335,7 +335,7 @@
 		justify-content: center;
 		background-color: #fff;
 		z-index: 1;
-		margin: 0 -20px;
+		margin: -1px -20px;
 		padding-top: 40px;
 	}
 
@@ -343,7 +343,7 @@
 		text-align: center;
 	}
 
-	.aboutme__photo {
+	.photo {
 		order: -1;
 	}
 
@@ -472,6 +472,7 @@
 	.header__phone {
 		font-size: 18px;
 		font-weight: 300;
+		text-align: center;
 	}
 
 	.header__button {
@@ -650,8 +651,8 @@
 
 
 	.animate__price_3 {
-		bottom: 50%;
-		transform: rotate(-130deg);
+		bottom: 40%;
+		transform: rotate(-9deg);
 	}
 
 

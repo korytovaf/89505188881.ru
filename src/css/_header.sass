@@ -1,0 +1,106 @@
+
+
+%header__button
+	width: 206px
+	height: 45px
+	border: 1px solid $color_pink
+	background-color: transparent
+	color: $color_pink
+	transition: background $time_hover, color $time_hover
+
+	&:hover
+		background-color: $color_pink
+		color: #fff
+
+
+.header__conteiner
+	background-color: $color_bg_grey
+
+
+.header 
+	display: flex
+	justify-content: space-between
+	align-items: center
+	height: 103px
+
+	&__button
+		align-items: center
+		@extend %header__button
+
+
+	&__phone
+		margin-left: auto
+		align-items: center
+		font-size: 25px
+		color: $color_html
+		margin-right: 26px
+		transition: color $time_hover
+
+		&:hover
+			color: $color_pink
+
+
+.menu
+	display: flex
+
+	&__item
+		margin-right: 32px
+
+
+	&__link
+		transition: color $time_hover
+		font-weight: 400
+		color: #1f1f24
+
+		&:hover 
+			color: $color_pink
+			border-bottom: 1px solid $color_pink
+
+
+
+.burger 
+	display: none
+	background-color: transparent
+	position: relative
+	height: 52px
+	width: 60px
+	border: none
+	cursor: pointer
+
+	&__btn span
+		left: 6px
+		top: 23px
+
+	&__btn span, &__btn span::before, &__btn span::after
+		position: absolute
+		width: 48px
+		height: 6px
+		transition: width 0.4s, transform 0.4s, top 0.4s
+		background: linear-gradient(13.0deg, rgba(255,143,90,0.9) 26%, rgba(255,47,150,0.95) 72%)
+
+	&__btn span::before, &__btn span::after 
+		content: ''
+		left: 0
+
+
+	&__btn span::before
+		top: 12px
+
+	&__btn span::after
+		top: -12px
+
+	&__btn_click span
+		width: 0
+		margin-left: 0
+
+	&__btn_click span::after
+		transform: rotate(45deg)
+		margin-top: 0
+		top: 0
+
+	&__btn_click span::before
+		transform: rotate(-45deg)
+		margin-top: 0
+		top: 0
+
+

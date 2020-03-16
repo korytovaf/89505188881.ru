@@ -21,5 +21,7 @@
     "gulp-uglify-es": "^2.0.0",
     "node-sass": "^4.13.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gulp-copy": "^4.0.1"
+  }
 }

@@ -5,7 +5,7 @@ $(function () {
 		e.preventDefault();
 
 		$('.header__nav').toggleClass('header__nav_click');
-		$('.burger-btn').toggleClass('burger-btn_click');
+		$('.burger__btn').toggleClass('burger__btn_click');
 	});
 	
 	
@@ -21,7 +21,7 @@ $(function () {
 
 
 		$('.header__nav').toggleClass('header__nav_click');
-		$('.burger-btn').toggleClass('burger-btn_click');
+		$('.burger__btn').toggleClass('burger__btn_click');
 
 	});
 	

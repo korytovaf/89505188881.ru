@@ -26,7 +26,7 @@ function watch() {
     });
 
     gulp.watch('./src/css/**/*.css', styles);
-    gulp.watch('./src/css/**/*.scss', styles);
+    gulp.watch('./src/css/**/*.sass', styles);
     gulp.watch('./src/js/**/*.js', scripts);
     gulp.watch('./*.html').on('change', browserSync.reload);
 }
@@ -34,10 +34,10 @@ function watch() {
 
 
 function styles() {
-    return gulp.src('./src/css/**/*.*')
+    return gulp.src('./src/css/main.sass')
     .pipe(sourcemaps.init())
     .pipe(sass())
-    .pipe(concat('all.css'))
+//    .pipe(concat('all.css'))
     .pipe(autoprefixer({
         overrideBrowserslist: ['last 2 versions'],
         cascade: false,
@@ -64,6 +64,7 @@ function scripts(){
 function clian() {
     return del(['build/*'])
 }
+
 
 gulp.task('styles', styles);
 gulp.task('scripts', scripts);

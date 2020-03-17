@@ -1,0 +1,116 @@
+@media screen and (max-width: 1024px)
+	.conteiner
+		max-width: 990px
+
+	.burger
+		display: block
+
+	.header__nav_tablet
+		position: absolute
+		top: 0
+		left: -50vh
+		width: 40vh
+		height: 100vh
+		transition: transform $time_menu linear
+		background-color: $color_backing
+		z-index: 1
+
+	.overlay
+		position: absolute
+		top: 0
+		left: 0
+		width: 100vw
+		height: 100vh
+		background-color: rgba(0,0,0,.78)
+		transition: transform $time_menu linear
+		z-index: 0
+
+	.menu__link_tablet
+		color: #fff
+		font-size: 26px
+
+	.header__nav_click 
+		transform: translateX(50vh)
+
+	.menu__tablet
+		flex-direction: column
+		margin-top: 50px
+
+	.menu__item_tablet
+		margin: 20px auto
+
+
+
+
+@media screen and (max-width: 768px)
+	.header__button
+		width: 45px
+		height: 45px
+		border-radius: 50%
+		border: $border_pink
+		font-size: 0
+
+	.icon-phone__header:before
+		font-size: 20px
+
+	.header__button:hover
+		background-color: transparent
+
+	.header__phone:hover
+		color: $color_html
+
+	.menu__link:hover
+		color: #fff
+	
+	.menu__link_tablet
+		font-size: 20px
+
+
+@media screen and (max-width: 425px)
+
+	.burger 
+		height: 35px
+		width: 40px
+
+		&__btn span, 
+		&__btn span::before, 
+		&__btn span::after
+			width: 25px
+			height: 3px
+		
+		&__btn span
+			left: 8px
+			top: 17px
+
+		&__btn span::after
+			top: -8px
+
+		&__btn span::before
+			top: 8px
+
+		&__btn_click span::after, 
+		&__btn_click span::before
+			top: 0
+
+		&__btn_click span
+			width: 0
+			margin-left: 0
+
+	.header__phone
+		font-size: 18px
+		margin-left: 0
+		margin-right: 0
+
+	.header__button
+		width: 26px
+		height: 26px
+
+	.icon-phone__header:before
+		font-size: 14px
+
+
+
+
+
+
+

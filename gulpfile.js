@@ -25,8 +25,8 @@ function watch() {
         }
     });
 
-    gulp.watch('./src/css/**/*.css', styles);
-    gulp.watch('./src/css/**/*.sass', styles);
+    gulp.watch('./src/sass/**/*.css', styles);
+    gulp.watch('./src/sass/**/*.sass', styles);
     gulp.watch('./src/js/**/*.js', scripts);
     gulp.watch('./*.html').on('change', browserSync.reload);
 }
@@ -34,7 +34,7 @@ function watch() {
 
 
 function styles() {
-    return gulp.src('./src/css/main.sass')
+    return gulp.src('./src/sass/style.sass')
     .pipe(sourcemaps.init())
     .pipe(sass())
 //    .pipe(concat('all.css'))

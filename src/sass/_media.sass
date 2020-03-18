@@ -1,6 +1,6 @@
 @media screen and (min-width: 1440px)
 	.aboutme__title
-		font-size: 76px
+		font-size: 80px
 
 	.aboutme__subtitle
 		font-size: 25px
@@ -49,6 +49,43 @@
 
 
 
+	.aboutme__title
+		font-size: calc(30px + 2vw)
+		margin-bottom: 25px
+
+	.aboutme__text-conteiner
+		margin-top: 150px
+
+	.button-orange
+		width: 320px
+		height: 68px
+		line-height: 68px
+
+
+
+
+
+@media screen and (max-width: 900px)
+	.aboutme__text-conteiner
+		margin-top: 0
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: 100vw
+
+	.aboutme__text
+		grid-column: 1/4
+		grid-row: 2/2
+		justify-self: center
+		margin-top: 0
+		background-color: #fff
+
+
+	.aboutme__photo
+		grid-column: 1/4
+		grid-row: 1/2
+		justify-self: center
+
 
 
 
@@ -78,11 +115,24 @@
 		font-size: 20px
 
 
+
+
+
+	.aboutme__subtitle
+		font-size: 16px
+		padding: 0 10px
+		text-align: center
+
+
+
+
+
 @media screen and (max-width: 425px)
 
 	.burger 
 		height: 35px
 		width: 40px
+		margin-left: -8px
 
 		&__btn span, 
 		&__btn span::before, 
@@ -119,6 +169,29 @@
 
 	.icon-phone__header:before
 		font-size: 14px
+
+
+
+	.aboutme__conteiner
+		padding-top: 26px
+
+	.aboutme__title
+		font-size: 30px
+		margin-top: 12px
+		margin-bottom: 12px
+
+	.aboutme__subtitle
+		margin-bottom: 27px
+		line-height: 20px
+
+	.button-orange
+		width: 280px
+		height: 55px
+		line-height: 55px
+		font-size: 16px
+
+	.photo__img
+		margin-right: -59px
 
 
 

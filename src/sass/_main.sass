@@ -4,14 +4,15 @@
 	&__conteiner
 		padding-top: 9px
 		display: grid
-		grid-template-columns: 1fr 1fr
+		grid-template-columns: 1fr 1fr 1fr
 
 	&__text
 		display: flex
-		align-items: center
+		grid-column: 1 / 3
 
 	&__photo
-		justify-self: end
+		grid-column: 3 / 4
+
 
 	&__ellipse
 		background-image: url(../../img/ellipse.svg)
@@ -21,16 +22,27 @@
 		width: 100vw
 
 	&__title
-		margin: 18px 0
-		font-size: calc(14px + 4vw)
+		margin-bottom: 18px
+		font-size: calc(30px + 3vw)
 		font-weight: 900
 		color: $color_html
 
 	&__subtitle
 		margin-bottom: 45px
-		font-size: calc(14px + 1vw)
+		font-size: calc(12px + 1vw)
 		color: $color_grey
 
+	&__text-conteiner
+		margin-top: 105px
+
+
+
+
+.photo
+
+
+	&__img
+		object-fit: fill
 
 
 
@@ -51,7 +63,6 @@
 	&:hover
 		background-color: $color_pink
 
-.aboutme__text-conteiner
-		margin-bottom: 95px
+
 
 

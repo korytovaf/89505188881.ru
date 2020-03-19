@@ -1,9 +1,21 @@
+@media screen and (min-width: 1500px)
+	.photo__img
+		margin-right: -180px
+
+	.skills__p
+		font-size: 20px
+
+	.main-title
+		font-size: 54px
+
+
 @media screen and (min-width: 1440px)
 	.aboutme__title
 		font-size: 80px
 
 	.aboutme__subtitle
 		font-size: 25px
+
 
 
 @media screen and (max-width: 1024px)
@@ -19,9 +31,9 @@
 		left: -50vh
 		width: 40vh
 		height: 100vh
-		transition: transform $time_menu linear
+		transition: transform $time_menu cubic-bezier(.17,.67,.25,.98)
 		background-color: $color_backing
-		z-index: 1
+		z-index: 3
 
 	.overlay
 		position: absolute
@@ -31,7 +43,7 @@
 		height: 100vh
 		background-color: rgba(0,0,0,.78)
 		transition: transform $time_menu linear
-		z-index: 0
+		z-index: 2
 
 	.menu__link_tablet
 		color: #fff
@@ -46,6 +58,8 @@
 
 	.menu__item_tablet
 		margin: 20px auto
+
+
 
 
 
@@ -65,15 +79,31 @@
 		background-position-x: 47vw
 		background-position-y: 110px
 
+	.photo__img
+		margin-right: 0
 
+
+
+
+	.skills__conteiner
+		grid-template-columns: 1fr 1fr
+		grid-template-rows: 1fr 1fr
+		grid-template-rows: 158px 158px
+		grid-column-gap: 20px
+		grid-row-gap: 75px
+		margin-top: 85px
+
+	.skills__p
+		font-size: calc(10px + 0.7vw)
+
+	.price__conteiner
+		padding: 80px 20px 2px 20px
 
 
 
 @media screen and (max-width: 900px)
 	.aboutme__text-conteiner
 		margin-top: 0
-		display: flex
-		flex-direction: column
 		align-items: center
 		width: 100vw
 
@@ -90,27 +120,34 @@
 		grid-row: 1/2
 		justify-self: center
 
+	.aboutme__ellipse
+		background-position-x: 0
+		background-position-y: 136px
+
+	.photo__img
+		margin-right: -59px
+
 
 
 
 
 
 @media screen and (max-width: 768px)
-	.header__button
-		width: 45px
-		height: 45px
-		border-radius: 50%
-		border: $border_pink
-		font-size: 0
+	.header
+		height: 77px
 
-	.icon-phone__header:before
-		font-size: 20px
+		&__button
+			width: 45px
+			height: 45px
+			border-radius: 50%
+			border: $border_pink
+			font-size: 0
 
-	.header__button:hover
-		background-color: transparent
+		&__button:hover
+			background-color: transparent
 
-	.header__phone:hover
-		color: $color_html
+		&__phone:hover
+			color: $color_html
 
 	.menu__link:hover
 		color: #fff
@@ -118,7 +155,8 @@
 	.menu__link_tablet
 		font-size: 20px
 
-
+	.icon-phone__header:before
+		font-size: 20px
 
 
 
@@ -127,6 +165,31 @@
 		padding: 0 10px
 		text-align: center
 
+	.aboutme__ellipse
+		background-position-x: -13vw
+		background-position-y: 136px
+
+
+
+
+
+
+@media screen and (max-width: 500px)
+	.aboutme__ellipse
+		background-position-x: -13vw
+		background-position-y: 77px
+		background-size: 137%
+
+
+	.skills__conteiner
+		grid-template-columns: 1fr
+		grid-template-rows: 1fr 1fr 1fr 1fr
+		grid-template-rows: 158px 158px 158px 158px
+		grid-row-gap: 75px
+		margin-top: 85px
+
+	.skills__p
+		font-size: 16px
 
 
 
@@ -176,8 +239,10 @@
 
 
 
+
+
 	.aboutme__conteiner
-		padding-top: 43px
+		padding-top: 57px
 
 	.aboutme__title
 		font-size: 30px
@@ -185,8 +250,8 @@
 		margin-bottom: 12px
 
 	.aboutme__subtitle
-		margin-bottom: 27px
-		line-height: 20px
+		margin-bottom: 25px
+		line-height: 22px
 
 	.button-orange
 		width: 280px
@@ -194,12 +259,36 @@
 		line-height: 55px
 		font-size: 16px
 
-	.photo__img
-		margin-right: -59px
 
 
 
 
+	.skills
+		padding-top: 44px
 
+		&__conteiner
+			margin-top: 40px
+			grid-row-gap: 12px
+
+		&__item
+			justify-content: start
+
+		&__img
+			width: 56px
+			height: 60px
+
+		&__p
+			line-height: 22px
+			padding-top: 18px
+
+		&__button
+			margin: 19px auto 0
+
+	.main-title
+		font-size: 30px
+
+	.portfolio__conteiner
+		padding-left: 20px
+		padding-right: 20px
 
 

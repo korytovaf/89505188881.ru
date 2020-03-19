@@ -10,7 +10,7 @@
 	
 	<link rel="stylesheet" type="text/css" href="build/css/style.css">
 
-	<link rel="stylesheet" href="libs/owlcarousel/owl.carousel.css">
+	<link rel="stylesheet" href="libs/owlcarousel/">
 
 	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -69,40 +69,35 @@
 						<img class="photo__img" src="img/shutterstock_224x334.png" alt="Фотография Александра">
 					</picture>
 				</div>
-
-				
 			</div>
 		</section>
 
-		<!--
-
-		<section id="skills">
+		<section class="skills" id="skills">
 			<div class="conteiner">
-				<div class="main__skills">
-					<h2 class="main-title">Что я делаю</h2>
-					<ul class="skills">
-						<li class="skills__item">
-							<img class="skills__img" src="img/tools_and_utensils_111.svg" alt="Вёрстка лендинг–страниц и сайтов любой сложности">
-							<p class="skills__p">Вёрстка лендинг–страниц и сайтов любой сложности</p>
-						</li>
-						<li class="skills__item">
-							<img class="skills__img" src="img/responsive_115.svg" alt="Адаптивная вёрстка под все браузеры и устройства">
-							<p class="skills__p">Адаптивная вёрстка под все браузеры и устройства</p>
-						</li>
-						<li class="skills__item">
-							<img class="skills__img" src="img/programming_119.svg" alt="Frontend–разработка и программирование">
-							<p class="skills__p">Frontend–разработка и программирование</p>
-						</li>
-						<li class="skills__item">
-							<img class="skills__img" src="img/coding_(1)_121.svg" alt="Исправление и доработка существующей вёрстки">
-							<p class="skills__p">Исправление и доработка существующей вёрстки</p>
-						</li>
-					</ul>
-					<a class="button-orange scroll" href="#price">Узнать стоимость</a>
-				</div>
+				<h2 class="main-title">Что я делаю</h2>
+				<ul class="skills__conteiner">
+					<li class="skills__item">
+						<img class="skills__img" src="img/tools_and_utensils_111.svg" alt="Вёрстка лендинг–страниц и сайтов любой сложности">
+						<p class="skills__p">Вёрстка лендинг–страниц<br>и сайтов любой сложности</p>
+					</li>
+					<li class="skills__item">
+						<img class="skills__img" src="img/responsive_115.svg" alt="Адаптивная вёрстка под все браузеры и устройства">
+						<p class="skills__p">Адаптивная вёрстка под все<br>браузеры и устройства</p>
+					</li>
+					<li class="skills__item">
+						<img class="skills__img" src="img/programming_119.svg" alt="Frontend–разработка и программирование">
+						<p class="skills__p">Frontend–разработка<br>и программирование</p>
+					</li>
+					<li class="skills__item">
+						<img class="skills__img" src="img/coding_(1)_121.svg" alt="Исправление и доработка существующей вёрстки">
+						<p class="skills__p">Исправление и доработка<br>существующей вёрстки</p>
+					</li>
+				</ul>
+				<a class="button-orange button_center scroll" href="#price">Узнать стоимость</a>
 			</div>
 		</section>
-		<section id="portfolio" class="portfolio">
+
+		<section class="portfolio" id="portfolio">
 			<div class="conteiner portfolio__conteiner">
 				<h2 class="main-title">Примеры моих работ</h2>
 				<div class="slider">
@@ -131,40 +126,29 @@
 								<h3 class="portfolio__header">Сайт психолога Веры Антоновой</h3>
 							</div>
 						</a>
-						<a class="portfolio__linck" href="#">
-							<div class="portfolio__item">
-								<img src="img/layer_2.png" alt="Сайт детской одежды">
-								<h3 class="portfolio__header">Сайт детской одежды</h3>
-							</div>
-						</a>
-						<a class="portfolio__linck" href="#">
-							<div class="portfolio__item">
-								<img src="img/layer_3.png" alt="Сайт магазина «Рыболов»">
-								<h3 class="portfolio__header">Сайт магазина «Рыболов»</h3>
-							</div>
-						</a>
 					</div>
 				</div>
-				<button class="order button__color_orange">Заказать проект</button>
+				<button class="order button-orange button_center">Заказать проект</button>
 			</div>
 		</section>
-		<section id="price" class="main__price">
-			<span class="animate__price animate__price_1">&#123; &#125;</span>
-			<span class="animate__price animate__price_2">&lt;/&gt;</span>
-			<span class="animate__price animate__price_3">&lt;div&gt;</span>
-			<span class="animate__price animate__price_4">#</span>
-			<span class="animate__price animate__price_5">&lt;/&gt;</span>
+
+
+		<section class="price" id="price" >
+			<span class="animate animate__price_1">&#123; &#125;</span>
+			<span class="animate animate__price_2">&lt;/&gt;</span>
+			<span class="animate animate__price_3">&lt;div&gt;</span>
+			<span class="animate animate__price_4">#</span>
+			<span class="animate animate__price_5">&lt;/&gt;</span>
 			<div class="conteiner price__conteiner">
 					<h2 class="visually-hidden">Цены и сроки</h2>
 					<p class="price__header">Адаптивная вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за 4 часа.*</p>
 					<div class="price__small">
-						<span>*  </span>
-						<small>Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в зависимости от сложности задач.</small>
+						<small>Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в&nbsp;зависимости от сложности задач.</small>
 					</div>
 			</div>
 		</section>
 
-	-->
+
 	</main>
 
 

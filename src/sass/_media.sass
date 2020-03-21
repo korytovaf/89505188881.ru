@@ -9,12 +9,20 @@
 		font-size: 54px
 
 
+
+
+
+
+
 @media screen and (min-width: 1440px)
 	.aboutme__title
 		font-size: 80px
 
 	.aboutme__subtitle
 		font-size: 25px
+
+
+
 
 
 
@@ -35,22 +43,13 @@
 		background-color: $color_backing
 		z-index: 3
 
-	.overlay
-		position: absolute
-		top: 0
-		left: 0
-		width: 100vw
-		height: 100vh
-		background-color: rgba(0,0,0,.78)
-		transition: transform $time_menu linear
-		z-index: 2
+	.header__nav_click 
+		transform: translateX(50vh)
+
 
 	.menu__link_tablet
 		color: #fff
 		font-size: 26px
-
-	.header__nav_click 
-		transform: translateX(50vh)
 
 	.menu__tablet
 		flex-direction: column
@@ -70,14 +69,14 @@
 	.aboutme__text-conteiner
 		margin-top: 150px
 
+	.aboutme__ellipse
+		background-position-x: 47vw
+		background-position-y: 110px
+
 	.button-orange
 		width: 320px
 		height: 68px
 		line-height: 68px
-
-	.aboutme__ellipse
-		background-position-x: 47vw
-		background-position-y: 110px
 
 	.photo__img
 		margin-right: 0
@@ -98,6 +97,16 @@
 
 	.price__conteiner
 		padding: 80px 20px 2px 20px
+
+	
+
+
+	.footer__conteiner
+		padding: 80px 20px 60px
+	
+	.social
+		padding-right: 0
+
 
 
 
@@ -132,7 +141,9 @@
 
 
 
+
 @media screen and (max-width: 768px)
+
 	.header
 		height: 77px
 
@@ -173,13 +184,64 @@
 
 
 
+	.footer__conteiner
+		flex-wrap: wrap
+		padding: 47px 20px 60px
+
+
+	.social
+		padding-top: 30px
+
+	.menu__item_footer
+		margin-right: 85px
+
+
+
+@media (max-width: 624px)
+	
+	.popup
+		width: 300px
+		top: 40%
+	
+
+	.popup__form_label
+		width: 200px
+		flex-direction: column
+		align-items: flex-start
+	
+
+	.popup__header
+		margin: 60px auto 40px
+
+
+	.popup__button
+		width: 200px
+		margin: 40px auto 20px
+	
+
+	.popup__alert
+		top: 40%
+
+
+	.popup__alert_header 
+		margin: 20px 30px 40px
+	
+
+	.popup__close
+		right: 8px
+		top: 8px
+		color: red
+
+
+
+
 
 @media screen and (max-width: 500px)
+
 	.aboutme__ellipse
 		background-position-x: -13vw
 		background-position-y: 77px
 		background-size: 137%
-
 
 	.skills__conteiner
 		grid-template-columns: 1fr
@@ -190,6 +252,14 @@
 
 	.skills__p
 		font-size: 16px
+
+	.contact
+		padding-top: 30px
+
+		&__link
+			padding-left: 0
+
+
 
 
 
@@ -265,10 +335,12 @@
 
 	.skills
 		padding-top: 44px
+		padding-bottom: 48px
 
 		&__conteiner
 			margin-top: 40px
 			grid-row-gap: 12px
+			padding-bottom: 18px
 
 		&__item
 			justify-content: start
@@ -287,8 +359,69 @@
 	.main-title
 		font-size: 30px
 
-	.portfolio__conteiner
-		padding-left: 20px
-		padding-right: 20px
+	.portfolio
+		padding-top: 47px
+		padding-bottom: 51px
+		margin-top: 0
+
+		&__conteiner
+			padding-left: 20px
+			padding-right: 20px
+		
+		&__header
+			font-size: 18px
+			margin-top: 17px
+
+	.slider
+		margin-top: 40px
+		margin-bottom: 47px
+
+	.owl-dots
+		margin-top: 40px
+
+	.owl-dot
+		width: 10px
+		height: 10px
 
 
+
+
+
+
+	.price__conteiner
+		padding: 41px 20px 2px
+	
+	.price__header
+		font-size: 28px
+		line-height: 40px
+
+	.price__small
+		font-size: 19px
+		line-height: 30px
+		margin-top: 33px
+		margin-bottom: 40px
+
+
+
+
+
+	.footer__conteiner
+		padding: 15px 20px 43px
+
+	.contact
+		padding-top: 26px
+
+		&__link 
+			font-size: 18px
+
+	.social
+		padding-top: 0
+
+		&__item
+			margin-top: 56px
+
+	.copyright
+		padding: 17px
+
+		& small
+			font-size: 14px

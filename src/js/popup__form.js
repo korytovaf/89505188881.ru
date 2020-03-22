@@ -54,7 +54,9 @@ $(function () {
 
 				$('.popup').fadeOut(150);
 				
-    $('.alert').css('display', 'block').animate({opacity: 1, left: '50%'}, 150);
+    $('.alert')
+    	.css('display', 'block')
+    	.animate({opacity: 1, left: '50%'}, 150);
 
 				$('form').trigger("reset");
 			});

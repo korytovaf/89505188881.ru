@@ -47,7 +47,7 @@ $(function () {
 
 		$.ajax({
 				type: "POST",
-				url: "../mailer/smart.php",
+				url: "../libs/mailer/smart.php",
 				data: $('form').serialize()
 			}).done(function() {
 				$(this).find("input").val("");
@@ -55,7 +55,7 @@ $(function () {
 				$('.popup').fadeOut(150);
 				
 
-                $('.popup__alert') 
+                $('.alert') 
                     .css('display', 'block')
                     .animate({opacity: 1, left: '50%'}, 150);
         		
@@ -69,9 +69,9 @@ $(function () {
 
 
 	//Сообщение об успешной отправке формы
-	$('.popup__alert_button').on('click', function(){
+	$('.alert__button').on('click', function(){
 		
-		$('.popup__alert').animate({opacity: 0, left: '45%'}, 150, function(){
+		$('.alert').animate({opacity: 0, left: '45%'}, 150, function(){
 			$(this).css('display', 'none');
 			$('.popup__background').fadeOut(150);
 		});

@@ -4,11 +4,15 @@ $(function () {
 	// для вызова Popup окна, кнопкам прописать класс .order
 	$('.order').on('click', function(e){
 		e.preventDefault()
+<<<<<<< HEAD
 		$('.popup__background').fadeIn(400,
+=======
+		$('.popup__background').fadeIn(150,
+>>>>>>> scss
             function(){
                 $('.popup') 
                     .css('display', 'block')
-                    .animate({opacity: 1, left: '50%'}, 400);
+                    .animate({opacity: 1, left: '50%'}, 150);
         });
 		$('html').addClass('popup__html_fixed');
 		$('body').addClass('popup__body_fixed');
@@ -17,16 +21,20 @@ $(function () {
 
 	$('.popup__close, .popup__background').on('click', function(){
 				
-		$('.popup').animate({opacity: 0, left: '45%'}, 400, function(){
+		$('.popup').animate({opacity: 0, left: '45%'}, 150, function(){
 			$(this).css('display', 'none');
+<<<<<<< HEAD
 			$('.popup__background').fadeOut(400);
+=======
+			$('.popup__background').fadeOut(150);
+>>>>>>> scss
 		});
 
 		$('html').removeClass('popup__html_fixed');
 		$('body').removeClass('popup__body_fixed');
 	});
 
-	$('input[type="tel"]').inputmask({"mask": "+7(999)999-99-99"});
+	$('input[type="tel"]').inputmask({"mask": "+7 999 999 9999"});
 
 	//Отправка формы через mailer
 	$('form').validate({
@@ -52,13 +60,11 @@ $(function () {
 			}).done(function() {
 				$(this).find("input").val("");
 
-				$('.popup').fadeOut(400);
+				$('.popup').fadeOut(150);
 				
-
-                $('.popup__alert') 
-                    .css('display', 'block')
-                    .animate({opacity: 1, left: '50%'}, 400);
-        		
+    $('.alert')
+    	.css('display', 'block')
+    	.animate({opacity: 1, left: '50%'}, 150);
 
 				$('form').trigger("reset");
 			});
@@ -71,9 +77,13 @@ $(function () {
 	//Сообщение об успешной отправке формы
 	$('.alert__button').on('click', function(){
 		
-		$('.popup__alert').animate({opacity: 0, left: '45%'}, 400, function(){
+		$('.alert').animate({opacity: 0, left: '45%'}, 150, function(){
 			$(this).css('display', 'none');
+<<<<<<< HEAD
 			$('.popup__background').fadeOut(400);
+=======
+			$('.popup__background').fadeOut(150);
+>>>>>>> scss
 		});
 
 		$('html').removeClass('popup__html_fixed');

@@ -6,6 +6,7 @@ const uglify = require('gulp-uglify-es').default;
 const del = require('del');
 const browserSync = require('browser-sync').create();
 const sourcemaps = require('gulp-sourcemaps');
+const sass = require('gulp-sass');
 
 const cssFiles = [
     './src/css/fonts.css',
@@ -35,7 +36,8 @@ function watch() {
         }
     });
 
-    gulp.watch('./src/css/**/*.css', styles);
+    gulp.watch('./src/sass/**/*.css', styles);
+    gulp.watch('./src/sass/**/*.sass', styles);
     gulp.watch('./src/js/**/*.js', scripts);
     gulp.watch('./*.html').on('change', browserSync.reload);
 }
@@ -43,9 +45,14 @@ function watch() {
 
 
 function styles() {
+<<<<<<< HEAD
     return gulp.src(cssFiles)
+=======
+    return gulp.src('./src/sass/style.sass')
+>>>>>>> scss
     .pipe(sourcemaps.init())
-    .pipe(concat('all.css'))
+    .pipe(sass())
+//    .pipe(concat('all.css'))
     .pipe(autoprefixer({
         overrideBrowserslist: ['last 2 versions'],
         cascade: false,
@@ -72,6 +79,7 @@ function scripts(){
 function clian() {
     return del(['build/*'])
 }
+
 
 gulp.task('styles', styles);
 gulp.task('scripts', scripts);

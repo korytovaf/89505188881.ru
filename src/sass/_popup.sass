@@ -1,0 +1,110 @@
+/* Добавляем этот класс HTML  */
+.popup__html_fixed
+	overflow: hidden
+
+
+/* Добавляем этот класс BODY  */
+.popup__body_fixed
+	overflow: scroll
+
+
+.popup 
+	width: 500px
+	background: #fff
+	position: fixed
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	display: none
+	opacity: 0
+	z-index: 10
+
+	&__background
+		z-index: 9
+		position: fixed
+		background-color: #000
+		opacity: 0.85
+		filter: alpha(opacity=80)
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		display: none
+
+	&__close
+		position: absolute
+		font-size: 18px
+		right: -20px
+		top: -20px
+		color: #fff
+		cursor: pointer
+
+	&__header
+		margin: 20px auto 40px
+		text-align: center
+
+	&__button
+		display: block
+		border: none
+		border-radius: 2px
+		background: linear-gradient(13.0deg, #ff8f5a 26%, #ff2f96 72%)
+		color: #fff
+		width: 268px
+		height: 60px
+		cursor: pointer
+		margin: 40px auto 20px
+
+
+.form
+	font-size: 20px
+	margin: 40px
+
+	&__label
+		min-width: 300px
+		margin: 20px auto
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+	&__input
+		min-width: 280px
+		height: 50px
+		padding: 0 20px
+		border: 1px solid #808080
+		border-radius: 2px
+
+		&:focus
+			border: 1px solid #ff2f96
+
+	&__pattern
+		color: #F00
+
+
+
+
+
+
+.alert
+	min-width: 300px
+	border-radius: 3px
+	background: #fff
+	position: fixed
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	display: none
+	opacity: 0
+	z-index: 12
+
+	&__header
+		text-align: center
+		margin: 20px 50px 40px
+
+	&__text
+		text-align: center
+		margin: 20px 50px 40px
+		line-height: 22px
+
+.error
+	border: 1px solid #f00
+	color: red

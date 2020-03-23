@@ -1,0 +1,87 @@
+@import '_fonts'
+
+@import '_normalize'
+
+
+$color_pink: #ff2f96
+$color_html: #1f1f24
+$color_grey: #8993ad
+$color_orange: #ff4e2e
+
+$color_bg_grey: #fbfbfb
+$color_bg_gradient: linear-gradient(13.0deg, #ff8f5a 26%, #ff2f96 72%)
+
+$color_backing: rgba(255,47,150,0.97)
+
+$border_pink: 1px solid $color_pink
+
+$time_hover: .2s
+$time_menu: .3s
+
+
+* 
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+
+
+html
+	font-family: Roboto, sans-serif;
+	color: $color_html
+
+ul 
+	list-style: none
+
+a
+	text-decoration: none
+
+
+.visually-hidden
+	position: absolute !important
+	clip: rect(1px, 1px, 1px, 1px)
+	padding: 0 !important
+	border: 0 !important
+	height: 1px !important
+	width: 1px !important
+	overflow: hidden
+
+
+.conteiner
+	max-width: 1210px
+	margin: 0 auto
+	padding-left: 20px
+	padding-right: 20px
+
+.overlay
+	position: absolute
+	top: 0
+	left: 0
+	width: 100vw
+	height: 100vh
+	background-color: rgba(0,0,0,.78)
+	transition: transform $time_menu linear
+	z-index: 2
+
+@import '_header'
+
+@import '_main'
+
+@import '_footer'
+
+@import '_popup'
+
+@import '_animate'
+
+
+
+
+@import '_media'
+
+
+@import '../../libs/owlcarousel/owl.carousel.min.css'
+
+
+
+
+
+

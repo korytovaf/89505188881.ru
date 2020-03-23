@@ -3,14 +3,18 @@
 <head >
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Александр Корытов - Frontend-разработчик и веб-верстальщик</title>
 	
 	<link rel="preload" href="./fonts/roboto-v20-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
 	
+<<<<<<< HEAD
 	<link rel="stylesheet" type="text/css" href="build/css/all.css">
 
 	<link rel="stylesheet" href="libs/owlcarousel/owl.carousel.css">
+=======
+	<link rel="stylesheet" type="text/css" href="build/css/style.css">
+>>>>>>> scss
 
 	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -21,6 +25,7 @@
 
 </head>
 <body id="body">
+<<<<<<< HEAD
 	<header class="header">
 		<div class="conteiner">
 			<div class="header__conteiner">
@@ -39,19 +44,41 @@
 					</ul>
 				</nav>
 				<a class="header__phone" href="tel:+79505188881">+7 (950) 518-88-81</a>
+=======
+	<header class="header__conteiner">
+		<div id="overlay"></div>
+		<div class="conteiner">
+			<div class="header">
+				<button class="burger burger__btn"><span></span></button>
+				<nav class="header__nav burger__menu header__nav_tablet">
+					<ul class="menu menu__tablet">
+						<li class="menu__item menu__item_tablet">
+							<a class="menu__link menu__link_header menu__link_tablet" href="#skills">Услуги</a>
+						</li>
+						<li class="menu__item menu__item_tablet">
+							<a class="menu__link menu__link_header menu__link_tablet" href="#portfolio">Портфолио</a>
+						</li>
+						<li class="menu__item menu__item_tablet">
+							<a class="menu__link menu__link_header menu__link_tablet" href="#price">Стоимость</a>
+						</li>
+					</ul>
+				</nav>
+				<a class="header__phone" href="tel:+79505188881">+7 950 518 8881</a>
+>>>>>>> scss
 				<button class="order header__button icon-phone__header">Заказать звонок</button>
 			</div>
 		</div>
 	</header>
 
 	<main>
-		<section class="main__aboutme">
+		<section class="aboutme">
 			<span class="animate animate_1">&#123; &#125;</span>
 			<span class="animate animate_2">&lt;/&gt;</span>
 			<span class="animate animate_3">&lt;div&gt;</span>
 			<span class="animate animate_4">#</span>
 			<span class="animate animate_5">&lt;/&gt;</span>
 			<div class="aboutme__ellipse"></div>
+<<<<<<< HEAD
 			<div class="conteiner">
 				<div class="aboutme">
 					<div class="aboutme__text-conteiner">
@@ -99,6 +126,53 @@
 			</div>
 		</section>
 		<section id="portfolio" class="portfolio">
+=======
+			<div class="conteiner aboutme__conteiner">
+				<div class="aboutme__text">
+					<div class="aboutme__text-conteiner">
+						<h1 class="aboutme__title">Александр&nbsp;Корытов</h1>
+						<p class="aboutme__subtitle">Frontend разработчик и веб-верстальщик</p>
+						<a class="button-orange scroll" href="#skills">Узнать больше</a>
+					</div>
+				</div>
+				<div class="aboutme__photo">
+					<picture class="photo">
+						<source media="(min-width: 501px)" type="image/webp" srcset="img/shutterstock_435x637.webp">
+						<source type="image/webp" srcset="img/shutterstock_224x334.webp">
+						<source media="(min-width: 501px)" srcset="img/shutterstock_435x637.png">
+						<img class="photo__img" src="img/shutterstock_224x334.png" alt="Фотография Александра">
+					</picture>
+				</div>
+			</div>
+		</section>
+
+		<section class="skills" id="skills">
+			<div class="conteiner">
+				<h2 class="main-title">Что я делаю</h2>
+				<ul class="skills__conteiner">
+					<li class="skills__item">
+						<img class="skills__img" src="img/tools_and_utensils_111.svg" alt="Вёрстка лендинг–страниц и сайтов любой сложности">
+						<p class="skills__p">Вёрстка лендинг–страниц<br>и сайтов любой сложности</p>
+					</li>
+					<li class="skills__item">
+						<img class="skills__img" src="img/responsive_115.svg" alt="Адаптивная вёрстка под все браузеры и устройства">
+						<p class="skills__p">Адаптивная вёрстка под все<br>браузеры и устройства</p>
+					</li>
+					<li class="skills__item">
+						<img class="skills__img" src="img/programming_119.svg" alt="Frontend–разработка и программирование">
+						<p class="skills__p">Frontend–разработка<br>и программирование</p>
+					</li>
+					<li class="skills__item">
+						<img class="skills__img" src="img/coding_(1)_121.svg" alt="Исправление и доработка существующей вёрстки">
+						<p class="skills__p">Исправление и доработка<br>существующей вёрстки</p>
+					</li>
+				</ul>
+				<a class="button-orange button_center scroll" href="#price">Узнать стоимость</a>
+			</div>
+		</section>
+
+		<section class="portfolio" id="portfolio">
+>>>>>>> scss
 			<div class="conteiner portfolio__conteiner">
 				<h2 class="main-title">Примеры моих работ</h2>
 				<div class="slider">
@@ -127,6 +201,7 @@
 								<h3 class="portfolio__header">Сайт психолога Веры Антоновой</h3>
 							</div>
 						</a>
+<<<<<<< HEAD
 						<a class="portfolio__linck" href="#">
 							<div class="portfolio__item">
 								<img src="img/layer_2.png" alt="Сайт детской одежды">
@@ -142,15 +217,22 @@
 					</div>
 				</div>
 				<button class="order button__color_orange">Заказать проект</button>
+=======
+					</div>
+				</div>
+				<button class="order button-orange button_center">Заказать проект</button>
+>>>>>>> scss
 			</div>
 		</section>
-		<section id="price" class="main__price">
+
+		<section class="price" id="price" >
 			<span class="animate__price animate__price_1">&#123; &#125;</span>
 			<span class="animate__price animate__price_2">&lt;/&gt;</span>
 			<span class="animate__price animate__price_3">&lt;div&gt;</span>
 			<span class="animate__price animate__price_4">#</span>
 			<span class="animate__price animate__price_5">&lt;/&gt;</span>
 			<div class="conteiner price__conteiner">
+<<<<<<< HEAD
 					<h2 class="visually-hidden">Цены и сроки</h2>
 					<p class="price__header">Адаптивная вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за 4 часа.*</p>
 					<div class="price__small">
@@ -171,10 +253,39 @@
 						<a class="menu__link menu__link_footer" href="#skills">Услуги</a>
 					</li>
 					<li class="menu__item">
+=======
+				<h2 class="visually-hidden">Цены и сроки</h2>
+				<p class="price__header">Адаптивная вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за 4 часа.*</p>
+				<div class="price__small">
+					<small>Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в&nbsp;зависимости от сложности задач.</small>
+				</div>
+			</div>
+		</section>
+	</main>
+
+
+	
+
+	<footer class="footer">
+		<div class="conteiner footer__conteiner">
+			<nav class="nav">
+				<ul class="menu menu__footer">
+					<li class="menu__item menu__item_footer">
+						<a class="menu__link menu__link_footer" href="#body">Главная</a>
+					</li>
+					<li class="menu__item menu__item_footer">
+						<a class="menu__link menu__link_footer" href="#skills">Услуги</a>
+					</li>
+					<li class="menu__item menu__item_footer">
+>>>>>>> scss
 						<a class="menu__link menu__link_footer" href="#portfolio">Портфолио</a>
 					</li>
 				</ul>
 			</nav>
+<<<<<<< HEAD
+=======
+
+>>>>>>> scss
 			<div class="contact">
 				<a class="contact__link" href="tel:+79505188881">
 					<i class="icon-phone__footer"></i>
@@ -185,6 +296,10 @@
 					kaf1@mail.ru
 				</a>
 			</div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> scss
 			<div class="social">
 				<button class="order footer__button">Заказать звонок</button>
 				<ul class="social__list">
@@ -223,6 +338,7 @@
 			<small>&copy; Александр Корытов, 2020</small>
 		</div>
 	</footer>
+
 	<div class="popup">
 		<span class="popup__close">&#10006;</span>
 		<form class="form" id="form-popup" action="libs/mailer/smart.php" method="POST">
@@ -239,7 +355,11 @@
 					Телефон
 					<span class="form__pattern">*</span>
 				</span>
+<<<<<<< HEAD
 				<input class="form__input" type="tel" name="phone" placeholder="+7 (999) 999-99-99">
+=======
+				<input class="form__input" type="tel" name="phone" placeholder="+7 999 999 9999">
+>>>>>>> scss
 			</label>
 			<label class="form__label">
 				<span>Email</span>
@@ -248,15 +368,25 @@
 			<button class="popup__button">Отправить</button>
 		</form>
 	</div>
+<<<<<<< HEAD
 	<div class="popup__alert">
+=======
+	<div class="alert">
+>>>>>>> scss
 		<h3 class="alert__header">Сообщение отправлено!</h3>
 		<p class="alert__text">Спасибо,<br>я свяжусь&nbsp;с&nbsp;вами <br> в&nbsp;ближайшее время.</p>
 		<button class="popup__button alert__button">Ок</button>
 	</div>
 	<div class="popup__background"></div>
+<<<<<<< HEAD
 	
 <script src="build/js/all.js"></script>
 <script src="libs/owlcarousel/owl.carousel.min.js"></script>
+=======
+
+	<script src="build/js/all.js"></script>
+	<script src="libs/owlcarousel/owl.carousel.min.js"></script>
+>>>>>>> scss
 
 </body>
 </html>

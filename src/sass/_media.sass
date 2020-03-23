@@ -1,0 +1,610 @@
+@media screen and (min-width: 1500px)
+	.photo__img
+		margin-right: -180px
+
+	.skills__p
+		font-size: 20px
+
+	.main-title
+		font-size: 54px
+
+
+
+
+
+
+
+@media screen and (min-width: 1440px)
+	.aboutme__title
+		font-size: 80px
+
+	.aboutme__subtitle
+		font-size: 25px
+
+
+
+
+
+
+@media screen and (max-width: 1024px)
+	.conteiner
+		max-width: 990px
+
+	.burger
+		display: block
+
+	.header__nav_tablet
+		position: absolute
+		top: 0
+		left: -50vh
+		width: 40vh
+		height: 100vh
+		transition: transform $time_menu cubic-bezier(.17,.67,.25,.98)
+		background-color: $color_backing
+		z-index: 3
+
+	.header__nav_click 
+		transform: translateX(50vh)
+
+
+	.menu__link_tablet
+		color: #fff
+		font-size: 26px
+
+	.menu__tablet
+		flex-direction: column
+		margin-top: 50px
+
+	.menu__item_tablet
+		margin: 20px auto
+
+
+
+
+
+	.aboutme__title
+		font-size: calc(30px + 2vw)
+		margin-bottom: 25px
+
+	.aboutme__text-conteiner
+		margin-top: 150px
+
+	.aboutme__ellipse
+		background-position-x: 47vw
+		background-position-y: 110px
+
+	.button-orange
+		width: 320px
+		height: 68px
+		line-height: 68px
+
+	.photo__img
+		margin-right: 0
+
+
+
+
+	.skills__conteiner
+		grid-template-columns: 1fr 1fr
+		grid-template-rows: 1fr 1fr
+		grid-template-rows: 158px 158px
+		grid-column-gap: 20px
+		grid-row-gap: 75px
+		margin-top: 85px
+
+	.skills__p
+		font-size: calc(10px + 0.7vw)
+
+	.price__conteiner
+		padding: 80px 20px 2px 20px
+
+	
+
+
+	.footer__conteiner
+		padding: 80px 20px 60px
+	
+	.social
+		padding-right: 0
+
+
+
+
+
+	.animate_1
+		left: 47%
+	
+
+	.main__aboutme:hover .animate_3
+		transform: translate(200px, 30px) rotate(150deg)
+	
+
+	.animate__price_2
+		top: 13%
+	
+
+	.main__price:hover .animate__price_2
+		transform: translate(240px, -30px) rotate(110deg)
+	
+
+	.main__price:hover .animate__price_5
+		transform: translate(110px, 10px) rotate(-60deg)
+	
+
+
+
+
+@media screen and (max-width: 900px)
+	.aboutme__text-conteiner
+		margin-top: 0
+		align-items: center
+		width: 100vw
+
+	.aboutme__text
+		grid-column: 1/4
+		grid-row: 2/2
+		justify-self: center
+		margin-top: 0
+		background-color: #fff
+
+
+	.aboutme__photo
+		grid-column: 1/4
+		grid-row: 1/2
+		justify-self: center
+
+	.aboutme__ellipse
+		background-position-x: 0
+		background-position-y: 136px
+
+	.photo__img
+		margin-right: -59px
+
+
+
+
+
+
+
+@media screen and (max-width: 768px)
+
+	.header
+		height: 77px
+
+		&__button
+			width: 45px
+			height: 45px
+			border-radius: 50%
+			border: $border_pink
+			font-size: 0
+
+		&__button:hover
+			background-color: transparent
+
+		&__phone:hover
+			color: $color_html
+
+	.menu__link:hover
+		color: #fff
+	
+	.menu__link_tablet
+		font-size: 20px
+
+	.icon-phone__header:before
+		font-size: 20px
+
+
+
+	.aboutme__subtitle
+		font-size: 16px
+		padding: 0 10px
+		text-align: center
+
+	.aboutme__ellipse
+		background-position-x: -13vw
+		background-position-y: 136px
+
+
+
+
+
+	.footer__conteiner
+		flex-wrap: wrap
+		padding: 47px 20px 60px
+
+
+	.social
+		padding-top: 30px
+
+	.menu__item_footer
+		margin-right: 85px
+
+
+
+
+
+	.animate
+		font-size: 30px
+	
+
+	.animate_1
+		left: 30%
+		top: 4%
+	
+
+	.main__aboutme:hover .animate_1 
+		transform: translate(200px, 0) rotate(80deg)
+	
+
+	.animate_2 
+		left: 6%
+	
+
+	.main__aboutme:hover .animate_2
+		transform: translate(100px, 200px) rotate(110deg)
+	
+
+	.animate_3 
+	 left: 6%
+	 top: -10%
+	
+
+	.main__aboutme:hover .animate_3
+		transform: translate(50px, 120px) rotate(20deg)
+	
+
+	.animate_4 
+	 left: 47%
+	 top: 53%
+	
+
+	.main__aboutme:hover .animate_4 
+		transform: translate(-100px, -10px) rotate(-60deg)
+	
+
+	.animate_5
+	 left: 90%
+	 top: 5%
+	
+
+	.main__aboutme:hover .animate_5
+		transform: translate(-200px, -80px) rotate(-60deg)
+	
+
+	.animate__price_1
+		left: 80%
+	
+
+	.main__price:hover .animate__price_2
+		transform: translate(140px, -30px) rotate(110deg)
+	
+
+	.main__price:hover .animate__price_3
+		transform: translate(-90px, 1px) rotate(-10deg)
+	
+	.animate__price
+		font-size: 18px
+
+
+
+
+
+
+
+
+@media (max-width: 624px)
+	
+	.popup
+		width: 300px
+		
+		&__header
+			margin: 20px auto 30px
+
+		&__button
+			width: 200px
+			margin: 40px auto 20px
+		
+		&__close
+			right: 8px
+			top: 8px
+			color: red
+
+	.form
+		font-size: 16px
+		margin: 0 20px
+
+		&__input
+			min-width: 100%
+			height: 35px
+			margin-top: 5px
+
+		&__label
+			flex-direction: column
+			align-items: flex-start
+			min-width: 100%
+
+	.alert
+		top: 40%
+
+		&__header 
+			margin: 20px 30px 40px
+	
+
+
+
+
+
+
+@media screen and (max-width: 500px)
+
+	.aboutme__ellipse
+		background-position-x: -13vw
+		background-position-y: 77px
+		background-size: 137%
+
+	.skills__conteiner
+		grid-template-columns: 1fr
+		grid-template-rows: 1fr 1fr 1fr 1fr
+		grid-template-rows: 158px 158px 158px 158px
+		grid-row-gap: 75px
+		margin-top: 85px
+
+	.skills__p
+		font-size: 16px
+
+	.contact
+		padding-top: 30px
+
+		&__link
+			padding-left: 0
+
+
+
+
+
+
+@media screen and (max-width: 425px)
+
+	.burger 
+		height: 35px
+		width: 40px
+		margin-left: -8px
+
+		&__btn span, 
+		&__btn span::before, 
+		&__btn span::after
+			width: 25px
+			height: 3px
+		
+		&__btn span
+			left: 8px
+			top: 17px
+
+		&__btn span::after
+			top: -8px
+
+		&__btn span::before
+			top: 8px
+
+		&__btn_click span::after, 
+		&__btn_click span::before
+			top: 0
+
+		&__btn_click span
+			width: 0
+			margin-left: 0
+
+	.header__phone
+		font-size: 18px
+		margin-left: 0
+		margin-right: 0
+
+	.header__button
+		width: 26px
+		height: 26px
+
+	.icon-phone__header:before
+		font-size: 14px
+
+
+
+
+
+	.aboutme__conteiner
+		padding-top: 57px
+
+	.aboutme__title
+		font-size: 30px
+		margin-top: 12px
+		margin-bottom: 12px
+
+	.aboutme__subtitle
+		margin-bottom: 25px
+		line-height: 22px
+
+	.button-orange
+		width: 280px
+		height: 55px
+		line-height: 55px
+		font-size: 16px
+
+
+
+
+
+	.skills
+		padding-top: 44px
+		padding-bottom: 48px
+
+		&__conteiner
+			margin-top: 40px
+			grid-row-gap: 12px
+			padding-bottom: 18px
+
+		&__item
+			justify-content: start
+
+		&__img
+			width: 56px
+			height: 60px
+
+		&__p
+			line-height: 22px
+			padding-top: 18px
+
+		&__button
+			margin: 19px auto 0
+
+	.main-title
+		font-size: 30px
+
+	.portfolio
+		padding-top: 47px
+		padding-bottom: 51px
+		margin-top: 0
+
+		&__conteiner
+			padding-left: 20px
+			padding-right: 20px
+		
+		&__header
+			font-size: 18px
+			margin-top: 17px
+
+	.slider
+		margin-top: 40px
+		margin-bottom: 47px
+
+	.owl-dots
+		margin-top: 40px
+
+	.owl-dot
+		width: 10px
+		height: 10px
+
+
+
+
+
+
+	.price__conteiner
+		padding: 41px 20px 2px
+	
+	.price__header
+		font-size: 28px
+		line-height: 40px
+
+	.price__small
+		font-size: 19px
+		line-height: 30px
+		margin-top: 33px
+		margin-bottom: 40px
+
+
+
+
+
+	.footer__conteiner
+		padding: 15px 20px 43px
+
+	.contact
+		padding-top: 26px
+
+		&__link 
+			font-size: 18px
+
+	.social
+		padding-top: 0
+
+		&__item
+			margin-top: 56px
+
+	.copyright
+		padding: 17px
+
+		& small
+			font-size: 14px
+
+
+
+
+
+
+	.animate
+		font-size: 20px
+	
+
+	.animate_1
+		left: 7%
+	
+
+	.main__aboutme:hover .animate_1
+		transform: translate(50px, -20px) rotate(80deg)
+	
+
+	.animate_3
+	 left: 21%
+	 top: 13%
+
+
+	.main__aboutme:hover .animate_3
+		transform: translate(-60px, 20px) rotate(20deg)
+	
+
+
+	.animate_5
+	 left: 87%
+	 top: 8%
+	
+
+	.main__aboutme:hover .animate_5
+		transform: translate(-50px, -30px) rotate(-60deg)
+	
+
+	.animate__price_1
+		top: 3%
+	
+
+	.main__price:hover .animate__price_1
+		transform: translate(-30px, 10px) rotate(180deg)
+	
+
+	.animate__price_2
+		left: 5%
+		top: 4%
+	
+
+	.main__price:hover .animate__price_2
+		transform: translate(80px, -4px) rotate(110deg)
+	
+
+
+	.animate__price_3
+		bottom: 40%
+		transform: rotate(-9deg)
+	
+
+	.animate__price_4
+		left: 20%
+		bottom: 4%
+		transform: rotate(62deg)
+	
+
+	.main__price:hover .animate__price_4
+		transform: translate(90px, 20px) rotate(-60deg)
+	
+
+	.animate__price_5
+		left: 50%
+		bottom: 8%
+		transform: rotate(62deg)
+	
+
+
+
+
+
+
+
+
+

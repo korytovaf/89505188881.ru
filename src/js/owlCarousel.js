@@ -14,11 +14,15 @@ $(document).ready(function(){
 			0:{
 				items: 1
 			},
+<<<<<<< HEAD
 			426:{
+=======
+			600:{
+>>>>>>> scss
 				items: 2
 
 			},
-			1224:{
+			1025:{
 				items: 3,
 				dots:false,
 				nav: true,

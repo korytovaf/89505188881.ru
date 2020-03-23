@@ -1,0 +1,83 @@
+.footer__conteiner
+	display: flex
+	flex-flow: nowrap
+	justify-content: space-between
+	padding: 56px 20px 60px
+
+.menu__footer
+	flex-direction: column
+
+.menu__item_footer
+	padding-bottom: 16px
+
+.menu__link_footer
+	color: $color_grey
+
+.nav
+	padding-top: 30px
+
+.contact
+	padding-top: 30px
+
+	&__link
+		display: block
+		padding-right: 22px
+		padding-left: 16px
+		margin-bottom: 30px
+		font-size: 25px
+		font-weight: 400
+		color: $color_grey
+		vertical-align: middle
+		transition: color $time_hover
+
+		&:hover
+			color: $color_pink
+
+
+.footer__button 
+	border: 1px solid $color_pink
+	border-radius: 2px
+	background: transparent
+	color: $color_pink
+	transition: background $time_hover, color $time_hover
+	width: 250px
+	height: 45px
+	cursor: pointer
+
+	&:hover
+		background: #ff2f96
+		color: #fff
+
+.social
+	padding-right: 20px
+	padding-top: 30px
+
+	&__list
+		display: flex
+
+	&__item
+		margin-top: 30px
+		margin-right: 26px
+
+	&__icon
+		fill: $color_grey
+		width: 30px
+		height: 30px
+		transition: fill $time_hover
+
+		&:hover
+			fill: $color_pink
+
+
+
+
+
+
+.copyright 
+	background-color: #31293c
+	text-align: center
+	padding: 30px
+
+	& small
+		font-size: 16px
+		color: #fff

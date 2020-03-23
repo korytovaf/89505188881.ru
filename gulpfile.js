@@ -8,16 +8,6 @@ const browserSync = require('browser-sync').create();
 const sourcemaps = require('gulp-sourcemaps');
 const sass = require('gulp-sass');
 
-const cssFiles = [
-    './src/css/fonts.css',
-    './src/css/normalize.css',
-    './src/css/style.css',
-    './src/css/header.css',
-    './src/css/main.css',
-    './src/css/footer.css',
-    './src/css/popup.css',
-    './src/css/media.css',
-]
 
 const jsFiles = [
     './src/js/jquery-3.4.1.min.js',
@@ -45,14 +35,10 @@ function watch() {
 
 
 function styles() {
-<<<<<<< HEAD
-    return gulp.src(cssFiles)
-=======
+
     return gulp.src('./src/sass/style.sass')
->>>>>>> scss
     .pipe(sourcemaps.init())
     .pipe(sass())
-//    .pipe(concat('all.css'))
     .pipe(autoprefixer({
         overrideBrowserslist: ['last 2 versions'],
         cascade: false,

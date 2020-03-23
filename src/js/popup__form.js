@@ -4,11 +4,8 @@ $(function () {
 	// для вызова Popup окна, кнопкам прописать класс .order
 	$('.order').on('click', function(e){
 		e.preventDefault()
-<<<<<<< HEAD
-		$('.popup__background').fadeIn(400,
-=======
+
 		$('.popup__background').fadeIn(150,
->>>>>>> scss
             function(){
                 $('.popup') 
                     .css('display', 'block')
@@ -23,11 +20,8 @@ $(function () {
 				
 		$('.popup').animate({opacity: 0, left: '45%'}, 150, function(){
 			$(this).css('display', 'none');
-<<<<<<< HEAD
-			$('.popup__background').fadeOut(400);
-=======
+
 			$('.popup__background').fadeOut(150);
->>>>>>> scss
 		});
 
 		$('html').removeClass('popup__html_fixed');
@@ -79,11 +73,8 @@ $(function () {
 		
 		$('.alert').animate({opacity: 0, left: '45%'}, 150, function(){
 			$(this).css('display', 'none');
-<<<<<<< HEAD
-			$('.popup__background').fadeOut(400);
-=======
+
 			$('.popup__background').fadeOut(150);
->>>>>>> scss
 		});
 
 		$('html').removeClass('popup__html_fixed');

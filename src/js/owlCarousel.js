@@ -14,11 +14,8 @@ $(document).ready(function(){
 			0:{
 				items: 1
 			},
-<<<<<<< HEAD
-			426:{
-=======
+
 			600:{
->>>>>>> scss
 				items: 2
 
 			},
